@@ -3,7 +3,7 @@ layout: simple
 title: About
 ---
 
-### 所有人需要了解：
+### 了解：
 
 * markdown: [http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
 * jekyll: [http://jekyll.bootcss.com/docs/frontmatter/](http://jekyll.bootcss.com/docs/frontmatter/)
@@ -17,27 +17,24 @@ nswbmw 将 gary, malu, lingdang 添加为该库的 Collaborators。
 
 设计师需要安装：
 
-```
-node.js  ->  https://nodejs.org/download/
-gem install jekyll
-gem install rouge
-gem install sass
-npm install -g grunt-cli
-```
+    node.js  ->  https://nodejs.org/download/
+    gem install jekyll
+    gem install rouge
+    gem install sass
+    npm install -g grunt-cli
+
 
 ### 第 1 步：
 
-```
-git clone https://github.com/zhaokun/primer.git
-```
+    git clone https://github.com/zhaokun/primer.git
+
 
 ### 第 2 步：
 
 到 primer 目录下运行：
 
-```
-jekyll serve
-```
+    jekyll serve
+
 
 启动 jekyll 服务，浏览器打开 `http://127.0.0.1:4000/primer/`
 
@@ -47,8 +44,7 @@ sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的
 
 首先，用 SourceTree 提交修改到 master 分支，然后运行：
 
-```
-grunt publish
-```
+    grunt publish
+
 
 会自动将  master 的修改推送到 GitHub 库的 gh-pages 分支，浏览器打开 `http://zhaokun.github.io/primer/`
