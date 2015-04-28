@@ -43,7 +43,7 @@
         About
       </h1>
       <div class="markdown-body">
-        <h3 id="section">所有人需要了解：</h3>
+        <h3 id="section">了解：</h3>
 
 <ul>
   <li>markdown: <a href="http://www.appinn.com/markdown/">http://www.appinn.com/markdown/</a></li>
@@ -58,41 +58,39 @@
 
 <p>设计师需要安装：</p>
 
-<p><code>
-node.js  -&gt;  https://nodejs.org/download/
+<pre><code>node.js  -&gt;  https://nodejs.org/download/
 gem install jekyll
 gem install rouge
 gem install sass
 npm install -g grunt-cli
-</code></p>
+</code></pre>
 
 <h3 id="section-2">第 1 步：</h3>
 
-<p><code>
-git clone https://github.com/zhaokun/primer.git
-</code></p>
+<pre><code>git clone https://github.com/zhaokun/primer.git
+</code></pre>
 
 <h3 id="section-3">第 2 步：</h3>
 
 <p>到 primer 目录下运行：</p>
 
-<p><code>
-jekyll serve
-</code></p>
+<pre><code>jekyll serve
+</code></pre>
 
-<p>启动 jekyll 服务，浏览器打开 <code>http://127.0.0.1:4000/primer/</code></p>
+<p>启动 jekyll 服务，浏览器打开 <code>http://127.0.0.1:4000/primer/</code> 用于本地调试。</p>
 
-<p>sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的样式文件。style guide 文档在 docs 目录下，修改完样式修改对应的 markdown 文件即可，服务会重新自动生成 html 页面，所以只需刷新页面即可看到效果。</p>
+<p>sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的样式文件。style guide 文档在 docs 目录下，修改完样式修改对应的 markdown 文件然后重新运行 <code>jekyll serve</code>，刷新页面即可看到效果。</p>
+
+<p><strong>Tips:</strong> <code>_include</code> 目录存放了左侧的列表，新建 scss 文件后需要在 docs/docs.scss 文件内引入。</p>
 
 <h3 id="section-4">第 3 步</h3>
 
-<p>首先，用 SourceTree 提交修改到 master 分支，然后运行：</p>
+<p>每次修改后，首先用 SourceTree 提交修改到 master 分支，然后运行：</p>
 
-<p><code>
-grunt publish
-</code></p>
+<pre><code>grunt publish
+</code></pre>
 
-<p>会自动将  master 的修改推送到 GitHub 库的 gh-pages 分支，浏览器打开 <code>http://zhaokun.github.io/primer/</code></p>
+<p>会自动将 master 的修改推送到 GitHub 库的 gh-pages 分支，浏览器打开 <code>http://zhaokun.github.io/primer/</code>，可能会过几分钟才生效。</p>
 
       </div>
     </div>
@@ -105,7 +103,7 @@ grunt publish
       About
     </h1>
     <div class="markdown-body">
-      <h3 id="section">所有人需要了解：</h3>
+      <h3 id="section">了解：</h3>
 
 <ul>
   <li>markdown: <a href="http://www.appinn.com/markdown/">http://www.appinn.com/markdown/</a></li>
@@ -120,41 +118,39 @@ grunt publish
 
 <p>设计师需要安装：</p>
 
-<p><code>
-node.js  -&gt;  https://nodejs.org/download/
+<pre><code>node.js  -&gt;  https://nodejs.org/download/
 gem install jekyll
 gem install rouge
 gem install sass
 npm install -g grunt-cli
-</code></p>
+</code></pre>
 
 <h3 id="section-2">第 1 步：</h3>
 
-<p><code>
-git clone https://github.com/zhaokun/primer.git
-</code></p>
+<pre><code>git clone https://github.com/zhaokun/primer.git
+</code></pre>
 
 <h3 id="section-3">第 2 步：</h3>
 
 <p>到 primer 目录下运行：</p>
 
-<p><code>
-jekyll serve
-</code></p>
+<pre><code>jekyll serve
+</code></pre>
 
-<p>启动 jekyll 服务，浏览器打开 <code>http://127.0.0.1:4000/primer/</code></p>
+<p>启动 jekyll 服务，浏览器打开 <code>http://127.0.0.1:4000/primer/</code> 用于本地调试。</p>
 
-<p>sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的样式文件。style guide 文档在 docs 目录下，修改完样式修改对应的 markdown 文件即可，服务会重新自动生成 html 页面，所以只需刷新页面即可看到效果。</p>
+<p>sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的样式文件。style guide 文档在 docs 目录下，修改完样式修改对应的 markdown 文件然后重新运行 <code>jekyll serve</code>，刷新页面即可看到效果。</p>
+
+<p><strong>Tips:</strong> <code>_include</code> 目录存放了左侧的列表，新建 scss 文件后需要在 docs/docs.scss 文件内引入。</p>
 
 <h3 id="section-4">第 3 步</h3>
 
-<p>首先，用 SourceTree 提交修改到 master 分支，然后运行：</p>
+<p>每次修改后，首先用 SourceTree 提交修改到 master 分支，然后运行：</p>
 
-<p><code>
-grunt publish
-</code></p>
+<pre><code>grunt publish
+</code></pre>
 
-<p>会自动将  master 的修改推送到 GitHub 库的 gh-pages 分支，浏览器打开 <code>http://zhaokun.github.io/primer/</code></p>
+<p>会自动将 master 的修改推送到 GitHub 库的 gh-pages 分支，浏览器打开 <code>http://zhaokun.github.io/primer/</code>，可能会过几分钟才生效。</p>
 
     </div>
   </div>
