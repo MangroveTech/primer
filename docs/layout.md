@@ -9,7 +9,7 @@ You can find all the below styles in `_layout.scss`.
 
 ## 索引
 
-* 此处不用改，将下面所有的 2 级标题制成索引
+* 此处不用改，将下面所有的 2 级标题制成索引...
 {:toc}
 
 ## Container
