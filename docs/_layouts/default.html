@@ -10,13 +10,13 @@
     <meta name="author" content="">
 
     <title>
-      {{ page.title }} &middot; Primer
+      {{ page.title }} &middot; Mailcup
     </title>
 
     <link rel="stylesheet" href="{{ site.baseurl }}/docs.css">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/img/apple-touch-icon-precomposed.png">
+    <link rel="cup" href="{{ site.baseurl }}/img/cup.png">
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
   </head>
   <body>
@@ -24,15 +24,14 @@
     <header class="masthead">
       <div class="container">
         <a href="{{ site.baseurl }}/" class="masthead-logo">
-          <span class="mega-octicon octicon-package"></span>
-          Primer
+          <img src="{{ site.baseurl }}/img/cup.png" width="32" height="32">
+          Mailcup
         </a>
 
         <nav class="masthead-nav">
-          <a {% if page.layout == "page" %}class="active"{% endif %} href="{{ site.baseurl }}/scaffolding">Docs</a>
+          <a {% if page.layout == "page" %}class="active"{% endif %} href="{{ site.baseurl }}/Layout">Docs</a>
           <a {% if page.title == "About" %}class="active"{% endif %} href="{{ site.baseurl }}/about">About</a>
           <a href="{{ site.github.repo }}" target="_blank">GitHub</a>
-          <a href="{{ site.github.repo }}/blob/master/README.md#install" target="_blank">Install</a>
         </nav>
       </div>
     </header>
@@ -40,10 +39,10 @@
     {% if page.title == "Home" %}
       <div class="jumbotron">
         <div class="container">
-          <h1>Primer</h1>
-          <p>The CSS toolkit and guidelines that power GitHub.</p>
+          <h1>Mailcup</h1>
+          <p>Mailcup Style Guide.</p>
 
-          <a href="{{ site.baseurl }}/scaffolding/" class="btn btn-reverse">
+          <a href="{{ site.baseurl }}/Layout/" class="btn btn-reverse">
             Read the docs
           </a>
         </div>
@@ -70,9 +69,8 @@
     <div class="container">
       {{ content }}
 
-      <footer class="footer">
-        Copyright GitHub {{ site.time | date: '%Y' }}.<br>
-        Created and maintained by the CSS team at GitHub. <strong>Currently v{{ site.version }}.</strong>
+      <footer class="footer" style="text-align:center">
+        Copyright Just {{ site.time | date: '%Y' }}.
       </footer>
     </div>
 

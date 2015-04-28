@@ -7,9 +7,9 @@ Primer's layout includes basic page containers and a single-tiered, fraction-bas
 
 You can find all the below styles in `_layout.scss`.
 
-## Contents
+## 索引
 
-* Will be replaced with the ToC, excluding the "Contents" header
+* 此处不用改，将下面所有的 2 级标题制成索引
 {:toc}
 
 ## Container

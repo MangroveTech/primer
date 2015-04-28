@@ -3,29 +3,52 @@ layout: simple
 title: About
 ---
 
-Learn more about this styleguide, particularly how it's built and who maintains it.
+### 所有人需要了解：
 
-### What and why
+* markdown: [http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
+* jekyll: [http://jekyll.bootcss.com/docs/frontmatter/](http://jekyll.bootcss.com/docs/frontmatter/)
+* sass: [http://www.ruanyifeng.com/blog/2012/06/sass.html](http://www.ruanyifeng.com/blog/2012/06/sass.html), [http://www.w3cplus.com/sassguide/](http://www.w3cplus.com/sassguide/)
+* git 的使用，SourceTree 即可。
 
-Primer is GitHub's internal CSS framework. It includes basic global styling for typography, small components like buttons and tabs, and our general guidelines for writing HTML and CSS. It's been used internally at GitHub for years now.
 
-Open-sourcing Primer means sharing and learning with the community. There's a lot we can improve upon in Primer, and help is always appreciated. While we don't currently plan on building this out as a competitor to other front-end frameworks, we will occasionally add, remove, or modify things.
+### 准备工作：
 
-### Browser support
+nswbmw 将 gary, malu, lingdang 添加为该库的 Collaborators。
 
-Primer currently supports Internet Explorer 9+ and the latest two versions of Chrome, Safari, and Firefox on OS X and Windows. While not a responsive or mobile-focused project, Mobile Safari and Chrome for Android should render just fine. Support for Linux-based browsers is not strictly guaranteed, but accounted for whenever possible.
+设计师需要安装：
 
-### Future updates
+```
+node.js  ->  https://nodejs.org/download/
+gem install jekyll
+gem install rouge
+gem install sass
+npm install -g grunt-cli
+```
 
-See the [roadmap](/roadmap) for a rough outline on what's slated for future versions of Primer.
+### 第 1 步：
 
-### Dependencies
+```
+git clone https://github.com/zhaokun/primer.git
+```
 
-- Our styles are built with SCSS.
-- Bower is used to link GitHub assets, namely our [Octicons](http://octicons.github.com) icon font and Markdown styles.
-- Autoprefixer is used to generate vendor-prefixed declarations and is handled via our Gruntfile.
-- A custom plugin for snippet and example combos, `example.rb`, was created as a fork of Jekyll's built-in `highlight` plugin.
+### 第 2 步：
 
-### Who
+到 primer 目录下运行：
 
-Currently maintained by [@mdo](https://twitter.com/mdo), [@jonrohan](https://twitter.com/jonrohan), and the GitHub CSS team.
+```
+jekyll serve
+```
+
+启动 jekyll 服务，浏览器打开 `http://127.0.0.1:4000/primer/`
+
+sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的样式文件。style guide 文档在 docs 目录下，修改完样式修改对应的 markdown 文件即可，服务会重新自动生成 html 页面，所以只需刷新页面即可看到效果。
+
+### 第 3 步
+
+首先，用 SourceTree 提交修改到 master 分支，然后运行：
+
+```
+grunt publish
+```
+
+会自动将  master 的修改推送到 GitHub 库的 gh-pages 分支，浏览器打开 `http://zhaokun.github.io/primer/`
