@@ -6,7 +6,7 @@ kramdown:
 
 permalink: pretty
 source: docs
-baseurl: "/_site"
+baseurl: "/primer"
 
 version: 2.1.0
 
