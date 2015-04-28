@@ -3,7 +3,7 @@ layout: page
 title: Layout
 ---
 
-Primer's layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it's just containers, rows, and columns.
+Page layouts 提供了 Mailcup 的基础布局，目前 Mailcup 仅有一种布局
 
 You can find all the below styles in `_layout.scss`.
 
