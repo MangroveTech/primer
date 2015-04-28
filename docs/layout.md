@@ -40,53 +40,28 @@ The grid is pretty standard—you create rows with `.columns` and individual col
 In practice, your columns will look like the example below.
 
 {% example html %}
-<div class="container">
-  <div class="columns">
-    <div class="one-fifth column">
-      .one-fifth
-    </div>
-    <div class="four-fifths column">
-      .four-fifths
-    </div>
-  </div>
-
-  <div class="columns">
-    <div class="one-fourth column">
-      .one-fourth
-    </div>
-    <div class="three-fourths column">
-      .three-fourths
-    </div>
-  </div>
-
-  <div class="columns">
-    <div class="one-third column">
-      .one-third
-    </div>
-    <div class="two-thirds column">
-      .two-thirds
-    </div>
-  </div>
-
-  <div class="columns">
-    <div class="one-half column">
-      .one-half
-    </div>
-    <div class="one-half column">
-      .one-half
-    </div>
-  </div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
 </div>
-{% endexample %}
-
-### Centered
-
-Columns can be [centered](/utilities/#centering-content) by adding `.centered` to the `.column` class.
-
-{% example html %}
-<div class="columns">
-  <div class="one-half column centered">
-    .one-half
-  </div>
+<div class="dropup">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
 </div>
 {% endexample %}
