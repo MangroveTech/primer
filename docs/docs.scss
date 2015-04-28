@@ -4,6 +4,8 @@
 ---
 
 @import "../scss/layout";
+@import "bower_components/primer-user-content/components/markdown";
+@import "css/syntax";
 
 .docs-example {
   margin: 20px auto;
