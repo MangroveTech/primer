@@ -80,6 +80,7 @@ Icon 提供了 Mailcup 所用到的图标字体方案
 <button type="button" class="btn btn-default" aria-label="Left Align">
   <span class="mc-icon-pin" aria-hidden="true"> Confirm</span>
 </button>
+{% endexample %}
 
 ##颜色
 
