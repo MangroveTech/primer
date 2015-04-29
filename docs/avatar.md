@@ -10,12 +10,12 @@ Avatar 提供了 Mailcup 所有用户头像显示方案
 * 此处不用改，将下面所有的 2 级标题制成索引...
 {:toc}
 
-##.avatar-mid
+##.mc-avatar-mid
 {% example html %}
-<img class="avatar-mid" src="https://avatar.tower.im/2458b7b4c2814259813404ce21749c2e"/><br><br>
+<img class="mc-avatar-mid" src="https://avatar.tower.im/2458b7b4c2814259813404ce21749c2e"/><br><br>
 {% endexample %}
 
-##.avatar-big
+##.mc-avatar-big
 {% example html %}
-<img class="avatar-big" src="https://avatar.tower.im/2458b7b4c2814259813404ce21749c2e"/><br><br>
+<img class="mc-avatar-big" src="https://avatar.tower.im/2458b7b4c2814259813404ce21749c2e"/><br><br>
 {% endexample %}

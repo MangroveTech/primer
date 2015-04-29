@@ -1,38 +1,38 @@
-$color-darkblue: #282A36;
-$color-lightgrey: #F1F1F1;
-$color-lightyellow: #FBFBF7;
+$mc-color-darkblue: #282A36;
+$mc-color-lightgrey: #F1F1F1;
+$mc-color-lightyellow: #FBFBF7;
 
-$color-darkborder: #979797;
-$color-lightborder: #D6D6D6;
-$color-midgrey: #919191;
+$mc-color-darkborder: #979797;
+$mc-color-lightborder: #D6D6D6;
+$mc-color-midgrey: #919191;
 
-$color-midblue: #4A90E2;
+$mc-color-midblue: #4A90E2;
 
 
 .darkblue {
-	background-color: $color-darkblue;
+	background-color: $mc-color-darkblue;
 }
 
 .lightgrey {
-	background-color: $color-lightgrey;
+	background-color: $mc-color-lightgrey;
 }
 
 .lightyellow {
-	background-color: $color-lightyellow;
+	background-color: $mc-color-lightyellow;
 }
 
 .darkborder {
-	background-color: $color-darkborder;
+	background-color: $mc-color-darkborder;
 }
 
 .lightborder {
-	background-color: $color-lightborder;
+	background-color: $mc-color-lightborder;
 }
 
 .midgrey {
-	background-color: $color-midgrey;
+	background-color: $mc-color-midgrey;
 }
 
 .midblue {
-	background-color: $color-midblue;
+	background-color: $mc-color-midblue;
 }
