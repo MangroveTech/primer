@@ -83,10 +83,9 @@ Icon 提供了 Mailcup 所用到的图标字体方案
 {% endexample %}
 
 ##颜色
+可以使用Mailcup所提供的配色
 
 {% example html %}
-<span class="mc-icon-clip btn-lg darkblue"> clip</span>
-<span class="mc-icon-clip btn-lg midgrey"> clip</span>
-<span class="mc-icon-clip btn-lg midblue"> clip</span>
-
+<span class="mc-icon-clip btn-lg" style="color:red"> clip</span>
+<span class="mc-icon-clip btn-lg" style="color:blue"> clip</span>
 {% endexample %}
