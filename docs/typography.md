@@ -5,19 +5,33 @@ title: Typography
 
 Typography 提供了 Mailcup 所用到的字体方案
 
-你可以在下面的CSS文件里找到 `_color.scss`.
+你可以在下面的CSS文件里找到 `_typography.scss`.
 
+* 此处不用改，将下面所有的 2 级标题制成索引...
+{:toc}
 
-##Navigation
+##.pagetitle
+用作页面标题，会话详情页 Subject
 
 {% example html %}
-<div class="nav-title">Navigation Title</div><br>
+<span class="pagetitle">Inbox</span>
 {% endexample %}
 
-##Table
-{% example html %}
-<div class="table-item-title">Brenda Bennett</div><br>
-<div class="table-item-subtitle">In the tumultuous business</div><br>
-<div class="table-item-content">There are some great debates and articles in the UI/UX designer world about Should we use hamburger menus in our products?.</div><br>
+##.bigtext
+用作 Table Item 里面的 Sender
 
+{% example html %}
+<span class="bigtext"><strong>Gary Chai</strong>, me</span>
+{% endexample %}
+
+##.mediumtext
+用作 Table Item 的 Summary, Left Menu 的 Item title
+{% example html %}
+<span class="mediumtext">Hey guys, please check your inbox.</span>
+{% endexample %}
+
+##.smalltext
+用作 Left Menu 的 Section title
+{% example html %}
+<span class="smalltext">LABELS</span>
 {% endexample %}

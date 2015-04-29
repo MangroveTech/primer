@@ -1,6 +1,38 @@
-$dark-background-color: #282A36;
-$grey-background-color: #448BDF;
+$color-darkblue: #282A36;
+$color-lightgrey: #F1F1F1;
+$color-lightyellow: #FBFBF7;
 
-.dark-background-color {
-	background-color: $dark-background-color;
+$color-darkborder: #979797;
+$color-lightborder: #D6D6D6;
+$color-midgrey: #919191;
+
+$color-midblue: #4A90E2;
+
+
+.darkblue {
+	background-color: $color-darkblue;
+}
+
+.lightgrey {
+	background-color: $color-lightgrey;
+}
+
+.lightyellow {
+	background-color: $color-lightyellow;
+}
+
+.darkborder {
+	background-color: $color-darkborder;
+}
+
+.lightborder {
+	background-color: $color-lightborder;
+}
+
+.midgrey {
+	background-color: $color-midgrey;
+}
+
+.midblue {
+	background-color: $color-midblue;
 }
