@@ -2,5 +2,34 @@
 
 .mc-button {
   @extend .btn;
-  @extend .btn-primary;
+  @extend .btn-default;
+}
+
+.mc-button-primary {
+	@extend .btn;
+ 	@extend .btn-primary;
+ 	background-color: #4A90E2;
+ 	border-color: #597D9D;
+
+ 	:hover,:focus,:active{
+ 		background-color: #326DB2;
+ 	}
+}
+
+.mc-button-danger {
+	@extend .btn;
+	@extend .btn-danger;
+}
+
+.mc-button-small {
+	@extend .btn-sm;
+}
+
+.mc-button-big {
+	@extend .btn-lg;
+}
+
+.mc-button-link{
+	@extend .btn;
+	@extend .btn-link;
 }
