@@ -32,7 +32,7 @@ nswbmw 将 gary, malu, lingdang 添加为该库的 Collaborators。
 
 到 primer 目录下运行：
 
-    supervisor -e css,html,js,json,scss,md -i node_modules,bower_component,_site -x jekyll server
+    npm start
 
 启动 jekyll 服务，浏览器打开 `http://127.0.0.1:4000/primer/` 用于本地调试。
 

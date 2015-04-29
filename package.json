@@ -4,9 +4,12 @@
   "homepage": "http://primercss.io",
   "author": "GitHub, Inc.",
   "scss": "./scss/primer.scss",
+  "scripts": {
+    "start": "supervisor -e css,html,js,json,scss,md -i node_modules,bower_component,_site -x jekyll server"  
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/primer/primer.git"
+    "url": "https://github.com/zhaokun/primer.git"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
