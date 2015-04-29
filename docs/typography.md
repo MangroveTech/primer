@@ -10,28 +10,32 @@ Typography 提供了 Mailcup 所用到的字体方案
 * 此处不用改，将下面所有的 2 级标题制成索引...
 {:toc}
 
-##.pagetitle
+##.mc-text-pagetitle
 用作页面标题，会话详情页 Subject
 
 {% example html %}
-<span class="pagetitle">Inbox</span>
+<span class="mc-text-pagetitle">Inbox</span>
 {% endexample %}
 
-##.bigtext
+##.mc-text-headline
 用作 Table Item 里面的 Sender
 
 {% example html %}
-<span class="bigtext"><strong>Gary Chai</strong>, me</span>
+<span class="mc-text-headline"><strong>Gary Chai</strong>, me</span>
 {% endexample %}
 
-##.mediumtext
+##.mc-text-content
 用作 Table Item 的 Summary, Left Menu 的 Item title
 {% example html %}
-<span class="mediumtext">Hey guys, please check your inbox.</span>
+<span class="mc-text-content">Hey guys, please check your inbox.</span>
 {% endexample %}
 
-##.smalltext
+##.mc-text-small
 用作 Left Menu 的 Section title
 {% example html %}
-<span class="smalltext">LABELS</span>
+<span class="mc-text-small">LABELS</span> <br>
+<span class="mc-text-small">OTHERS</span> <br><br>
+
+<span class="mc-text-small">标签</span> <br>
+<span class="mc-text-small">其他</span> <br>
 {% endexample %}
