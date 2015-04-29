@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Buttons
+title: Button
 ---
 
 Buttons 提供了 Mailcup 所有按键方案
