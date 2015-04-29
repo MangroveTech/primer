@@ -22,6 +22,7 @@ nswbmw 将 gary, malu, lingdang 添加为该库的 Collaborators。
     gem install rouge
     gem install sass
     npm install -g grunt-cli
+    npm install -g supervisor
 
 ### 第 1 步：
 
@@ -31,11 +32,11 @@ nswbmw 将 gary, malu, lingdang 添加为该库的 Collaborators。
 
 到 primer 目录下运行：
 
-    jekyll serve
+    supervisor -e css,html,js,json,scss,md -i node_modules,bower_component,_site -x jekyll server
 
 启动 jekyll 服务，浏览器打开 `http://127.0.0.1:4000/primer/` 用于本地调试。
 
-sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的样式文件。style guide 文档在 docs 目录下，修改完样式修改对应的 markdown 文件然后重新运行 `jekyll serve`，刷新页面即可看到效果。
+sass 文件在 scss 目录下，以后修改样式就是修改这个目录下的样式文件。style guide 文档在 docs 目录下，修改完样式修改对应的 markdown 文件。服务会自动重启，刷新页面即可看到效果。
 
 **Tips:** `_include` 目录存放了左侧的列表，新建 scss 文件后需要在 docs/docs.scss 文件内引入。
 
