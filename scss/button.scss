@@ -1,0 +1,7 @@
+
+@import "../css/_bootstrap";
+
+.mc-button {
+  @extend .btn;
+  @extend .btn-primary;
+}
