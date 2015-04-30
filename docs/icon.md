@@ -56,8 +56,10 @@ Icon 提供了 Mailcup 所用到的图标字体方案
 <div class="col-md-3"><span class="mc-icon-text btn-lg"> text</span></div>
 <div class="col-md-3"><span class="mc-icon-bold btn-lg"> bold</span></div>
 <div class="col-md-3"><span class="mc-icon-litaic btn-lg"> litaic</span></div>
+</div>
+<div class="row" style="margin:15px 0px 15px 0px">
 <div class="col-md-3"><span class="mc-icon-underline btn-lg"> underline</span></div>
-
+<div class="col-md-3"><span class="mc-icon-inbox btn-lg"> inbox</span></div>
 </div>
 {% endexample %}
 

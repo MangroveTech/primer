@@ -63,5 +63,7 @@ Buttons 提供了 Mailcup 所有按键方案
 * 链接按键
 
 {% example html %}
+<button class='mc-button-nobg'><span class='mc-icon-done'></span></button><br><br>
+
 <button class='mc-button-link'>Link Button</button>
 {% endexample %}

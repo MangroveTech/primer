@@ -12,14 +12,14 @@ Textfield 提供了 Mailcup 所有输入框方案
 
 ##尺寸
 
-* 默认尺寸，不需要指定
+* `.mc-textfield` 默认
 * `.mc-textfield-small`
 * `.mc-textfield-big`
 
 {% example html %}
-<input type="text" class="form-control input-sm" placeholder="Small size"> <br>
-<input type="text" class="form-control" placeholder="Default size"> <br>
-<input type="text" class="form-control input-lg" placeholder="Big size"> <br>
+<input type="text" class="mc-textfield-small" placeholder="Small size"> <br>
+<input type="text" class="mc-textfield" placeholder="Default size"> <br>
+<input type="text" class="mc-textfield-big" placeholder="Big size"> <br>
 {% endexample %}
 
 

@@ -1,0 +1,73 @@
+@import "../scss/typography";
+@import "../scss/icon";
+@import "../scss/textfield";
+@import "../scss/button";
+
+.mc-navbar{
+	float:left;
+	height:100px;
+	width:100%;
+	background-color:white;
+	box-shadow: 0px 0px 4px #A8A8A8;
+
+	.mc-searchfield{
+		@extend .mc-textfield;
+		width:300px;
+		float:right;
+		margin: 10px 10px 0 0;
+	}
+}
+
+.mc-navbar-titlearea{
+	float:left;
+	width:100%;
+	hegiht:60px;
+}
+
+.mc-navbar-functionarea{
+	float:left;
+	width:100%;
+	hegiht:46px;
+	margin:4px 0 0 0;
+}
+
+.mc-navbar-title{
+	@extend .mc-text-pagetitle;
+	float:left;
+	margin:13px 0 0 20px;
+}
+
+.mc-navbar-newbutton{
+	@extend .mc-button-primary;
+	@extend .mc-button-small;
+
+	float:left;
+	margin: 8px 0 0 20px;
+}
+
+.mc-navbar-backbutton{
+	@extend .mc-button-nobg;
+
+	float:left;
+	color:#666666;
+	margin:8px 0 0 10px;
+}
+
+.mc-navbar-subject{
+	font-size:18px;
+	float:left;
+	margin:9 0 0 20px;
+  width: 100%;
+  line-height: 40px;
+  padding: 4px 0 0 20px;
+}
+
+.mc-navbar-toolbutton{
+	float:right;
+	margin:0 20px 0 0;
+	color:#666666;
+
+	.mc-button-nobg{
+		margin:8px 10px 0 10px;
+	}
+}
