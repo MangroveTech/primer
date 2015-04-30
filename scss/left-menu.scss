@@ -1,4 +1,5 @@
 @import "../scss/color";
+@import "../scss/icon";
 
 .mc-leftmenu{
 	float:left;
@@ -6,20 +7,29 @@
 	height:100%;
 	background-color:$mc-color-darkblue;
 	color:$mc-color-midgrey;
-	user-select: none; 
+	-webkit-box-shadow:-6px 0px 6px #14151B inset; 	
 }
 
 .mc-leftmenu-logo{
 	margin: 22px;
 	width:80px;
 	height:24px;
+	background-image: -webkit-image-set( url('img/Mailcup-logo.png') 1x, url('img/Mailcup-logo@2x.png') 2x); 
+	background-repeat:no-repeat;
+}
+
+.mc-leftmenu-icon{
+	float:left;
+	font-size:16px;
+	line-height:32px;
+	padding:0 8px 0 0;
 }
 
 .mc-leftmenu-item-label{
 	float:left;
 	width:10px;
 	height:10px;
-	margin:11px 11px 11px 0;
+	margin:11px 11px 11px 2px;
 	background-color:#7ED321;
 	border-radius: 1px;
 }
