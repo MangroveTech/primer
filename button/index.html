@@ -60,6 +60,9 @@
   <li class=""><a href="/primer/typography/">
     Typography
   </a></li>
+  <li class=""><a href="/primer/icon/">
+    Icon
+  </a></li>
 </ul>
 
 <h4>Components</h4>
@@ -84,6 +87,12 @@
 
 <h4>Patterns</h4>
 
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/left-menu/">
+    Left Menu
+  </a></li>
+</ul>
+
       
     </div>
     <div class="col-md-9 markdown-body">
@@ -97,8 +106,8 @@
 
 <ul id="markdown-toc">
   <li><a href="#section" id="markdown-toc-section">排序规则</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">尺寸</a></li>
-  <li><a href="#section-2" id="markdown-toc-section-2">种类</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">种类</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">尺寸</a></li>
   <li><a href="#section-3" id="markdown-toc-section-3">状态</a></li>
   <li><a href="#section-4" id="markdown-toc-section-4">样式</a></li>
 </ul>
@@ -107,10 +116,29 @@
 
 <p>当有多个按键组时，应该按重要(偏向性)，从左至右排列</p>
 
-<div class="docs-example clearfix"><button class="btn btn-primary" style="margin:5px;">提交</button><button class="btn btn-default">暂停</button><button class="btn btn-link">取消</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">style=</span><span class="s">"margin:5px;"</span><span class="nt">&gt;</span>提交<span class="nt">&lt;/button&gt;&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-default'</span><span class="nt">&gt;</span>暂停<span class="nt">&lt;/button&gt;&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-link'</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button-primary" style="margin:5px;">提交</button>
+<button class="mc-button">暂停</button>
+<button class="mc-button-link">取消</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span> <span class="na">style=</span><span class="s">"margin:5px;"</span><span class="nt">&gt;</span>提交<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button'</span><span class="nt">&gt;</span>暂停<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="section-1">尺寸</h2>
+<h2 id="section-1">种类</h2>
+
+<ul>
+  <li><code>.mc-button</code> 普通按键</li>
+  <li><code>.mc-button-primary</code> 高优先级的按键</li>
+  <li><code>.mc-button-danger</code> 危险按键</li>
+</ul>
+
+<div class="docs-example clearfix"><button class="mc-button">Default button</button>
+<button class="mc-button-primary">Primary button</button>
+<button class="mc-button-danger">Danger button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-danger'</span><span class="nt">&gt;</span>Danger button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+
+<h2 id="section-2">尺寸</h2>
 
 <ul>
   <li>默认尺寸，不需要指定</li>
@@ -118,39 +146,24 @@
   <li><code>.mc-button-big</code> 大尺寸</li>
 </ul>
 
-<div class="docs-example clearfix"><button class="btn btn-primary btn-sm">Small button</button>
-<button class="btn btn-primary">Default button</button> 
-<button class="btn btn-primary btn-lg">Big button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary btn-sm'</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary btn-lg'</span><span class="nt">&gt;</span>Big button<span class="nt">&lt;/button&gt;</span></code></pre></div>
-
-<h2 id="section-2">种类</h2>
-
-<ul>
-  <li><code>.mc-button-primary</code> 高优先级的按键</li>
-  <li><code>.mc-button-standard</code> 普通按键</li>
-  <li><code>.mc-button-danger</code> 危险按键</li>
-</ul>
-
-<div class="docs-example clearfix"><button class="btn btn-primary">Primary button</button>
-<button class="btn btn-default">Default button</button>
-<button class="btn btn-danger">Danger button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-default'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-danger'</span><span class="nt">&gt;</span>Danger button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button-primary mc-button-small">Small button</button>
+<button class="mc-button-primary">Default button</button> 
+<button class="mc-button-primary mc-button-big">Big button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary mc-button-small'</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary mc-button-big'</span><span class="nt">&gt;</span>Big button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 <h2 id="section-3">状态</h2>
 
 <ul>
-  <li><code>.mc-button-active</code> 激活状态</li>
+  <li>激活状态，添加 <code>active</code> 类</li>
   <li>不可用状态，添加 <code>disabled</code> 属性</li>
 </ul>
 
-<div class="docs-example clearfix"><button class="btn btn-default active">Active button</button>
-<button class="btn btn-primary" disabled="disabled">Disabled button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-default active'</span><span class="nt">&gt;</span>Active button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button active">Active button</button>
+<button class="mc-button-primary" disabled="disabled">Disabled button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button active'</span><span class="nt">&gt;</span>Active button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 <h2 id="section-4">样式</h2>
 
@@ -160,8 +173,8 @@
   <li>链接按键</li>
 </ul>
 
-<div class="docs-example clearfix"><button class="btn btn-link">Link Button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-link'</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button-link">Link Button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 
       </div>
@@ -193,6 +206,9 @@
   <li class=""><a href="/primer/typography/">
     Typography
   </a></li>
+  <li class=""><a href="/primer/icon/">
+    Icon
+  </a></li>
 </ul>
 
 <h4>Components</h4>
@@ -217,6 +233,12 @@
 
 <h4>Patterns</h4>
 
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/left-menu/">
+    Left Menu
+  </a></li>
+</ul>
+
     
   </div>
   <div class="three-fourths column markdown-body">
@@ -230,8 +252,8 @@
 
 <ul id="markdown-toc">
   <li><a href="#section" id="markdown-toc-section">排序规则</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">尺寸</a></li>
-  <li><a href="#section-2" id="markdown-toc-section-2">种类</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">种类</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">尺寸</a></li>
   <li><a href="#section-3" id="markdown-toc-section-3">状态</a></li>
   <li><a href="#section-4" id="markdown-toc-section-4">样式</a></li>
 </ul>
@@ -240,10 +262,29 @@
 
 <p>当有多个按键组时，应该按重要(偏向性)，从左至右排列</p>
 
-<div class="docs-example clearfix"><button class="btn btn-primary" style="margin:5px;">提交</button><button class="btn btn-default">暂停</button><button class="btn btn-link">取消</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">style=</span><span class="s">"margin:5px;"</span><span class="nt">&gt;</span>提交<span class="nt">&lt;/button&gt;&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-default'</span><span class="nt">&gt;</span>暂停<span class="nt">&lt;/button&gt;&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-link'</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button-primary" style="margin:5px;">提交</button>
+<button class="mc-button">暂停</button>
+<button class="mc-button-link">取消</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span> <span class="na">style=</span><span class="s">"margin:5px;"</span><span class="nt">&gt;</span>提交<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button'</span><span class="nt">&gt;</span>暂停<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="section-1">尺寸</h2>
+<h2 id="section-1">种类</h2>
+
+<ul>
+  <li><code>.mc-button</code> 普通按键</li>
+  <li><code>.mc-button-primary</code> 高优先级的按键</li>
+  <li><code>.mc-button-danger</code> 危险按键</li>
+</ul>
+
+<div class="docs-example clearfix"><button class="mc-button">Default button</button>
+<button class="mc-button-primary">Primary button</button>
+<button class="mc-button-danger">Danger button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-danger'</span><span class="nt">&gt;</span>Danger button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+
+<h2 id="section-2">尺寸</h2>
 
 <ul>
   <li>默认尺寸，不需要指定</li>
@@ -251,39 +292,24 @@
   <li><code>.mc-button-big</code> 大尺寸</li>
 </ul>
 
-<div class="docs-example clearfix"><button class="btn btn-primary btn-sm">Small button</button>
-<button class="btn btn-primary">Default button</button> 
-<button class="btn btn-primary btn-lg">Big button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary btn-sm'</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary btn-lg'</span><span class="nt">&gt;</span>Big button<span class="nt">&lt;/button&gt;</span></code></pre></div>
-
-<h2 id="section-2">种类</h2>
-
-<ul>
-  <li><code>.mc-button-primary</code> 高优先级的按键</li>
-  <li><code>.mc-button-standard</code> 普通按键</li>
-  <li><code>.mc-button-danger</code> 危险按键</li>
-</ul>
-
-<div class="docs-example clearfix"><button class="btn btn-primary">Primary button</button>
-<button class="btn btn-default">Default button</button>
-<button class="btn btn-danger">Danger button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-default'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-danger'</span><span class="nt">&gt;</span>Danger button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button-primary mc-button-small">Small button</button>
+<button class="mc-button-primary">Default button</button> 
+<button class="mc-button-primary mc-button-big">Big button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary mc-button-small'</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary mc-button-big'</span><span class="nt">&gt;</span>Big button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 <h2 id="section-3">状态</h2>
 
 <ul>
-  <li><code>.mc-button-active</code> 激活状态</li>
+  <li>激活状态，添加 <code>active</code> 类</li>
   <li>不可用状态，添加 <code>disabled</code> 属性</li>
 </ul>
 
-<div class="docs-example clearfix"><button class="btn btn-default active">Active button</button>
-<button class="btn btn-primary" disabled="disabled">Disabled button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-default active'</span><span class="nt">&gt;</span>Active button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button active">Active button</button>
+<button class="mc-button-primary" disabled="disabled">Disabled button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button active'</span><span class="nt">&gt;</span>Active button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 <h2 id="section-4">样式</h2>
 
@@ -293,8 +319,8 @@
   <li>链接按键</li>
 </ul>
 
-<div class="docs-example clearfix"><button class="btn btn-link">Link Button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'btn btn-link'</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="mc-button-link">Link Button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 
     </div>
@@ -303,7 +329,7 @@
 
 
       <footer style="margin:20px auto;text-align:center;">
-        Copyright Just 2015.
+        &copy; Just 2015.
       </footer>
     </div>
   </body>
