@@ -13,10 +13,14 @@ title: Left Menu
 			<ul>
 				<a class="active" href="#">
 					<span class='active-ind'></span>
-					<li><strong>Inbox</strong></li>
+					<li><span class='mc-leftmenu-icon mc-icon-template'></span><strong>Inbox</strong></li>
 				</a>
-				<a href="#"><li>Follow up</li></a>
-				<a href="#"><li>Done</li></a>
+				<a href="#">
+					<li><span class='mc-leftmenu-icon mc-icon-pin'></span>Follow up</li>
+				</a>
+				<a href="#">
+					<li><span class='mc-leftmenu-icon mc-icon-done'></span>Done</li>
+				</a>
 			</ul>
 		</div>
 		<div class='mc-leftmenu-section'>
