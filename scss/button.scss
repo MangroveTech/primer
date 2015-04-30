@@ -9,7 +9,7 @@
 	@extend .btn;
  	@extend .btn-primary;
  	background-color: #4A90E2;
- 	border-color: #597D9D;
+ 	border-color: #4A90E2;
 
  	:hover,:focus,:active{
  		background-color: #326DB2;
@@ -32,4 +32,14 @@
 .mc-button-link{
 	@extend .btn;
 	@extend .btn-link;
+}
+
+.mc-button-nobg{
+	@extend .btn;
+	@extend .btn-default;
+
+	background:none;
+	border-style:none;
+	font-size:20px;
+	color:#666666;
 }

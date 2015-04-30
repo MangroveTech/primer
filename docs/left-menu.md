@@ -3,8 +3,6 @@ layout: page
 title: Left Menu
 ---
 
-##Layout
-
 {% example html %}
 <div style='height:500px;'>
 	<div class='mc-leftmenu'>
