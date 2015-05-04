@@ -43,4 +43,17 @@ title: Left Menu
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  $('.mc-leftmenu-section-title .glyphicon').click(function() {
+    if ($(this).attr('class').match('glyphicon-triangle-bottom')) {
+      $(this).removeClass('glyphicon-triangle-bottom');
+      $(this).addClass('glyphicon-triangle-right');
+    } else {
+      $(this).removeClass('glyphicon-triangle-right');
+      $(this).addClass('glyphicon-triangle-bottom');
+    }
+    $(this).parent().next().slideToggle('slow');
+  });
+</script>
 {% endexample %}
