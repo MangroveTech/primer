@@ -83,6 +83,9 @@
   <li class=""><a href="/primer/notification/">
     Notification
   </a></li>
+  <li class=""><a href="/primer/modal/">
+    Modal
+  </a></li>
 </ul>
 
 <h4>Patterns</h4>
@@ -94,9 +97,13 @@
   <li class="active"><a href="/primer/navbar/">
     Navbar
   </a></li>
-  <li class=""><a href="/primer/modal/">
-    Modal
+  <li class=""><a href="/primer/threadlist/">
+    Threadlist
   </a></li>
+  <li class=""><a href="/primer/compose/">
+    Compose
+  </a></li>
+
 </ul>
 
       
@@ -109,99 +116,99 @@
         <h2 id="root">Root</h2>
 
 <div class="docs-example clearfix"><div style="height:200px;width:100%;background-color:#f1f1f1">
-	<div class="mc-navbar">
-		<div class="mc-navbar-titlearea">
-				<span class="mc-navbar-title">Inbox</span>
-				<input type="text" class="mc-searchfield" placeholder="Search" />
-		</div>
-		<div class="mc-navbar-functionarea">
-				<button class="mc-navbar-newbutton">New message</button>
-		</div>
-	</div>
+  <div class="mc-navbar">
+    <div class="mc-navbar-titlearea">
+        <span class="mc-navbar-title">Inbox</span>
+        <input type="text" class="mc-searchfield" placeholder="Search" />
+    </div>
+    <div class="mc-navbar-functionarea">
+        <button class="mc-navbar-newbutton">New message</button>
+    </div>
+  </div>
 </div></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:200px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-navbar-title'</span><span class="nt">&gt;</span>Inbox<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-navbar-newbutton'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/button&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-navbar-title'</span><span class="nt">&gt;</span>Inbox<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-navbar-newbutton'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="content">Content</h2>
 
 <div class="docs-example clearfix"><div style="height:200px;width:100%;background-color:#f1f1f1">
-	<div class="mc-navbar">
-		<div class="mc-navbar-titlearea">
-				<button type="button" class="mc-navbar-backbutton">
-				  <span class="mc-icon-back" aria-hidden="true"></span>
-				</button>
-				<input type="text" class="mc-searchfield" placeholder="Search" />
-				<div class="mc-navbar-toolbutton">
-					<button type="button" class="mc-button-nobg">
-				  	<span class="mc-icon-pin"></span>
-					</button>
-					<button type="button" class="mc-button-nobg">
-				  	<span class="mc-icon-done"></span>
-					</button>
-					<button type="button" class="mc-button-nobg">
-				  	<span class="mc-icon-label"></span>
-					</button>
-					<div class="btn-group">
-						<button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown">
-					  	<span class="mc-icon-more"></span>
-						</button>
-					  <ul class="dropdown-menu" role="menu">
-					    <li><a href="#">转发全部</a></li>
-					    <li><a href="#">打印全文</a></li>
-					    <li class="divider"></li>
-					    <li><a href="#">删除会话</a></li>
-					  </ul>
-					</div>
-				</div>
-		</div>
-		<div class="mc-navbar-functionarea">
-			<div class="mc-navbar-subject">The Difference Between Living in New York and San Francisco</div>
-		</div>
-	</div>
+  <div class="mc-navbar">
+    <div class="mc-navbar-titlearea">
+        <button type="button" class="mc-navbar-backbutton">
+          <span class="mc-icon-back" aria-hidden="true"></span>
+        </button>
+        <input type="text" class="mc-searchfield" placeholder="Search" />
+        <div class="mc-navbar-toolbutton">
+          <button type="button" class="mc-button-nobg">
+            <span class="mc-icon-pin"></span>
+          </button>
+          <button type="button" class="mc-button-nobg">
+            <span class="mc-icon-done"></span>
+          </button>
+          <button type="button" class="mc-button-nobg">
+            <span class="mc-icon-label"></span>
+          </button>
+          <div class="btn-group">
+            <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown">
+              <span class="mc-icon-more"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">转发全部</a></li>
+              <li><a href="#">打印全文</a></li>
+              <li class="divider"></li>
+              <li><a href="#">删除会话</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="mc-navbar-functionarea">
+      <div class="mc-navbar-subject">这里是邮件的标题</div>
+    </div>
+  </div>
 </div></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:200px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-navbar-backbutton"</span><span class="nt">&gt;</span>
-				  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-back"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-				<span class="nt">&lt;/button&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-toolbutton'</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-				  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin"</span><span class="nt">&gt;&lt;/span&gt;</span>
-					<span class="nt">&lt;/button&gt;</span>
-					<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-				  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-done"</span><span class="nt">&gt;&lt;/span&gt;</span>
-					<span class="nt">&lt;/button&gt;</span>
-					<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-				  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-					<span class="nt">&lt;/button&gt;</span>
-					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
-						<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg dropdown-toggle"</span>  <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-					  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-more"</span><span class="nt">&gt;&lt;/span&gt;</span>
-						<span class="nt">&lt;/button&gt;</span>
-					  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
-					    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>转发全部<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>打印全文<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-					    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>删除会话<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					  <span class="nt">&lt;/ul&gt;</span>
-					<span class="nt">&lt;/div&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-subject'</span><span class="nt">&gt;</span>The Difference Between Living in New York and San Francisco<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-navbar-backbutton"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-back"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-toolbutton'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-done"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg dropdown-toggle"</span>  <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-more"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>转发全部<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>打印全文<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>删除会话<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-subject'</span><span class="nt">&gt;</span>这里是邮件的标题<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
@@ -257,6 +264,9 @@
   <li class=""><a href="/primer/notification/">
     Notification
   </a></li>
+  <li class=""><a href="/primer/modal/">
+    Modal
+  </a></li>
 </ul>
 
 <h4>Patterns</h4>
@@ -268,9 +278,13 @@
   <li class="active"><a href="/primer/navbar/">
     Navbar
   </a></li>
-  <li class=""><a href="/primer/modal/">
-    Modal
+  <li class=""><a href="/primer/threadlist/">
+    Threadlist
   </a></li>
+  <li class=""><a href="/primer/compose/">
+    Compose
+  </a></li>
+
 </ul>
 
     
@@ -283,99 +297,99 @@
       <h2 id="root">Root</h2>
 
 <div class="docs-example clearfix"><div style="height:200px;width:100%;background-color:#f1f1f1">
-	<div class="mc-navbar">
-		<div class="mc-navbar-titlearea">
-				<span class="mc-navbar-title">Inbox</span>
-				<input type="text" class="mc-searchfield" placeholder="Search" />
-		</div>
-		<div class="mc-navbar-functionarea">
-				<button class="mc-navbar-newbutton">New message</button>
-		</div>
-	</div>
+  <div class="mc-navbar">
+    <div class="mc-navbar-titlearea">
+        <span class="mc-navbar-title">Inbox</span>
+        <input type="text" class="mc-searchfield" placeholder="Search" />
+    </div>
+    <div class="mc-navbar-functionarea">
+        <button class="mc-navbar-newbutton">New message</button>
+    </div>
+  </div>
 </div></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:200px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-navbar-title'</span><span class="nt">&gt;</span>Inbox<span class="nt">&lt;/span&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-navbar-newbutton'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/button&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-navbar-title'</span><span class="nt">&gt;</span>Inbox<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-navbar-newbutton'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="content">Content</h2>
 
 <div class="docs-example clearfix"><div style="height:200px;width:100%;background-color:#f1f1f1">
-	<div class="mc-navbar">
-		<div class="mc-navbar-titlearea">
-				<button type="button" class="mc-navbar-backbutton">
-				  <span class="mc-icon-back" aria-hidden="true"></span>
-				</button>
-				<input type="text" class="mc-searchfield" placeholder="Search" />
-				<div class="mc-navbar-toolbutton">
-					<button type="button" class="mc-button-nobg">
-				  	<span class="mc-icon-pin"></span>
-					</button>
-					<button type="button" class="mc-button-nobg">
-				  	<span class="mc-icon-done"></span>
-					</button>
-					<button type="button" class="mc-button-nobg">
-				  	<span class="mc-icon-label"></span>
-					</button>
-					<div class="btn-group">
-						<button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown">
-					  	<span class="mc-icon-more"></span>
-						</button>
-					  <ul class="dropdown-menu" role="menu">
-					    <li><a href="#">转发全部</a></li>
-					    <li><a href="#">打印全文</a></li>
-					    <li class="divider"></li>
-					    <li><a href="#">删除会话</a></li>
-					  </ul>
-					</div>
-				</div>
-		</div>
-		<div class="mc-navbar-functionarea">
-			<div class="mc-navbar-subject">The Difference Between Living in New York and San Francisco</div>
-		</div>
-	</div>
+  <div class="mc-navbar">
+    <div class="mc-navbar-titlearea">
+        <button type="button" class="mc-navbar-backbutton">
+          <span class="mc-icon-back" aria-hidden="true"></span>
+        </button>
+        <input type="text" class="mc-searchfield" placeholder="Search" />
+        <div class="mc-navbar-toolbutton">
+          <button type="button" class="mc-button-nobg">
+            <span class="mc-icon-pin"></span>
+          </button>
+          <button type="button" class="mc-button-nobg">
+            <span class="mc-icon-done"></span>
+          </button>
+          <button type="button" class="mc-button-nobg">
+            <span class="mc-icon-label"></span>
+          </button>
+          <div class="btn-group">
+            <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown">
+              <span class="mc-icon-more"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">转发全部</a></li>
+              <li><a href="#">打印全文</a></li>
+              <li class="divider"></li>
+              <li><a href="#">删除会话</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="mc-navbar-functionarea">
+      <div class="mc-navbar-subject">这里是邮件的标题</div>
+    </div>
+  </div>
 </div></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:200px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-navbar-backbutton"</span><span class="nt">&gt;</span>
-				  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-back"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-				<span class="nt">&lt;/button&gt;</span>
-				<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-toolbutton'</span><span class="nt">&gt;</span>
-					<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-				  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin"</span><span class="nt">&gt;&lt;/span&gt;</span>
-					<span class="nt">&lt;/button&gt;</span>
-					<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-				  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-done"</span><span class="nt">&gt;&lt;/span&gt;</span>
-					<span class="nt">&lt;/button&gt;</span>
-					<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-				  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-					<span class="nt">&lt;/button&gt;</span>
-					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
-						<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg dropdown-toggle"</span>  <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-					  	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-more"</span><span class="nt">&gt;&lt;/span&gt;</span>
-						<span class="nt">&lt;/button&gt;</span>
-					  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
-					    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>转发全部<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>打印全文<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-					    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>删除会话<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-					  <span class="nt">&lt;/ul&gt;</span>
-					<span class="nt">&lt;/div&gt;</span>
-				<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-subject'</span><span class="nt">&gt;</span>The Difference Between Living in New York and San Francisco<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-titlearea'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-navbar-backbutton"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-back"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mc-searchfield"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-toolbutton'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-done"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg dropdown-toggle"</span>  <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-more"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>转发全部<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>打印全文<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>删除会话<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-functionarea'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-navbar-subject'</span><span class="nt">&gt;</span>这里是邮件的标题<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
