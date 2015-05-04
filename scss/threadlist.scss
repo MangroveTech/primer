@@ -37,7 +37,8 @@
   height: 90px;
   float: left;
   color:black;
-
+  cursor: pointer;
+  
   :hover{
     background-color:$mc-color-lightyellow;
   }
@@ -47,14 +48,20 @@
     height: 90px;
     position: absolute;
     .mc-avatar-mid{
-      margin: 15px 0 15px 15px;
+      margin: 15px 0 18px 16px;
       background-color:#a1a1a1;
+    }
+    .mc-threadlist-item-unread{
+      float:left;
+      width:5px;
+      background-color:#4A90E2;
+      height:90px;
     }
   }
 
   .mc-threadlist-item-content{
     float: left;
-    padding: 15px 0 15px 70px;
+    padding: 15px 0 18px 70px;
     width: 100%;
 
     .mc-threadlist-date{

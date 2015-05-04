@@ -3,8 +3,10 @@ layout: page
 title: Threadlist
 ---
 
+##Inbox
 {% example html %}
-<div style='height:400px;width:100%;background-color:#f1f1f1'>
+
+<div style='height:300px;width:100%;background-color:#f1f1f1'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Today</span>
@@ -13,6 +15,7 @@ title: Threadlist
     <div class='mc-section'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
+          <div class='mc-threadlist-item-unread'></div>
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-threadlist-item-content'>
@@ -38,3 +41,28 @@ title: Threadlist
   </div>
 </div>
 {% endexample %}
+
+
+##Follow up
+<div style='height:170px;width:100%;background-color:#f1f1f1'>
+  <div class='mc-threadlist-section'>
+    <div class='mc-section-header'>
+      <span class='mc-text-content'>Follow up</span>
+      <button class='mc-button-nobg'><span class='mc-icon-alldone'></span></button>
+    </div>
+    <div class='mc-section'>
+      <a class='mc-threadlist-item'>
+        <div class='mc-threadlist-item-left'>
+          <div class='mc-avatar-mid'></div>
+        </div>
+        <div class='mc-threadlist-item-content'>
+          <div class='mc-threadlist-date'>12:22 PM</div>
+          <div class='mc-threadlist-headline'>李华, 我, 赵其刚 (3)</div>
+          <div class='mc-threadlist-subject'>关于工程师的招聘</div>
+          <div class='mc-threadlist-content'>我认为李华说的很有道理，工程师团队的文化建设非常重要，大家都应该重视起来</div>
+        </div>
+        <span class='divider'></span>
+      </a>
+    </div>
+  </div>
+</div>

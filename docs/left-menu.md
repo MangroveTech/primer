@@ -11,7 +11,7 @@ title: Left Menu
       <ul>
         <a class="active" href="#">
           <span class='active-ind'></span>
-          <li><span class='mc-leftmenu-icon mc-icon-template'></span><strong>Inbox</strong></li>
+          <li><span class='mc-leftmenu-icon mc-icon-inbox'></span><strong>Inbox</strong></li>
         </a>
         <a href="#">
           <li><span class='mc-leftmenu-icon mc-icon-pin'></span>Follow up</li>
