@@ -1,0 +1,46 @@
+$green: #7ED321;
+$blue: #18D7AC;
+$orange: #F5A623;
+
+label {
+  margin-bottom:-4px !important;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+  font-size: 62.5%;
+}
+
+[id^="mc-checkbox-"] + label {
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+}
+
+[id^="mc-checkbox-green"] + label, [id^="mc-checkbox-green"]:checked + label {
+  background-color: $green;
+}
+[id^="mc-checkbox-blue"] + label, [id^="mc-checkbox-blue"]:checked + label {
+  background-color: $blue;
+}
+[id^="mc-checkbox-orange"] + label, [id^="mc-checkbox-orange"]:checked + label {
+  background-color: $orange;
+}
+
+[id^="mc-checkbox-"]:checked + label:after {
+  content: '\2713';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 1px 0 0 0;
+  vertical-align: middle;
+}
