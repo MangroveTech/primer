@@ -51,5 +51,18 @@ Token Field, 搜索结果
 
 ###Labels Selector
 
-
-
+{% example html %}
+<div class="btn-group">
+  <button class='mc-button-nobg dropdown-toggle' data-toggle="dropdown" aria-expanded="false"><span class='mc-icon-done'></span></button>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a>Label as:</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><input type="checkbox" id="mc-checkbox-green" checked/><label for="mc-checkbox-green"></label> Team</a></li>
+    <li><a href="#"><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> Support</a></li>
+    <li><a href="#"><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> Hiring</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Create new...</a></li>
+  </ul>
+</div>
+{% endexample %}

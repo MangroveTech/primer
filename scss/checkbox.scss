@@ -20,6 +20,7 @@ input[type="checkbox"] + label {
   padding: 9px;
   display: inline-block;
   position: relative;
+  border-radius: 2px;
 }
 
 [id^="mc-checkbox-green"] + label, [id^="mc-checkbox-green"]:checked + label {
