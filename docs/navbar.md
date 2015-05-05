@@ -56,3 +56,5 @@ title: Navbar
   </div>
 </div>
 {% endexample %}
+
+##Search

@@ -3,8 +3,6 @@ layout: page
 title: Modal
 ---
 
-测试测试
-
 * 此处不用改，将下面所有的 2 级标题制成索引...
 {:toc}
 
