@@ -53,7 +53,7 @@ title: Left Menu
       $(this).removeClass('glyphicon-triangle-right');
       $(this).addClass('glyphicon-triangle-bottom');
     }
-    $(this).parent().next().slideToggle('slow');
+    $(this).parent().next().slideToggle('fast');
   });
 </script>
 {% endexample %}
