@@ -3,7 +3,11 @@ layout: page
 title: Notification
 ---
 
-##Layout
+##种类
+###Label
+###Button
+###Description
+
 {% example html %}
 
 <div style='height:100px;width:100%;background-color:#f1f1f1;'>

@@ -18,5 +18,10 @@ title: Label
 {% endexample %}
 
 ##Token
-出现在需要输入联系人的地方
+* 出现在需要输入联系人的Textfield里
 
+* 双击可变为 email 地址进行编辑
+
+* 右侧有 close 按键
+
+* 可选中，可拖拽交换位置(如果实现成本太高可以先不做)

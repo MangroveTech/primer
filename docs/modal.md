@@ -8,9 +8,21 @@ title: Modal
 * 此处不用改，将下面所有的 2 级标题制成索引...
 {:toc}
 
-### Modal
 
-bootstrap 原生 modal.
+##Header, Body, Footer
+这里要注意 Footer 的交互效果
+
+##尺寸
+这个待定，gary 稍后同步
+
+##种类
+
+###One Column
+
+###Two Column
+
+##动画
+可以用 boot strip 默认的
 
 {% example html %}
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
