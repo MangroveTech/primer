@@ -24,6 +24,11 @@ title: Threadlist
           <div class='mc-threadlist-subject'>Please confirm your address</div>
           <div class='mc-threadlist-content'>Hey John, I see you profile and glad to help, please check the address blow if is right? If you think there has some other questions</div>
         </div>
+        <div class='mc-threadlist-item-right'>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
+        </div>
         <span class='divider'></span>
       </a>
       <a class='mc-threadlist-item'>
