@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <title>
-      Mailcup &middot; Modal
+      Mailcup &middot; Notification
     </title>
 
     <link rel="stylesheet" href="/primer/docs.css">
@@ -80,10 +80,10 @@
   <li class=""><a href="/primer/dropdown/">
     Dropdown
   </a></li>
-  <li class=""><a href="/primer/notification/">
+  <li class="active"><a href="/primer/notification/">
     Notification
   </a></li>
-  <li class="active"><a href="/primer/modal/">
+  <li class=""><a href="/primer/modal/">
     Modal
   </a></li>
   <li class=""><a href="/primer/label/">
@@ -115,36 +115,41 @@
     </div>
     <div class="col-md-9 markdown-body">
       <h1 class="page-title">
-        Modal
+        Notification
       </h1>
       <div class="markdown-body">
-        <p>测试测试</p>
+        <h2 id="section">种类</h2>
+<p>###Label
+###Button
+###Description</p>
 
-<ul id="markdown-toc">
-  <li><a href="#header-body-footer" id="markdown-toc-header-body-footer">Header, Body, Footer</a></li>
-  <li><a href="#section" id="markdown-toc-section">尺寸</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">种类</a>    <ul>
-      <li><a href="#one-column" id="markdown-toc-one-column">One Column</a></li>
-      <li><a href="#two-column" id="markdown-toc-two-column">Two Column</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-2" id="markdown-toc-section-2">动画</a></li>
-</ul>
+<div class="docs-example clearfix"><div style="height:100px;width:100%;background-color:#f1f1f1;">
+  <div class="mc-notification">
+    Loading...
+  </div>
 
-<h2 id="header-body-footer">Header, Body, Footer</h2>
-<p>这里要注意 Footer 的交互效果</p>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:100px;width:100%;background-color:#f1f1f1;'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-notification'</span><span class="nt">&gt;</span>
+    Loading...
+  <span class="nt">&lt;/div&gt;</span>
 
-<h2 id="section">尺寸</h2>
-<p>这个待定，gary 稍后同步</p>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h2 id="section-1">种类</h2>
+<h2 id="with-button">With button</h2>
 
-<h3 id="one-column">One Column</h3>
+<div class="docs-example clearfix"><div style="height:100px;width:100%;background-color:#f1f1f1;">
+  <div class="mc-notification">
+    Mark as 'CSMail' <button class="mc-button-link">Always do this</button> <button class="mc-button-link">Undo</button>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:100px;width:100%;background-color:#f1f1f1;'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-notification'</span><span class="nt">&gt;</span>
+    Mark as 'CSMail' <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Always do this<span class="nt">&lt;/button&gt;</span> <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Undo<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h3 id="two-column">Two Column</h3>
-
-<h2 id="section-2">动画</h2>
-<p>可以用 boot strip 默认的</p>
+<h2 id="animation">Animation</h2>
 
 <div class="docs-example clearfix"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
   show modal
@@ -155,14 +160,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">创建新的标签</h4>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        
+        程科是狗
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-primary">创建</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -182,14 +187,14 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>创建新的标签<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-        
+        程科是狗
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>创建<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -250,10 +255,10 @@
   <li class=""><a href="/primer/dropdown/">
     Dropdown
   </a></li>
-  <li class=""><a href="/primer/notification/">
+  <li class="active"><a href="/primer/notification/">
     Notification
   </a></li>
-  <li class="active"><a href="/primer/modal/">
+  <li class=""><a href="/primer/modal/">
     Modal
   </a></li>
   <li class=""><a href="/primer/label/">
@@ -285,36 +290,41 @@
   </div>
   <div class="three-fourths column markdown-body">
     <h1 class="page-title">
-      Modal
+      Notification
     </h1>
     <div class="markdown-body">
-      <p>测试测试</p>
+      <h2 id="section">种类</h2>
+<p>###Label
+###Button
+###Description</p>
 
-<ul id="markdown-toc">
-  <li><a href="#header-body-footer" id="markdown-toc-header-body-footer">Header, Body, Footer</a></li>
-  <li><a href="#section" id="markdown-toc-section">尺寸</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">种类</a>    <ul>
-      <li><a href="#one-column" id="markdown-toc-one-column">One Column</a></li>
-      <li><a href="#two-column" id="markdown-toc-two-column">Two Column</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-2" id="markdown-toc-section-2">动画</a></li>
-</ul>
+<div class="docs-example clearfix"><div style="height:100px;width:100%;background-color:#f1f1f1;">
+  <div class="mc-notification">
+    Loading...
+  </div>
 
-<h2 id="header-body-footer">Header, Body, Footer</h2>
-<p>这里要注意 Footer 的交互效果</p>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:100px;width:100%;background-color:#f1f1f1;'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-notification'</span><span class="nt">&gt;</span>
+    Loading...
+  <span class="nt">&lt;/div&gt;</span>
 
-<h2 id="section">尺寸</h2>
-<p>这个待定，gary 稍后同步</p>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h2 id="section-1">种类</h2>
+<h2 id="with-button">With button</h2>
 
-<h3 id="one-column">One Column</h3>
+<div class="docs-example clearfix"><div style="height:100px;width:100%;background-color:#f1f1f1;">
+  <div class="mc-notification">
+    Mark as 'CSMail' <button class="mc-button-link">Always do this</button> <button class="mc-button-link">Undo</button>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:100px;width:100%;background-color:#f1f1f1;'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-notification'</span><span class="nt">&gt;</span>
+    Mark as 'CSMail' <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Always do this<span class="nt">&lt;/button&gt;</span> <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Undo<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h3 id="two-column">Two Column</h3>
-
-<h2 id="section-2">动画</h2>
-<p>可以用 boot strip 默认的</p>
+<h2 id="animation">Animation</h2>
 
 <div class="docs-example clearfix"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
   show modal
@@ -325,14 +335,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">创建新的标签</h4>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        
+        程科是狗
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-primary">创建</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -352,14 +362,14 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>创建新的标签<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-        
+        程科是狗
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>创建<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
