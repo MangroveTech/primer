@@ -3,7 +3,8 @@ layout: page
 title: Label
 ---
 
-##Label
+* 此处不用改，将下面所有的 2 级标题制成索引...
+{:toc}
 
 {% example html %}
 <div style='padding:20px;font-size:13px'>
