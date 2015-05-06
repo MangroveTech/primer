@@ -62,7 +62,7 @@ Token Field, 搜索结果
     <li><a href="#"><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> Support</a></li>
     <li><a href="#"><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> Hiring</a></li>
     <li class="divider"></li>
-    <li><a href="#">Create new...</a></li>
+    <li><a href="#"><span class="mc-icon-plus"></span> Create new...</a></li>
   </ul>
 </div>
 {% endexample %}
