@@ -7,17 +7,112 @@ title: Modal
 {:toc}
 
 
-##Header, Body, Footer
-这里要注意 Footer 的交互效果
+##Layout
+{% example html %}
+<div style='height:300px;width:100%;background-color:#f1f1f1'>
+  <div class='mc-modal'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>New Label</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body'>
+      <p>利用 CSS 来实现对象的垂直居中有许多不同的方法，比较难的是选择那个正确的方法。我下面说明一下我看到的好的方法和怎么来创建一个好的居中网站。
+      </p>
+      <p>
+        使用 CSS 实现垂直居中并不容易。有些方法在一些浏览器中无效。下面我们看一下使对象垂直集中的5种不同方法，以及它们各自的优缺点。(可以看看测试页面，有简短解释。
+      </p>
+    </div>
+    <div class='mc-modal-footer'>
+      <div class='mc-modal-footer-left'>
+        <button type="button" class="mc-button-nobg">
+          <span class="mc-icon-text"></span>
+        </button>
+        <button type="button" class="mc-button-nobg">
+          <span class="mc-icon-clip"></span>
+        </button>
+      </div>
+      <div class='mc-modal-footer-right'>
+        <button class='mc-button-primary'>Create</button>
+        <button class='mc-button-link'>Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endexample %}
+
 
 ##尺寸
-这个待定，gary 稍后同步
+* 正常尺寸 560px 默认值
+* `mc-modal-big` 720px 大尺寸
+
+{% example html %}
+<div style='height:300px;width:100%;background-color:#f1f1f1'>
+  <div class='mc-modal mc-modal-big'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body'>
+      <br><br><br><br>
+    </div>
+    <div class='mc-modal-footer'>
+      <div class='mc-modal-footer-right'>
+        <button class='mc-button-primary'>Save</button>
+        <button class='mc-button-link'>Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endexample %}
 
 ##种类
+* 默认为单列
+* 在 `mc-modal-body` 中添加 `mc-modal-body-left` 和 `mc-modal-body-right` 可变为双列
 
-###One Column
+{% example html %}
+<div style='height:300px;width:100%;background-color:#f1f1f1'>
+  <div class='mc-modal mc-modal-twocolumn'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body'>
+      <div class='mc-modal-body-left'> Menu <br><br><br><br></div>
+      <div class='mc-modal-body-right'> Content</div>
+    </div>
+  </div>
 
-###Two Column
+</div>
+
+{% endexample %}
 
 ##动画
 可以用 boot strip 默认的

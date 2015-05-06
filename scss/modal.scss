@@ -1,0 +1,64 @@
+.mc-modal{
+  @extend .panel;
+  @extend .panel-default;
+  margin: 0 auto;
+  width: 560px;
+  box-shadow: 0px 0px 8px #494949;
+  border: none;
+
+
+}
+
+.mc-modal-big{
+  width: 720px;
+}
+
+.mc-modal-header{
+  @extend .panel-heading;
+  height: 46px;
+  .mc-modal-title{
+    font-size:14px;
+    float:left;
+    line-height:25px
+  }
+  button{
+    float:right;
+    font-size:14px;
+    margin: -2px -4px 0 0;
+  }
+}
+
+.mc-modal-body{
+  @extend .panel-body;
+
+  .mc-modal-body-left{
+    float: left;
+    width: 170px;
+
+  }
+  .mc-modal-body-right{
+    float:left;
+  }
+
+}
+
+.mc-modal-footer{
+  @extend .panel-footer;
+  height: 68px;
+  background-color:white;
+  border-style: none;
+  .mc-modal-footer-left{
+    float:left;
+    .mc-button-nobg{
+      font-size: 17px;
+      margin: 4px 2px 0 2px;
+    }
+  }
+
+  .mc-modal-footer-right{
+    float:right;
+    button{
+      margin: 7px 2px 0 2px;    
+    }
+  }
+}
