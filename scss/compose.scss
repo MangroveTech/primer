@@ -4,22 +4,27 @@
   @extend .panel-default;
 
   width:480px;
-  height:440px;
   background-color:white;
   box-shadow: 0px 0px 8px #A8A8A8;
 
 }
 
 .mc-compose-header{
-  @extend .panel-heading;
+  @extend .mc-modal-header;
 
-  float: left;
   width: 100%;
   padding: 6px 10px 6px 15px;
+  color: #fff !important;
+  background-color: #313236 !important;
 
   .mc-button-nobg{
+    margin-top: 0;
     float:right;
     font-size:14px;
+    color: #fff;
+    &:hover{
+      background-color: #424242;
+    }
   }
 }
 
@@ -32,11 +37,46 @@
 }
 
 .mc-compose-body{
-  @extend .panel-body;
-  float: left;
+  @extend .mc-modal-body;
+  height: 325px;
+  padding: 0;
 
+  .mc-compose-body-label {
+    width:100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom:1px solid #ECECEC;
+    padding-left: 14px;
+    span{
+      padding: 0 6px;
+      cursor: pointer;
+      float: right;
+    }
+    input{
+      width: 375px;
+      height: 42px;
+      padding:0;
+      border:0;
+      margin-top:1px;
+      outline: none;
+    }
+    &.cc, &.bcc {
+      display: none;
+    }
+  }
 }
 
 .mc-compose-footer{
-  @extend .panel-footer;
+  @extend .mc-modal-footer;
+  .mc-compose-footer-left{
+    @extend .mc-modal-footer-left;
+  }
+  .mc-compose-footer-right{
+    @extend .mc-modal-footer-right;
+    button{
+      padding: 6px 20px;
+    }
+  }
+
 }
+
