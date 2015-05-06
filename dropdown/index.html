@@ -204,26 +204,38 @@
   <ul class="dropdown-menu" role="menu">
     <li><a>Label as:</a></li>
     <li class="divider"></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-green" checked="" /><label for="mc-checkbox-green"></label> Team</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-blue" checked="" /><label for="mc-checkbox-blue"></label> Support</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-orange" checked="" /><label for="mc-checkbox-orange"></label> Hiring</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-green" checked="" /><label for="mc-checkbox-green"></label> Team</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-blue" checked="" /><label for="mc-checkbox-blue"></label> Support</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-orange" checked="" /><label for="mc-checkbox-orange"></label> Hiring</a></li>
     <li class="divider"></li>
-    <li><a href="#"><span class="mc-icon-plus"></span> Create new...</a></li>
+    <li><a><span class="mc-icon-plus"></span> Create new...</a></li>
   </ul>
-</div></div>
+</div>
+
+<script type="text/javascript">
+  $('.dropdown-menu li a').click(function (e) {
+    e.stopPropagation();
+  });
+</script></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg dropdown-toggle'</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-icon-done'</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a&gt;</span>Label as:<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-green"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-green"</span><span class="nt">&gt;&lt;/label&gt;</span> Team<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-blue"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-blue"</span><span class="nt">&gt;&lt;/label&gt;</span> Support<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-orange"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-orange"</span><span class="nt">&gt;&lt;/label&gt;</span> Hiring<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-green"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-green"</span><span class="nt">&gt;&lt;/label&gt;</span> Team<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-blue"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-blue"</span><span class="nt">&gt;&lt;/label&gt;</span> Support<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-orange"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-orange"</span><span class="nt">&gt;&lt;/label&gt;</span> Hiring<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-plus"</span><span class="nt">&gt;&lt;/span&gt;</span> Create new...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-plus"</span><span class="nt">&gt;&lt;/span&gt;</span> Create new...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.dropdown-menu li a'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
 
       </div>
@@ -399,26 +411,38 @@
   <ul class="dropdown-menu" role="menu">
     <li><a>Label as:</a></li>
     <li class="divider"></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-green" checked="" /><label for="mc-checkbox-green"></label> Team</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-blue" checked="" /><label for="mc-checkbox-blue"></label> Support</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-orange" checked="" /><label for="mc-checkbox-orange"></label> Hiring</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-green" checked="" /><label for="mc-checkbox-green"></label> Team</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-blue" checked="" /><label for="mc-checkbox-blue"></label> Support</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-orange" checked="" /><label for="mc-checkbox-orange"></label> Hiring</a></li>
     <li class="divider"></li>
-    <li><a href="#"><span class="mc-icon-plus"></span> Create new...</a></li>
+    <li><a><span class="mc-icon-plus"></span> Create new...</a></li>
   </ul>
-</div></div>
+</div>
+
+<script type="text/javascript">
+  $('.dropdown-menu li a').click(function (e) {
+    e.stopPropagation();
+  });
+</script></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg dropdown-toggle'</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-icon-done'</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a&gt;</span>Label as:<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-green"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-green"</span><span class="nt">&gt;&lt;/label&gt;</span> Team<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-blue"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-blue"</span><span class="nt">&gt;&lt;/label&gt;</span> Support<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-orange"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-orange"</span><span class="nt">&gt;&lt;/label&gt;</span> Hiring<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-green"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-green"</span><span class="nt">&gt;&lt;/label&gt;</span> Team<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-blue"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-blue"</span><span class="nt">&gt;&lt;/label&gt;</span> Support<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"mc-checkbox-orange"</span> <span class="na">checked</span><span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">"mc-checkbox-orange"</span><span class="nt">&gt;&lt;/label&gt;</span> Hiring<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-plus"</span><span class="nt">&gt;&lt;/span&gt;</span> Create new...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-plus"</span><span class="nt">&gt;&lt;/span&gt;</span> Create new...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.dropdown-menu li a'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
 
     </div>
