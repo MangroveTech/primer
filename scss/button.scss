@@ -41,17 +41,3 @@
 	font-size:20px;
 	color:#666666;
 }
-
-/////Label
-
-.mc-label{
-  @extend .label;
-  @extend .label-default;
-  font-weight: normal;
-}
-
-.mc-label-threadlist{
-  @extend .mc-label;
-  font-size: 11px;
-}
-

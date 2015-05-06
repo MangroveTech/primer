@@ -58,11 +58,17 @@ Token Field, 搜索结果
   <ul class="dropdown-menu" role="menu">
     <li><a>Label as:</a></li>
     <li class="divider"></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-green" checked/><label for="mc-checkbox-green"></label> Team</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> Support</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> Hiring</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-green" checked/><label for="mc-checkbox-green"></label> Team</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> Support</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> Hiring</a></li>
     <li class="divider"></li>
-    <li><a href="#">Create new...</a></li>
+    <li><a><span class="mc-icon-plus"></span> Create new...</a></li>
   </ul>
 </div>
+
+<script type="text/javascript">
+  $('.dropdown-menu li a').click(function (e) {
+    e.stopPropagation();
+  });
+</script>
 {% endexample %}
