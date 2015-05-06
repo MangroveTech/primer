@@ -5,6 +5,12 @@
   width: 560px;
   box-shadow: 0px 0px 8px #494949;
   border: none;
+
+
+}
+
+.mc-modal-big{
+  width: 720px;
 }
 
 .mc-modal-header{
@@ -24,6 +30,15 @@
 
 .mc-modal-body{
   @extend .panel-body;
+
+  .mc-modal-body-left{
+    float: left;
+    width: 170px;
+
+  }
+  .mc-modal-body-right{
+    float:left;
+  }
 
 }
 

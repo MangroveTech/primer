@@ -9,7 +9,7 @@ title: Modal
 
 ##Layout
 {% example html %}
-<div style='height:600px;width:100%;background-color:#f1f1f1'>
+<div style='height:300px;width:100%;background-color:#f1f1f1'>
   <div class='mc-modal'>
     <div class='mc-modal-header'>
       <div class='mc-modal-title'>New Label</div>
@@ -52,13 +52,67 @@ title: Modal
 
 
 ##尺寸
-这个待定，gary 稍后同步
+* 正常尺寸 560px 默认值
+* `mc-modal-big` 720px 大尺寸
+
+{% example html %}
+<div style='height:300px;width:100%;background-color:#f1f1f1'>
+  <div class='mc-modal mc-modal-big'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body'>
+      <br><br><br><br>
+    </div>
+    <div class='mc-modal-footer'>
+      <div class='mc-modal-footer-right'>
+        <button class='mc-button-primary'>Save</button>
+        <button class='mc-button-link'>Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endexample %}
 
 ##种类
+* 默认为单列
+* 在 `mc-modal-body` 中添加 `mc-modal-body-left` 和 `mc-modal-body-right` 可变为双列
 
-###One Column
+{% example html %}
+<div style='height:300px;width:100%;background-color:#f1f1f1'>
+  <div class='mc-modal mc-modal-twocolumn'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body'>
+      <div class='mc-modal-body-left'> Menu <br><br><br><br></div>
+      <div class='mc-modal-body-right'> Content</div>
+    </div>
+  </div>
 
-###Two Column
+</div>
+
+{% endexample %}
 
 ##动画
 可以用 boot strip 默认的
