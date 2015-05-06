@@ -41,6 +41,11 @@ title: Threadlist
           <div class='mc-threadlist-subject'>Customer Relationship Management</div>
           <div class='mc-threadlist-content'>This isn't what we want, please send it to John</div>
         </div>
+        <div class='mc-threadlist-item-right'>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
+        </div>
       </a>
     </div>
   </div>
@@ -49,13 +54,15 @@ title: Threadlist
 
 
 ##Follow up
+
+{% example html %}
 <div style='height:170px;width:100%;background-color:#f1f1f1'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Follow up</span>
       <button class='mc-button-nobg'><span class='mc-icon-alldone'></span></button>
     </div>
-    <div class='mc-section'>
+    <div class='mc-section mc-section-followup'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <div class='mc-avatar-mid'></div>
@@ -65,9 +72,16 @@ title: Threadlist
           <div class='mc-threadlist-headline'>李华, 我, 赵其刚 (3)</div>
           <div class='mc-threadlist-subject'>关于工程师的招聘</div>
           <div class='mc-threadlist-content'>我认为李华说的很有道理，工程师团队的文化建设非常重要，大家都应该重视起来</div>
+          <div class='mc-threadlist-right'><span class="mc-icon-pin btn-lg"></span></div>
+        </div>
+        <div class='mc-threadlist-item-right'>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
         </div>
         <span class='divider'></span>
       </a>
     </div>
   </div>
 </div>
+{% endexample %}
