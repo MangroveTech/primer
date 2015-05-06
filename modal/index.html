@@ -122,27 +122,198 @@
       </h1>
       <div class="markdown-body">
         <ul id="markdown-toc">
-  <li><a href="#header-body-footer" id="markdown-toc-header-body-footer">Header, Body, Footer</a></li>
+  <li><a href="#layout" id="markdown-toc-layout">Layout</a></li>
   <li><a href="#section" id="markdown-toc-section">尺寸</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">种类</a>    <ul>
-      <li><a href="#one-column" id="markdown-toc-one-column">One Column</a></li>
-      <li><a href="#two-column" id="markdown-toc-two-column">Two Column</a></li>
-    </ul>
-  </li>
+  <li><a href="#section-1" id="markdown-toc-section-1">种类</a></li>
   <li><a href="#section-2" id="markdown-toc-section-2">动画</a></li>
 </ul>
 
-<h2 id="header-body-footer">Header, Body, Footer</h2>
-<p>这里要注意 Footer 的交互效果</p>
+<h2 id="layout">Layout</h2>
+
+<div class="docs-example clearfix"><div style="height:300px;width:100%;background-color:#f1f1f1">
+  <div class="mc-modal">
+    <div class="mc-modal-header">
+      <div class="mc-modal-title">New Label</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class="mc-modal-body">
+      <p>利用 CSS 来实现对象的垂直居中有许多不同的方法，比较难的是选择那个正确的方法。我下面说明一下我看到的好的方法和怎么来创建一个好的居中网站。
+      </p>
+      <p>
+        使用 CSS 实现垂直居中并不容易。有些方法在一些浏览器中无效。下面我们看一下使对象垂直集中的5种不同方法，以及它们各自的优缺点。(可以看看测试页面，有简短解释。
+      </p>
+    </div>
+    <div class="mc-modal-footer">
+      <div class="mc-modal-footer-left">
+        <button type="button" class="mc-button-nobg">
+          <span class="mc-icon-text"></span>
+        </button>
+        <button type="button" class="mc-button-nobg">
+          <span class="mc-icon-clip"></span>
+        </button>
+      </div>
+      <div class="mc-modal-footer-right">
+        <button class="mc-button-primary">Create</button>
+        <button class="mc-button-link">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:300px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-title'</span><span class="nt">&gt;</span>New Label<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>利用 CSS 来实现对象的垂直居中有许多不同的方法，比较难的是选择那个正确的方法。我下面说明一下我看到的好的方法和怎么来创建一个好的居中网站。
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        使用 CSS 实现垂直居中并不容易。有些方法在一些浏览器中无效。下面我们看一下使对象垂直集中的5种不同方法，以及它们各自的优缺点。(可以看看测试页面，有简短解释。
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer-left'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-text"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-clip"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer-right'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Create<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="section">尺寸</h2>
-<p>这个待定，gary 稍后同步</p>
+<ul>
+  <li>正常尺寸 560px 默认值</li>
+  <li><code>mc-modal-big</code> 720px 大尺寸</li>
+</ul>
+
+<div class="docs-example clearfix"><div style="height:300px;width:100%;background-color:#f1f1f1">
+  <div class="mc-modal mc-modal-big">
+    <div class="mc-modal-header">
+      <div class="mc-modal-title">Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class="mc-modal-body">
+      <br /><br /><br /><br />
+    </div>
+    <div class="mc-modal-footer">
+      <div class="mc-modal-footer-right">
+        <button class="mc-button-primary">Save</button>
+        <button class="mc-button-link">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:300px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal mc-modal-big'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-title'</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer-right'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="section-1">种类</h2>
+<ul>
+  <li>默认为单列</li>
+  <li>在 <code>mc-modal-body</code> 中添加 <code>mc-modal-body-left</code> 和 <code>mc-modal-body-right</code> 可变为双列</li>
+</ul>
 
-<h3 id="one-column">One Column</h3>
+<div class="docs-example clearfix"><div style="height:300px;width:100%;background-color:#f1f1f1">
+  <div class="mc-modal mc-modal-twocolumn">
+    <div class="mc-modal-header">
+      <div class="mc-modal-title">Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class="mc-modal-body">
+      <div class="mc-modal-body-left"> Menu <br /><br /><br /><br /></div>
+      <div class="mc-modal-body-right"> Content</div>
+    </div>
+  </div>
 
-<h3 id="two-column">Two Column</h3>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:300px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal mc-modal-twocolumn'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-title'</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body-left'</span><span class="nt">&gt;</span> Menu <span class="nt">&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body-right'</span><span class="nt">&gt;</span> Content<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="section-2">动画</h2>
 <p>可以用 boot strip 默认的</p>
@@ -293,27 +464,198 @@
     </h1>
     <div class="markdown-body">
       <ul id="markdown-toc">
-  <li><a href="#header-body-footer" id="markdown-toc-header-body-footer">Header, Body, Footer</a></li>
+  <li><a href="#layout" id="markdown-toc-layout">Layout</a></li>
   <li><a href="#section" id="markdown-toc-section">尺寸</a></li>
-  <li><a href="#section-1" id="markdown-toc-section-1">种类</a>    <ul>
-      <li><a href="#one-column" id="markdown-toc-one-column">One Column</a></li>
-      <li><a href="#two-column" id="markdown-toc-two-column">Two Column</a></li>
-    </ul>
-  </li>
+  <li><a href="#section-1" id="markdown-toc-section-1">种类</a></li>
   <li><a href="#section-2" id="markdown-toc-section-2">动画</a></li>
 </ul>
 
-<h2 id="header-body-footer">Header, Body, Footer</h2>
-<p>这里要注意 Footer 的交互效果</p>
+<h2 id="layout">Layout</h2>
+
+<div class="docs-example clearfix"><div style="height:300px;width:100%;background-color:#f1f1f1">
+  <div class="mc-modal">
+    <div class="mc-modal-header">
+      <div class="mc-modal-title">New Label</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class="mc-modal-body">
+      <p>利用 CSS 来实现对象的垂直居中有许多不同的方法，比较难的是选择那个正确的方法。我下面说明一下我看到的好的方法和怎么来创建一个好的居中网站。
+      </p>
+      <p>
+        使用 CSS 实现垂直居中并不容易。有些方法在一些浏览器中无效。下面我们看一下使对象垂直集中的5种不同方法，以及它们各自的优缺点。(可以看看测试页面，有简短解释。
+      </p>
+    </div>
+    <div class="mc-modal-footer">
+      <div class="mc-modal-footer-left">
+        <button type="button" class="mc-button-nobg">
+          <span class="mc-icon-text"></span>
+        </button>
+        <button type="button" class="mc-button-nobg">
+          <span class="mc-icon-clip"></span>
+        </button>
+      </div>
+      <div class="mc-modal-footer-right">
+        <button class="mc-button-primary">Create</button>
+        <button class="mc-button-link">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:300px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-title'</span><span class="nt">&gt;</span>New Label<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>利用 CSS 来实现对象的垂直居中有许多不同的方法，比较难的是选择那个正确的方法。我下面说明一下我看到的好的方法和怎么来创建一个好的居中网站。
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        使用 CSS 实现垂直居中并不容易。有些方法在一些浏览器中无效。下面我们看一下使对象垂直集中的5种不同方法，以及它们各自的优缺点。(可以看看测试页面，有简短解释。
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer-left'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-text"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-clip"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer-right'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Create<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="section">尺寸</h2>
-<p>这个待定，gary 稍后同步</p>
+<ul>
+  <li>正常尺寸 560px 默认值</li>
+  <li><code>mc-modal-big</code> 720px 大尺寸</li>
+</ul>
+
+<div class="docs-example clearfix"><div style="height:300px;width:100%;background-color:#f1f1f1">
+  <div class="mc-modal mc-modal-big">
+    <div class="mc-modal-header">
+      <div class="mc-modal-title">Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class="mc-modal-body">
+      <br /><br /><br /><br />
+    </div>
+    <div class="mc-modal-footer">
+      <div class="mc-modal-footer-right">
+        <button class="mc-button-primary">Save</button>
+        <button class="mc-button-link">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:300px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal mc-modal-big'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-title'</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-footer-right'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="section-1">种类</h2>
+<ul>
+  <li>默认为单列</li>
+  <li>在 <code>mc-modal-body</code> 中添加 <code>mc-modal-body-left</code> 和 <code>mc-modal-body-right</code> 可变为双列</li>
+</ul>
 
-<h3 id="one-column">One Column</h3>
+<div class="docs-example clearfix"><div style="height:300px;width:100%;background-color:#f1f1f1">
+  <div class="mc-modal mc-modal-twocolumn">
+    <div class="mc-modal-header">
+      <div class="mc-modal-title">Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class="mc-modal-body">
+      <div class="mc-modal-body-left"> Menu <br /><br /><br /><br /></div>
+      <div class="mc-modal-body-right"> Content</div>
+    </div>
+  </div>
 
-<h3 id="two-column">Two Column</h3>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:300px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal mc-modal-twocolumn'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-title'</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body-left'</span><span class="nt">&gt;</span> Menu <span class="nt">&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-modal-body-right'</span><span class="nt">&gt;</span> Content<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="section-2">动画</h2>
 <p>可以用 boot strip 默认的</p>
