@@ -95,7 +95,7 @@ title: Form
     </div>
     <div class='mc-modal-footer'>
       <div class='mc-modal-footer-right'>
-        <button class='mc-button-primary' disabled='disabled'>Create</button>
+        <button class='mc-button-primary'>Create</button>
         <button class='mc-button-link'>Cancel</button>
       </div>
     </div>
