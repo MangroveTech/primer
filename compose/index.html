@@ -7,8 +7,8 @@
       Mailcup &middot; Compose
     </title>
 
-    <link rel="stylesheet" href="/primer/docs.css">
     <link rel="stylesheet" type="text/css" href="/primer/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/primer/docs.css">
     <script type="text/javascript" src="/primer/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/primer/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
@@ -136,10 +136,65 @@
         <span class="mc-icon-unfocus"></span>
       </button>
     </div>
-    <div class="mc-compose-body"></div>
-    <div class="mc-compose-footer"></div>
+    <div class="mc-compose-body">
+      <div class="mc-compose-body-label to">
+        To&nbsp;
+        <input />
+        <span class="bcc">Bcc</span>
+        <span class="cc">Cc</span>
+      </div>
+      <div class="mc-compose-body-label cc">
+        Cc&nbsp;
+        <input />
+      </div>
+      <div class="mc-compose-body-label bcc">
+        Bcc&nbsp;
+        <input />
+      </div>
+    </div>
+    <div class="mc-compose-footer">
+     <div class="mc-compose-footer-left">
+       <button type="button" class="mc-button-nobg">
+         <span class="mc-icon-clip"></span>
+       </button>
+       <button type="button" class="mc-button-nobg">
+         <span class="mc-icon-text"></span>
+       </button>
+       <button type="button" class="mc-button-nobg">
+         <span class="mc-icon-template"></span>
+       </button>
+     </div>
+     <div class="mc-compose-footer-right">
+       <button class="mc-button-primary">Send</button>
+     </div>
+   </div>
   </div>
-</div></div>
+</div>
+
+<script type="text/javascript">
+  $('span.cc').click(function() {
+    $('span.cc').css('display', 'none');
+    $('.mc-compose-body-label.cc').css('display', 'block');
+    $('.mc-compose-body-label.cc input').blur(function() {
+      if (!$(this).val()) {
+        $('.mc-compose-body-label.cc').css('display', 'none');
+        $('span.cc').css('display', 'block');
+      }
+    });
+  });
+  $('span.bcc').click(function() {
+    $('span.bcc').css('display', 'none');
+    $('.mc-compose-body-label.bcc').css('display', 'block');
+    $('.mc-compose-body-label.bcc input').blur(function() {
+      if (!$(this).val()) {
+        $('.mc-compose-body-label.bcc').css('display', 'none');
+        $('span.bcc').css('display', 'block');
+      }
+    });
+  });
+
+
+</script></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-header'</span><span class="nt">&gt;</span>
@@ -154,10 +209,65 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
       <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body'</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label to"</span><span class="nt">&gt;</span>
+        To<span class="ni">&amp;nbsp;</span>
+        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bcc"</span><span class="nt">&gt;</span>Bcc<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cc"</span><span class="nt">&gt;</span>Cc<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label cc"</span><span class="nt">&gt;</span>
+        Cc<span class="ni">&amp;nbsp;</span>
+        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label bcc"</span><span class="nt">&gt;</span>
+        Bcc<span class="ni">&amp;nbsp;</span>
+        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-left'</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-clip"</span><span class="nt">&gt;&lt;/span&gt;</span>
+       <span class="nt">&lt;/button&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-text"</span><span class="nt">&gt;&lt;/span&gt;</span>
+       <span class="nt">&lt;/button&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-template"</span><span class="nt">&gt;&lt;/span&gt;</span>
+       <span class="nt">&lt;/button&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-right'</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Send<span class="nt">&lt;/button&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+
+
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
       </div>
     </div>
@@ -264,10 +374,65 @@
         <span class="mc-icon-unfocus"></span>
       </button>
     </div>
-    <div class="mc-compose-body"></div>
-    <div class="mc-compose-footer"></div>
+    <div class="mc-compose-body">
+      <div class="mc-compose-body-label to">
+        To&nbsp;
+        <input />
+        <span class="bcc">Bcc</span>
+        <span class="cc">Cc</span>
+      </div>
+      <div class="mc-compose-body-label cc">
+        Cc&nbsp;
+        <input />
+      </div>
+      <div class="mc-compose-body-label bcc">
+        Bcc&nbsp;
+        <input />
+      </div>
+    </div>
+    <div class="mc-compose-footer">
+     <div class="mc-compose-footer-left">
+       <button type="button" class="mc-button-nobg">
+         <span class="mc-icon-clip"></span>
+       </button>
+       <button type="button" class="mc-button-nobg">
+         <span class="mc-icon-text"></span>
+       </button>
+       <button type="button" class="mc-button-nobg">
+         <span class="mc-icon-template"></span>
+       </button>
+     </div>
+     <div class="mc-compose-footer-right">
+       <button class="mc-button-primary">Send</button>
+     </div>
+   </div>
   </div>
-</div></div>
+</div>
+
+<script type="text/javascript">
+  $('span.cc').click(function() {
+    $('span.cc').css('display', 'none');
+    $('.mc-compose-body-label.cc').css('display', 'block');
+    $('.mc-compose-body-label.cc input').blur(function() {
+      if (!$(this).val()) {
+        $('.mc-compose-body-label.cc').css('display', 'none');
+        $('span.cc').css('display', 'block');
+      }
+    });
+  });
+  $('span.bcc').click(function() {
+    $('span.bcc').css('display', 'none');
+    $('.mc-compose-body-label.bcc').css('display', 'block');
+    $('.mc-compose-body-label.bcc input').blur(function() {
+      if (!$(this).val()) {
+        $('.mc-compose-body-label.bcc').css('display', 'none');
+        $('span.bcc').css('display', 'block');
+      }
+    });
+  });
+
+
+</script></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-header'</span><span class="nt">&gt;</span>
@@ -282,10 +447,65 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
       <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body'</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label to"</span><span class="nt">&gt;</span>
+        To<span class="ni">&amp;nbsp;</span>
+        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bcc"</span><span class="nt">&gt;</span>Bcc<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cc"</span><span class="nt">&gt;</span>Cc<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label cc"</span><span class="nt">&gt;</span>
+        Cc<span class="ni">&amp;nbsp;</span>
+        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label bcc"</span><span class="nt">&gt;</span>
+        Bcc<span class="ni">&amp;nbsp;</span>
+        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-left'</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-clip"</span><span class="nt">&gt;&lt;/span&gt;</span>
+       <span class="nt">&lt;/button&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-text"</span><span class="nt">&gt;&lt;/span&gt;</span>
+       <span class="nt">&lt;/button&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-template"</span><span class="nt">&gt;&lt;/span&gt;</span>
+       <span class="nt">&lt;/button&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-right'</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Send<span class="nt">&lt;/button&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+
+
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
     </div>
   </div>
