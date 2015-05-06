@@ -33,6 +33,9 @@ title: Compose
         Bcc&nbsp;
         <input />
       </div>
+      <div class="mc-compose-body-label">
+        <input placeholder="Subject" />
+      </div>
     </div>
     <div class='mc-compose-footer'>
      <div class='mc-compose-footer-left'>
