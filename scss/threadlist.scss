@@ -150,13 +150,18 @@ $mc-icon-pin-color: #4A90E2;
       width: 90%;
     }
     .mc-threadlist-right{
-      width: 10%;
       display: block;
-      position: absolute;
-      right: 35px;
-      line-height: 90px;
+      float: right;
+      margin-top: -10px;
+      margin-right: 35px;
+      // position: absolute;
+      // right: 35px;
+      // line-height: 90px;
       text-decoration: none;
       color: $mc-icon-pin-color;
+      span{
+        padding: 0;
+      }
     }
   }
 }
