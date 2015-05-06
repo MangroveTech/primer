@@ -36,6 +36,8 @@ title: Compose
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
       </div>
+      <div class='mc-compose-body-editor' contenteditable="true">
+      </div>
     </div>
     <div class='mc-compose-footer'>
      <div class='mc-compose-footer-left'>

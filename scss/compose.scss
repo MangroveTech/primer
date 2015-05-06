@@ -38,7 +38,7 @@
 
 .mc-compose-body{
   @extend .mc-modal-body;
-  height: 325px;
+  max-height: 400px;
   padding: 0;
 
   .mc-compose-body-label {
@@ -63,6 +63,16 @@
     &.cc, &.bcc {
       display: none;
     }
+  }
+
+  .mc-compose-body-editor{
+    &:focus{
+      outline: none;
+    }
+    padding: 10px;
+    height: 200px;
+    max-height: 280px;
+    overflow-y: scroll;
   }
 }
 
