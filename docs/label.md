@@ -3,19 +3,42 @@ layout: page
 title: Label
 ---
 
+Label 提供了 Mailcup 所有的Mailcup标签显示方案
+
 * 此处不用改，将下面所有的 2 级标题制成索引...
 {:toc}
 
+##基础label样式
+* 使用label最基础的方法
+* 在label的使用中，默认样式中的文字大小是10px
+* `mc-label-*`的遵循了设计图设计，只有文字为10px一种
+
 {% example html %}
-<div style='padding:20px;font-size:13px'>
-  <span class='mc-label'>Team</span>
-  This is thread subject
-</div>
-<div style='padding:20px;font-size:18px'>
-  <span class='mc-label'>重要客户</span>
-  <span class='mc-label'>Wave</span>
-  这里是会话的标题
-</div>
+<span class="mc-label">Label</span>
+{% endexample %}
+
+##Label可用变体
+* 用下面的任何一个类即可改变标签的外观
+
+{% example html %}
+<span class="mc-label">Label</span>
+<br>
+<br>
+<span class="mc-label-primary">Primary</span>
+<br>
+<br>
+<span class="mc-label-danger">Danger</span>
+<br>
+<br>
+<span class="mc-label-info">Info</span>
+<br>
+<br>
+<span class="mc-label-warning">Warning</span>
+<br>
+<br>
+<span class="mc-label-success">Success</span>
+<br>
+<br>
 {% endexample %}
 
 ##Token

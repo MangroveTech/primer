@@ -88,16 +88,3 @@
   @extend .panel-footer;
 }
 
-/////Label
-
-.mc-label{
-  @extend .label;
-  @extend .label-default;
-  font-weight: normal;
-}
-
-.mc-label-threadlist{
-  @extend .mc-label;
-  font-size: 11px;
-}
-
