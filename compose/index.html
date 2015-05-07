@@ -131,7 +131,13 @@
       </h1>
       <div class="markdown-body">
         
-<div class="docs-example clearfix"><div style="height:600px;width:100%;background-color:#f1f1f1">
+<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.bootstrap3.css " />
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-selectize2/dist/selectize.js"></script>
+
+<div style="height:600px;width:100%;background-color:#f1f1f1">
   <div class="mc-compose">
     <div class="mc-compose-header">
       <div class="mc-compose-title">New message</div>
@@ -161,7 +167,7 @@
         <input />
       </div>
       <div class="mc-compose-body-label">
-        <input placeholder="Subject" />
+        <input placeholder="Subject" /><span class="mc-label-info">Label</span>
       </div>
       <div class="mc-compose-body-editor" contenteditable="true">
       </div>
@@ -207,9 +213,38 @@
     });
   });
 
+angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($scope) {
+  $scope.myModel = 1;
+
+  $scope.myOptions = [
+    {id: 1, title: 'Spectrometer'},
+    {id: 2, title: 'Star Chart'},
+    {id: 3, title: 'Three'},
+    {id: 4, title: 'Second'},
+    {id: 5, title: 'Four five'}
+  ];
+
+  $scope.myConfig = {
+    create: true,
+    valueField: 'id',
+    labelField: 'title',
+    delimiter: '|',
+    placeholder: 'Input emial address',
+    onInitialize: function(selectize){
+      // receives the selectize object as an argument
+    },
+    // maxItems: 5
+  };
+});
 
 </script></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/selectize/dist/css/selectize.bootstrap3.css "</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/selectize/dist/js/standalone/selectize.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular-selectize2/dist/selectize.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-header'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-title'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/div&gt;</span>
@@ -239,7 +274,7 @@
         <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-label-info"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body-editor'</span> <span class="na">contenteditable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -285,6 +320,29 @@
     <span class="p">});</span>
   <span class="p">});</span>
 
+<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'selectize'</span><span class="p">]).</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'mailcupCtrl'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myModel</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myOptions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Spectrometer'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Star Chart'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Three'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Second'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Four five'</span><span class="p">}</span>
+  <span class="p">];</span>
+
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">create</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">valueField</span><span class="p">:</span> <span class="s1">'id'</span><span class="p">,</span>
+    <span class="na">labelField</span><span class="p">:</span> <span class="s1">'title'</span><span class="p">,</span>
+    <span class="na">delimiter</span><span class="p">:</span> <span class="s1">'|'</span><span class="p">,</span>
+    <span class="na">placeholder</span><span class="p">:</span> <span class="s1">'Input emial address'</span><span class="p">,</span>
+    <span class="na">onInitialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">selectize</span><span class="p">){</span>
+      <span class="c1">// receives the selectize object as an argument</span>
+    <span class="p">},</span>
+    <span class="c1">// maxItems: 5</span>
+  <span class="p">};</span>
+<span class="p">});</span>
 
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
@@ -388,7 +446,13 @@
     </h1>
     <div class="markdown-body">
       
-<div class="docs-example clearfix"><div style="height:600px;width:100%;background-color:#f1f1f1">
+<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.bootstrap3.css " />
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-selectize2/dist/selectize.js"></script>
+
+<div style="height:600px;width:100%;background-color:#f1f1f1">
   <div class="mc-compose">
     <div class="mc-compose-header">
       <div class="mc-compose-title">New message</div>
@@ -418,7 +482,7 @@
         <input />
       </div>
       <div class="mc-compose-body-label">
-        <input placeholder="Subject" />
+        <input placeholder="Subject" /><span class="mc-label-info">Label</span>
       </div>
       <div class="mc-compose-body-editor" contenteditable="true">
       </div>
@@ -464,9 +528,38 @@
     });
   });
 
+angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($scope) {
+  $scope.myModel = 1;
+
+  $scope.myOptions = [
+    {id: 1, title: 'Spectrometer'},
+    {id: 2, title: 'Star Chart'},
+    {id: 3, title: 'Three'},
+    {id: 4, title: 'Second'},
+    {id: 5, title: 'Four five'}
+  ];
+
+  $scope.myConfig = {
+    create: true,
+    valueField: 'id',
+    labelField: 'title',
+    delimiter: '|',
+    placeholder: 'Input emial address',
+    onInitialize: function(selectize){
+      // receives the selectize object as an argument
+    },
+    // maxItems: 5
+  };
+});
 
 </script></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/selectize/dist/css/selectize.bootstrap3.css "</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/selectize/dist/js/standalone/selectize.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular-selectize2/dist/selectize.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-header'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-title'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/div&gt;</span>
@@ -496,7 +589,7 @@
         <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-label-info"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body-editor'</span> <span class="na">contenteditable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -542,6 +635,29 @@
     <span class="p">});</span>
   <span class="p">});</span>
 
+<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'selectize'</span><span class="p">]).</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'mailcupCtrl'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myModel</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myOptions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Spectrometer'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Star Chart'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Three'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Second'</span><span class="p">},</span>
+    <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="na">title</span><span class="p">:</span> <span class="s1">'Four five'</span><span class="p">}</span>
+  <span class="p">];</span>
+
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">create</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">valueField</span><span class="p">:</span> <span class="s1">'id'</span><span class="p">,</span>
+    <span class="na">labelField</span><span class="p">:</span> <span class="s1">'title'</span><span class="p">,</span>
+    <span class="na">delimiter</span><span class="p">:</span> <span class="s1">'|'</span><span class="p">,</span>
+    <span class="na">placeholder</span><span class="p">:</span> <span class="s1">'Input emial address'</span><span class="p">,</span>
+    <span class="na">onInitialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">selectize</span><span class="p">){</span>
+      <span class="c1">// receives the selectize object as an argument</span>
+    <span class="p">},</span>
+    <span class="c1">// maxItems: 5</span>
+  <span class="p">};</span>
+<span class="p">});</span>
 
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
