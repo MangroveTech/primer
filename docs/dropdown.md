@@ -16,7 +16,7 @@ Dropdown 提供了 Mailcup 所有下拉/上拉菜单样式
 * `mc-dropdown-up` 上拉菜单
 
 {% example html %}
-<div class="btn-group">
+<div class="btn-group mc-dropdown-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     Dropdown <span class="caret"></span>
   </button>
@@ -53,16 +53,22 @@ Token Field, 搜索结果
 
 {% example html %}
 <div class="btn-group">
-  <button class='mc-button-nobg dropdown-toggle' data-toggle="dropdown" aria-expanded="false"><span class='mc-icon-done'></span></button>
+  <button class='mc-button-nobg dropdown-toggle' data-toggle="dropdown" aria-expanded="false"><span class='mc-icon-label'></span></button>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a>Label as:</a></li>
+    <li class='mc-dropdown-title'>Label as:</li>
     <li class="divider"></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-green" checked/><label for="mc-checkbox-green"></label> Team</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> Support</a></li>
-    <li><a href="#"><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> Hiring</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-green" checked/><label for="mc-checkbox-green"></label> Team</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> Support</a></li>
+    <li><a><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> Hiring</a></li>
     <li class="divider"></li>
-    <li><a href="#"><span class="mc-icon-plus"></span> Create new...</a></li>
+    <li class='mc-dropdown-bottombutton'><a><span class="mc-icon-plus"></span> Create new...</a></li>
   </ul>
 </div>
+
+<script type="text/javascript">
+  $('.dropdown-menu li a').click(function (e) {
+    e.stopPropagation();
+  });
+</script>
 {% endexample %}

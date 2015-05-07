@@ -1,5 +1,29 @@
-.dropdown-menu li {
+.dropdown-menu li{
+
   a {
+    cursor: pointer;
     padding: 5px 15px !important;
+  }
+
+}
+.mc-dropdown-title{
+  display: block;
+  padding: 5px 14px 2px 14px;
+  clear: both;
+  color: #333;
+  white-space: nowrap;
+}
+
+.mc-dropdown-bottombutton{
+  display: block;
+  clear: both;
+  color: #333;
+  white-space: nowrap;
+  font-size: 14px;
+
+  span{
+    padding: 0px 11px 9px 2px;
+    font-size: 14px;
+    color: #666666;
   }
 }

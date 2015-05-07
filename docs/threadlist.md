@@ -53,13 +53,15 @@ title: Threadlist
 {% endexample %}
 
 ##Follow up Page
+
+{% example html %}
 <div style='height:170px;width:100%;background-color:#f1f1f1'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Follow up</span>
       <button class='mc-button-nobg'><span class='mc-icon-alldone'></span></button>
     </div>
-    <div class='mc-section'>
+    <div class='mc-section mc-section-followup'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <div class='mc-avatar-mid'></div>
@@ -69,46 +71,45 @@ title: Threadlist
           <div class='mc-threadlist-headline'>李华, 我, 赵其刚 (3)</div>
           <div class='mc-threadlist-subject'><span class="mc-label-info">招聘</span>关于工程师的招聘</div>
           <div class='mc-threadlist-content'>我认为李华说的很有道理，工程师团队的文化建设非常重要，大家都应该重视起来</div>
+          <div class='mc-threadlist-right'><span class="mc-icon-pin btn-lg"></span></div>
         </div>
         <div class='mc-threadlist-item-right'>
-          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg" style="color:blue"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
           <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
           <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
         </div>
         <span class='divider'></span>
       </a>
     </div>
-  </div>
-</div>
-
+{% endexample %}
 
 ##Done Page
+
+{% example html %}
 <div style='height:170px;width:100%;background-color:#f1f1f1'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
-      <span class='mc-text-content'>Done</span>
+      <span class='mc-text-content'>Follow up</span>
       <button class='mc-button-nobg'><span class='mc-icon-alldone'></span></button>
     </div>
-    <div class='mc-section'>
+    <div class='mc-section mc-section-followup'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-threadlist-item-content'>
           <div class='mc-threadlist-date'>12:22 PM</div>
-          <div class='mc-threadlist-headline'>李华, 我 (2)</div>
-          <div class='mc-threadlist-subject'><span class="mc-label-info">Team</span>15年四月份Bug状态汇总</div>
-          <div class='mc-threadlist-content'>
-            15年四月份反馈的Bug修复情况表，并且协作工具上面有一些记录。
-          </div>
+          <div class='mc-threadlist-headline'>李华, 我, 赵其刚 (3)</div>
+          <div class='mc-threadlist-subject'><span class="mc-label-info">招聘</span>关于工程师的招聘</div>
+          <div class='mc-threadlist-content'>我认为李华说的很有道理，工程师团队的文化建设非常重要，大家都应该重视起来</div>
+          <div class='mc-threadlist-right'><span class="mc-icon-done btn-lg"></span></div>
         </div>
         <div class='mc-threadlist-item-right'>
           <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg" style="color:green"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
           <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
         </div>
         <span class='divider'></span>
       </a>
     </div>
-  </div>
-</div>
+{% endexample %}
