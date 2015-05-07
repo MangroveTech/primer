@@ -22,30 +22,20 @@ Label 提供了 Mailcup 所有的Mailcup标签显示方案
 
 {% example html %}
 <span class="mc-label">Label</span>
-<br>
-<br>
 <span class="mc-label-primary">Primary</span>
-<br>
-<br>
 <span class="mc-label-danger">Danger</span>
-<br>
-<br>
 <span class="mc-label-info">Info</span>
-<br>
-<br>
 <span class="mc-label-warning">Warning</span>
-<br>
-<br>
 <span class="mc-label-success">Success</span>
-<br>
-<br>
 {% endexample %}
 
 ##Token
-* 出现在需要输入联系人的Textfield里
-
-* 双击可变为 email 地址进行编辑
-
 * 右侧有 close 按键
 
+{% example html %}
+<span class="mc-label" data-dismiss="alert">Shuangchun &times;</span>
+{% endexample %}
+
+* 出现在需要输入联系人的Textfield里
+* 双击可变为 email 地址进行编辑
 * 可选中，可拖拽交换位置(如果实现成本太高可以先不做)
