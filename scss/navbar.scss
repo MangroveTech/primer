@@ -10,6 +10,22 @@
 		width:300px;
 		float:right;
 		margin: 10px 10px 0 0;
+		transition:width 0.5s;
+		-moz-transition:width 0.5s;
+		-webkit-transition:width 0.5s;
+		-o-transition:width 0.5s;
+	}
+	.mc-searchfield:hover{
+		@extend .mc-textfield;
+		width:400px;
+		float:right;
+		margin: 10px 10px 0 0;
+	}
+	.mc-searchfield:focus{
+		@extend .mc-textfield;
+		width:400px;
+		float:right;
+		margin: 10px 10px 0 0;
 	}
 }
 

@@ -21,6 +21,7 @@
     "primer-markdown": "https://github.com/primer/markdown.git#2.1.7",
     "primer-css": "*",
     "angular": "*",
-    "angular-selectize2": "*"
+    "angular-selectize2": "*",
+    "toastr": "*"
   }
 }

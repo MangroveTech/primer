@@ -31,3 +31,43 @@ title: Notification
 
 ##Animation
 从下方弹出，停留5秒后，从下方
+
+{% example html %}
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/toastr/toastr.min.js"></script>
+<link rel="stylesheet" href="../bower_components/toastr/toastr.min.css">
+
+<button class="btn btn-danger" href="click" id="shownotifi">Click</button>
+
+<script type="text/javascript">
+  toastr.options = {
+    "closeButton": false,
+    "debug": false,
+    "toastClass": '',
+    "positionClass": "",
+    "messageClass": 'mc-notification-right',
+    "containerId": null,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut",
+    "iconClasses": {
+      "error": '',
+      "info": '',
+      "success": '',
+      "warning": ''
+    }
+  }
+
+  $('#shownotifi').click(function () {
+    console.log('chuangjianshibai');
+    toastr.error('创建失败!');
+  });
+</script>
+
+{% endexample %}
