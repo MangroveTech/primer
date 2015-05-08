@@ -42,17 +42,13 @@ title: Compose
         <div style="float:left">
         Cc&nbsp;
         </div>
-        <div class="mc-select" ng-app="mailcup" ng-controller="mailcupCtrl">
-          <selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
-        </div>
+        <input />
       </div>
       <div class="mc-compose-body-label bcc">
         <div style="float:left">
           Bcc&nbsp;
         </div>
-        <div class="mc-select" ng-app="mailcup" ng-controller="mailcupCtrl">
-          <selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
-        </div>
+        <input />
       </div>
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
@@ -190,17 +186,13 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
         <div style="float:left">
         Cc&nbsp;
         </div>
-        <div class="mc-select" ng-app="mailcup" ng-controller="mailcupCtrl">
-          <selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
-        </div>
+        <input />
       </div>
       <div class="mc-compose-body-label bcc">
         <div style="float:left">
           Bcc&nbsp;
         </div>
-        <div class="mc-select" ng-app="mailcup" ng-controller="mailcupCtrl">
-          <selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
-        </div>
+        <input />
       </div>
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
@@ -208,9 +200,11 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
         <span class="mc-icon-label mc-span-right"></span>
       </div>
       <div class='mc-compose-body-editor' contenteditable="true">
-        <div class="mc-col-xs-6">
-        <div class="alert mc-alert alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="right:0px;margin:5px"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="mc-compose-body-editor">
+      <div class="mc-col-xs-6 alert alert-dismissible">
+        <div class="alert mc-alert alert-dismissible">
+          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close" style="right:0px;margin:5px"><span aria-hidden="true">&times;</span></button>
           <div style="float:left">
             <span class="mc-icon-template" style="font-size:46px;"></span>
           </div>
@@ -220,9 +214,9 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
           </div>
         </div>
         </div>
-        <div class="mc-col-xs-6">
-        <div class="alert mc-alert alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="right:0px;margin:5px"><span aria-hidden="true">&times;</span></button>
+        <div class="mc-col-xs-6 alert alert-dismissible">
+        <div class="mc-alert">
+          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close" style="right:0px;margin:5px"><span aria-hidden="true">&times;</span></button>
           <div style="float:left">
             <span class="mc-icon-template" style="font-size:46px;"></span>
           </div>
