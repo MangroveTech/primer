@@ -47,11 +47,7 @@
     line-height: 45px;
     border-bottom:1px solid #ECECEC;
     padding-left: 14px;
-    span{
-      padding: 0 6px;
-      cursor: pointer;
-      float: right;
-    }
+    
     input{
       width: 375px;
       height: 42px;
@@ -76,6 +72,27 @@
   }
 }
 
+.mc-select {
+  width: 375px;
+  height: 42px;
+  padding:0;
+  border:0;
+  margin-top:1px;
+  outline: none;
+  float: left;
+  border-bottom:1px solid #ECECEC;
+}
+.mc-cc {
+  padding: 0 6px;
+  cursor: pointer;
+  float: right;
+}
+
+.mc-span-right {
+  padding: 0px 8px;
+  float: right;
+}
+
 .mc-compose-footer{
   @extend .mc-modal-footer;
   .mc-compose-footer-left{
@@ -90,3 +107,18 @@
 
 }
 
+.mc-alert {
+  @extend .alert;
+  @extend .alert-success;
+
+  background-color:#FFFFFF;
+  border-color: #D1D1D1;
+  height: 70px;
+  padding: 0px 0px 0px 5px;
+}
+
+.mc-col-xs-6 {
+  @extend .col-xs-6;
+  padding-right: 4px;
+  padding-left: 4px;
+}
