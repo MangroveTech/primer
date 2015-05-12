@@ -25,9 +25,9 @@ title: Threadlist
           <div class='mc-threadlist-content'>Hey John, I see you profile and glad to help, please check the address blow if is right? If you think there has some other questions</div>
         </div>
         <div class='mc-threadlist-item-right'>
-          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
         </div>
         <span class='divider'></span>
       </a>
@@ -42,9 +42,8 @@ title: Threadlist
           <div class='mc-threadlist-content'>This isn't what we want, please send it to John</div>
         </div>
         <div class='mc-threadlist-item-right'>
-          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done"></span></button></div>     <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
         </div>
       </a>
     </div>
@@ -74,9 +73,9 @@ title: Threadlist
           <div class='mc-threadlist-right'><span class="mc-icon-pin btn-lg"></span></div>
         </div>
         <div class='mc-threadlist-item-right'>
-          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
         </div>
         <span class='divider'></span>
       </a>
@@ -105,9 +104,9 @@ title: Threadlist
           <div class='mc-threadlist-right'><span class="mc-icon-done btn-lg"></span></div>
         </div>
         <div class='mc-threadlist-item-right'>
-          <div><button class='mc-button-nobg'><span class="mc-icon-pin btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-done btn-lg"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-label btn-lg"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
         </div>
         <span class='divider'></span>
       </a>
