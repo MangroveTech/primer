@@ -4,7 +4,7 @@
 	height:100%;
 	background-color:$mc-color-darkblue;
 	color:$mc-color-midgrey;
-	-webkit-box-shadow:-6px 0px 6px #14151B inset; 	
+	box-shadow:-6px 0px 6px rgba(20,21,27,.5) inset; 	
 	moz-user-select: -moz-none;
 	-moz-user-select: none;
 	-o-user-select:none;
