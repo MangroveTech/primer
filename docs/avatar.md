@@ -16,6 +16,6 @@ Avatar 提供了 Mailcup 所有用户头像显示方案
 * `mc-avatar-big` 大尺寸
 
 {% example html %}
-<img class="mc-avatar-mid" src="https://avatar.tower.im/2458b7b4c2814259813404ce21749c2e"/><br><br>
-<img class="mc-avatar-big" src="https://avatar.tower.im/2458b7b4c2814259813404ce21749c2e"/><br>
+<img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/><br><br>
+<img class="mc-avatar-big" src="../img/Mailcup-avatar-default.png"/><br>
 {% endexample %}

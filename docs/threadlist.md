@@ -6,7 +6,7 @@ title: Threadlist
 ##Inbox Page
 {% example html %}
 
-<div style='height:300px;width:100%;background-color:#f1f1f1'>
+<div style='height:400px;width:100%;background-color:#f1f1f1'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Today</span>
@@ -16,7 +16,7 @@ title: Threadlist
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <div class='mc-threadlist-item-unread'></div>
-          <div class='mc-avatar-mid'></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
         </div>
         <div class='mc-threadlist-item-content'>
           <div class='mc-threadlist-date'>12:22 PM</div>
@@ -33,13 +33,30 @@ title: Threadlist
       </a>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
-          <div class='mc-avatar-mid'></div>
+          <div class='mc-threadlist-item-unread'></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
         </div>
         <div class='mc-threadlist-item-content'>
           <div class='mc-threadlist-date'>12:22 PM</div>
-          <div class='mc-threadlist-headline'>Brenda Bennett, me (4)</div>
+          <div class='mc-threadlist-headline'><strong>Brenda Bennett</strong>, me (4)</div>
           <div class='mc-threadlist-subject'>Customer Relationship Management</div>
           <div class='mc-threadlist-content'>This isn't what we want, please send it to John</div>
+        </div>
+        <div class='mc-threadlist-item-right'>
+          <div><button class='mc-button-nobg'><span class="mc-icon-done"></span></button></div>     <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
+        </div>
+        <span class='divider'></span>
+      </a>
+      <a class='mc-threadlist-item'>
+        <div class='mc-threadlist-item-left'>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
+        </div>
+        <div class='mc-threadlist-item-content'>
+          <div class='mc-threadlist-date'>12:22 PM</div>
+          <div class='mc-threadlist-headline'>Gary Chai, me (4)</div>
+          <div class='mc-threadlist-subject'>Pull Request questions</div>
+          <div class='mc-threadlist-content'>Hi Jack, I have few questions about title</div>
         </div>
         <div class='mc-threadlist-item-right'>
           <div><button class='mc-button-nobg'><span class="mc-icon-done"></span></button></div>     <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
@@ -63,7 +80,7 @@ title: Threadlist
     <div class='mc-section mc-section-followup'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
-          <div class='mc-avatar-mid'></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
         </div>
         <div class='mc-threadlist-item-content'>
           <div class='mc-threadlist-date'>12:22 PM</div>
@@ -94,7 +111,7 @@ title: Threadlist
     <div class='mc-section mc-section-followup'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
-          <div class='mc-avatar-mid'></div>
+            <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
         </div>
         <div class='mc-threadlist-item-content'>
           <div class='mc-threadlist-date'>12:22 PM</div>
