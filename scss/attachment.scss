@@ -1,0 +1,82 @@
+.mc-attachment {
+  display: block;
+  text-indent: -9999px;
+  width: 41px;
+  height: 51px;
+  background-size : 41px 51px;
+}
+
+.mc-attachment-ai {
+  @extend .mc-attachment;
+  background-image: url(svg/ai.svg);
+}
+
+.mc-attachment-audio {
+  @extend .mc-attachment;
+  background-image: url(svg/audio.svg);
+}
+
+.mc-attachment-cal {
+  @extend .mc-attachment;
+  background-image: url(svg/cal.svg);
+}
+
+.mc-attachment-doc {
+  @extend .mc-attachment;
+  background-image: url(svg/doc.svg);
+}
+
+.mc-attachment-excl {
+  @extend .mc-attachment;
+  background-image: url(svg/excl.svg);
+}
+
+.mc-attachment-exe {
+  @extend .mc-attachment;
+  background-image: url(svg/exe.svg);
+}
+
+.mc-attachment-keynote {
+  @extend .mc-attachment;
+  background-image: url(svg/keynote.svg);
+}
+
+.mc-attachment-pdf {
+  @extend .mc-attachment;
+  background-image: url(svg/pdf.svg);
+}
+
+.mc-attachment-ppt {
+  @extend .mc-attachment;
+  background-image: url(svg/ppt.svg);
+}
+
+.mc-attachment-ps {
+  @extend .mc-attachment;
+  background-image: url(svg/ps.svg);
+}
+
+.mc-attachment-sketch {
+  @extend .mc-attachment;
+  background-image: url(svg/sketch.svg);
+}
+
+.mc-attachment-txt {
+  @extend .mc-attachment;
+  background-image: url(svg/txt.svg);
+}
+
+.mc-attachment-unknow {
+  @extend .mc-attachment;
+  background-image: url(svg/unknow.svg);
+}
+
+.mc-attachment-video {
+  @extend .mc-attachment;
+  background-image: url(svg/video.svg);
+}
+
+.mc-attachment-zip {
+  @extend .mc-attachment;
+  background-image: url(svg/zip.svg);
+}

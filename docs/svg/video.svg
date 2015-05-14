@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="51px" viewBox="0 0 41 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>VIDEO</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="AttachmentIcons" sketch:type="MSArtboardGroup" transform="translate(-238.000000, -187.000000)">
+            <g id="VIDEO" sketch:type="MSLayerGroup" transform="translate(238.000000, 187.000000)">
+                <g transform="translate(0.859155, 0.859155)" sketch:type="MSShapeGroup">
+                    <g id="PDF">
+                        <path d="M39.9295775,47.8198191 C39.9295775,48.9069816 39.1205063,49.7887324 38.1211722,49.7887324 L1.8100804,49.7887324 C0.809769139,49.7887324 0,48.9069816 0,47.8198191 L0,1.96742088 C0,0.880122699 0.809769139,0 1.8100804,0 L30.5105148,0 L39.9295775,10.4126371 L39.9295775,47.8198191 Z" id="Shape" fill="#63CCE3"></path>
+                        <path d="M30.5341556,0.0158450697 L30.404887,8.45215437 C30.3879631,9.55663988 31.2738603,10.4604324 32.3788569,10.4619325 L39.9367435,10.4520023 L30.5341556,0.0158450697 Z" id="Path-18" fill="#3F92A5"></path>
+                    </g>
+                    <polygon id="Triangle-17" fill="#FFFFFF" transform="translate(21.000000, 25.000000) scale(-1, 1) rotate(-90.000000) translate(-21.000000, -25.000000) " points="21 21 26 29 16 29 "></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
