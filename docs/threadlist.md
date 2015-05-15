@@ -97,6 +97,8 @@ title: Threadlist
         <span class='divider'></span>
       </a>
     </div>
+  </div>
+</div>
 {% endexample %}
 
 ##Done Page
@@ -128,4 +130,6 @@ title: Threadlist
         <span class='divider'></span>
       </a>
     </div>
+  </div>
+</div>
 {% endexample %}

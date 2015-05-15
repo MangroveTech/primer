@@ -114,7 +114,26 @@
   background-color:#FFFFFF;
   border-color: #D1D1D1;
   height: 70px;
-  padding: 0px 0px 0px 5px;
+  padding: 8px 0px 0px 5px;
+  .mc-alert-close {
+    right:11px;
+    margin:-5px
+  }
+  .mc-alert-text {
+    float: left;
+  }
+  .mc-alert-title {
+    font-size: 12px;
+    color: black;
+    margin-top: 8px;
+    margin-left: 5px
+  }
+  .mc-alert-filesize {
+    font-size: 12px;
+    color: gery;
+    margin-top: 5px;
+    margin-left: 5px
+  }
 }
 
 .mc-col-xs-6 {

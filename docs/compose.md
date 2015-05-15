@@ -52,8 +52,21 @@ title: Compose
       </div>
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
-        <span class="mc-label-info">Mailcup</span>
-        <span class="mc-icon-label mc-span-right"></span>
+        <span class="mc-label-info">label</span>
+        <div class="btn-group">
+          <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="mc-icon-label"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" id="mc-label-select">
+            <li><a>Label as:</a></li>
+            <li class="divider"></li>
+            <li><a><input type="checkbox" id="mc-checkbox-green" checked/><label for="mc-checkbox-green"></label> green</a></li>
+            <li><a><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> blue</a></li>
+            <li><a><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> orange</a></li>
+            <li class="divider"></li>
+            <li><a class="mc-icon-plus"> &nbsp;Create new...</a></li>
+          </ul>
+        </div>
       </div>
       <div class='mc-compose-body-editor' contenteditable="true">
       </div>
@@ -204,25 +217,25 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
       <div class="mc-compose-body-editor">
       <div class="mc-col-xs-6 alert alert-dismissible">
         <div class="alert mc-alert alert-dismissible">
-          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close" style="right:0px;margin:5px"><span aria-hidden="true">&times;</span></button>
-          <div style="float:left">
-            <span class="mc-icon-template" style="font-size:46px;"></span>
+          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close mc-alert-close"><span aria-hidden="true">&times;</span></button>
+          <div class="mc-alert-text">
+            <span class="mc-attachment-doc"></span>
           </div>
-          <div style="float:left">
-            <div style="font-size:12px;color:black;margin-top:8px;margin-left:5px">Report.pdf</div>
-            <div style="font-size:12px;color:gery;margin-top:5px;margin-left:5px">120Kb</div>
+          <div class="mc-alert-text">
+            <div class="mc-alert-title">Report.pdf</div>
+            <div class="mc-alert-filesize">120Kb</div>
           </div>
         </div>
         </div>
         <div class="mc-col-xs-6 alert alert-dismissible">
         <div class="mc-alert">
-          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close" style="right:0px;margin:5px"><span aria-hidden="true">&times;</span></button>
-          <div style="float:left">
-            <span class="mc-icon-template" style="font-size:46px;"></span>
+          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close mc-alert-close"><span aria-hidden="true">&times;</span></button>
+          <div class="mc-alert-text">
+            <span class="mc-attachment-doc"></span>
           </div>
-          <div style="float:left">
-            <div style="font-size:12px;color:black;margin-top:8px;margin-left:5px">Report.pdf</div>
-            <div style="font-size:12px;color:gery;margin-top:5px;margin-left:5px">120Kb</div>
+          <div class="mc-alert-text">
+            <div class="mc-alert-title">Report.pdf</div>
+            <div class="mc-alert-filesize">120Kb</div>
           </div>
         </div>
         </div>
