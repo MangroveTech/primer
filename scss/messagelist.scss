@@ -50,7 +50,6 @@
       float: left;
       width: 100%;
       height: 20px;
-      overflow: hidden;
       padding: 3px 15px 0 0;
 
       button{
@@ -79,5 +78,11 @@
   
 }
 
+.mc-message-list-dropdown{
+  width: 10px;
+}
 
+#mc-label-select{
+  width: 228px;
+}
 
