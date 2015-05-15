@@ -18,6 +18,8 @@ Checkbox 提供了 Mailcup 所用到的复选框样式
 <input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> orange
 {% endexample %}
 
+### label的选择
+
 {% example html %}
 <div class="btn-group">
   <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">

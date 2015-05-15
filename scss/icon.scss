@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'mailcup';
-  src:url('fonts/mailcup.eot?-xfo7q1');
-  src:url('fonts/mailcup.eot?#iefix-xfo7q1') format('embedded-opentype'),
-    url('fonts/mailcup.woff?-xfo7q1') format('woff'),
-    url('fonts/mailcup.ttf?-xfo7q1') format('truetype'),
-    url('fonts/mailcup.svg?-xfo7q1#mailcup') format('svg');
+  src:url('fonts/mailcup.eot?-xhba2w');
+  src:url('fonts/mailcup.eot?#iefix-xhba2w') format('embedded-opentype'),
+    url('fonts/mailcup.woff?-xhba2w') format('woff'),
+    url('fonts/mailcup.ttf?-xhba2w') format('truetype'),
+    url('fonts/mailcup.svg?-xhba2w#mailcup') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,8 +22,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.mc-icon-template:before {
+.mc-icon-spam:before {
   content: "\e600";
+}
+
+.mc-icon-trash:before {
+  content: "\e609";
+}
+
+.mc-icon-followup:before {
+  content: "\e61d";
+}
+
+.mc-icon-template:before {
+  content: "\e61e";
 }
 
 .mc-icon-clip:before {
@@ -56,10 +68,6 @@
 
 .mc-icon-focus:before {
   content: "\e608";
-}
-
-.mc-icon-pin:before {
-  content: "\e609";
 }
 
 .mc-icon-font-color:before {
@@ -137,4 +145,3 @@
 .mc-icon-unfocus:before {
   content: "\e61c";
 }
-

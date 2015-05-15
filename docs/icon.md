@@ -66,6 +66,9 @@ Icon 提供了 Mailcup 所用到的图标字体方案
 </div>
 <div class="row" style="margin:15px 0px 15px 0px">
 <div class="col-md-3"><span class="mc-icon-unfocus btn-lg"> unfocus</span></div>
+<div class="col-md-3"><span class="mc-icon-spam btn-lg"> unfocus</span></div>
+<div class="col-md-3"><span class="mc-icon-trash btn-lg"> unfocus</span></div>
+
 </div>
 {% endexample %}
 
