@@ -52,8 +52,9 @@
       height: 20px;
       padding: 3px 15px 0 0;
       font-family: arial, sans-serif;
-
-      button{
+      overflow: hidden;
+      
+        button{
         height: 20px;
         font-size: 8px;
         margin: 0px 0 2px 2px;
