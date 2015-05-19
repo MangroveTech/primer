@@ -24,6 +24,10 @@
       padding: 0 15px;
 
       .mc-replybox-editor{
+        div,span{
+          font-family: arial, sans-serif;
+        }
+        
         width: 100%;
         font-size:14px;
         &:focus{

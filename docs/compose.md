@@ -118,7 +118,7 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
     labelField: 'name',
     delimiter: '|',
     searchField: ['name', 'address'],
-    placeholder: 'Input emial address',
+    placeholder: '',
     onInitialize: function(selectize){
       // receives the selectize object as an argument
     },
@@ -288,7 +288,7 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
     labelField: 'name',
     delimiter: '|',
     searchField: ['name', 'address'],
-    placeholder: 'Input emial address',
+    placeholder: '',
     onInitialize: function(selectize){
       // receives the selectize object as an argument
     },
