@@ -139,117 +139,81 @@
   <li><a href="#token" id="markdown-toc-token">Token</a></li>
 </ul>
 
-<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.bootstrap3.css " />
+<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css " />
+<link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet" />
+<link href="../bower_components/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css" type="text/css" rel="stylesheet" />
+<link href="../bower_components/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap-tokenfield/dist/bootstrap-tokenfield.min.js"></script>
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="../bower_components/angular-selectize2/dist/selectize.js"></script>
 
-<div ng-app="mailcup" ng-controller="mailcupCtrl">
-  <selectize config="myConfig" options="myOptions" ng-model="myModel"></selectize>
+<div ng-app="mailcup">
+  <tokenfield></tokenfield>
 </div>
 
 <script type="text/javascript">
-angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($scope) {
-  $scope.myModel = 1;
 
-  $scope.myOptions = [
-    {address: 'chun@mailcup.com', name: 'Spectrometer'},
-    {address: 'zhao@mailcup.com', name: 'Star Chart'},
-    {address: 'chai@mailcup.com', name: 'Three'},
-    {address: 'gb@mailcup.com', name: 'Second'},
-    {address: 'ck@mailcup.com', name: 'Four five'}
-  ];
+angular.module('mailcup', [])
+  .directive('tokenfield', function () {
+    return {
+      restrict: 'EA',
+      replace: true,
+      transclude: true,
+      scope: false,
+      template: '<input type="text" class="form-control" id="tokenfield" value="red,green,blue" />',
+      controller: function ($scope) {
 
-  $scope.dbclick = function() {
-    console.log('DBCLICK');
-  };
-
-  $scope.myConfig = {
-    create: true,
-    valueField: 'address',
-    labelField: 'name',
-    delimiter: '|',
-    searchField: ['name', 'address'],
-    placeholder: 'Input emial address',
-    onInitialize: function(selectize){
-      // receives the selectize object as an argument
-    },
-    render: {
-        item: function(item, escape) {
-          // console.log('item', item)
-          return '<div>' +
-              (item.name ? '<span class="name" ng-click="dbclick()">' + escape(item.name) + '</span>' : '')
-              + '</div>';
-        },
-        option: function(item, escape) {
-          var label = item.name || item.address;
-          var caption = item.name ? item.address : null;
-          return '<div>' +
-              '<span class="name" style="color:#000">' + escape(label) + '</span>' +
-              (caption ? '<span class="email" style="color:#000">' + escape('<' + caption + '>') + '</span>' : '') +
-          '</div>';
-        }
       },
-    // maxItems: 5
-  };
-});
-</script></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/selectize/dist/css/selectize.bootstrap3.css "</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/selectize/dist/js/standalone/selectize.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular-selectize2/dist/selectize.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+      link: function($scope, element, attrs) {
+        angular.element('#tokenfield').tokenfield({
+          autocomplete: {
+            source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
+            delay: 100
+          },
+          showAutocompleteOnFocus: true
+        })
+      }
+    };
+  });
 
-<span class="nt">&lt;div</span> <span class="na">ng-app=</span><span class="s">"mailcup"</span> <span class="na">ng-controller=</span><span class="s">"mailcupCtrl"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;selectize</span> <span class="na">config=</span><span class="s">'myConfig'</span> <span class="na">options=</span><span class="s">'myOptions'</span> <span class="na">ng-model=</span><span class="s">"myModel"</span><span class="nt">&gt;&lt;/selectize&gt;</span>
+</script></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/bootstrap/dist/css/bootstrap.min.css "</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"../bower_components/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"../bower_components/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/bootstrap-tokenfield/dist/bootstrap-tokenfield.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">ng-app=</span><span class="s">"mailcup"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;tokenfield&gt;&lt;/tokenfield&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'selectize'</span><span class="p">]).</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'mailcupCtrl'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myModel</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myOptions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chun@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Spectrometer'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'zhao@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Star Chart'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chai@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Three'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'gb@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Second'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'ck@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Four five'</span><span class="p">}</span>
-  <span class="p">];</span>
+<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[])</span>
+  <span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">'tokenfield'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="na">restrict</span><span class="p">:</span> <span class="s1">'EA'</span><span class="p">,</span>
+      <span class="na">replace</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="na">transclude</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="na">scope</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="na">template</span><span class="p">:</span> <span class="s1">'&lt;input type="text" class="form-control" id="tokenfield" value="red,green,blue" /&gt;'</span><span class="p">,</span>
+      <span class="na">controller</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
 
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">dbclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'DBCLICK'</span><span class="p">);</span>
-  <span class="p">};</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myConfig</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">create</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="na">valueField</span><span class="p">:</span> <span class="s1">'address'</span><span class="p">,</span>
-    <span class="na">labelField</span><span class="p">:</span> <span class="s1">'name'</span><span class="p">,</span>
-    <span class="na">delimiter</span><span class="p">:</span> <span class="s1">'|'</span><span class="p">,</span>
-    <span class="na">searchField</span><span class="p">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">],</span>
-    <span class="na">placeholder</span><span class="p">:</span> <span class="s1">'Input emial address'</span><span class="p">,</span>
-    <span class="na">onInitialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">selectize</span><span class="p">){</span>
-      <span class="c1">// receives the selectize object as an argument</span>
-    <span class="p">},</span>
-    <span class="na">render</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">item</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="c1">// console.log('item', item)</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="s1">'&lt;span class="name" ng-click="dbclick()"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span>
-              <span class="o">+</span> <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">},</span>
-        <span class="na">option</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="o">||</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span><span class="p">;</span>
-          <span class="kd">var</span> <span class="nx">caption</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span> <span class="p">:</span> <span class="kc">null</span><span class="p">;</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="s1">'&lt;span class="name" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">label</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">caption</span> <span class="p">?</span> <span class="s1">'&lt;span class="email" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="s1">'&lt;'</span> <span class="o">+</span> <span class="nx">caption</span> <span class="o">+</span> <span class="s1">'&gt;'</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span> <span class="o">+</span>
-          <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">}</span>
       <span class="p">},</span>
-    <span class="c1">// maxItems: 5</span>
-  <span class="p">};</span>
-<span class="p">});</span>
+      <span class="na">link</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">angular</span><span class="p">.</span><span class="nx">element</span><span class="p">(</span><span class="s1">'#tokenfield'</span><span class="p">).</span><span class="nx">tokenfield</span><span class="p">({</span>
+          <span class="na">autocomplete</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">source</span><span class="p">:</span> <span class="p">[</span><span class="s1">'red'</span><span class="p">,</span><span class="s1">'blue'</span><span class="p">,</span><span class="s1">'green'</span><span class="p">,</span><span class="s1">'yellow'</span><span class="p">,</span><span class="s1">'violet'</span><span class="p">,</span><span class="s1">'brown'</span><span class="p">,</span><span class="s1">'purple'</span><span class="p">,</span><span class="s1">'black'</span><span class="p">,</span><span class="s1">'white'</span><span class="p">],</span>
+            <span class="na">delay</span><span class="p">:</span> <span class="mi">100</span>
+          <span class="p">},</span>
+          <span class="na">showAutocompleteOnFocus</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">})</span>
+      <span class="p">}</span>
+    <span class="p">};</span>
+  <span class="p">});</span>
+
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
       </div>
@@ -360,117 +324,81 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
   <li><a href="#token" id="markdown-toc-token">Token</a></li>
 </ul>
 
-<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.bootstrap3.css " />
+<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css " />
+<link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet" />
+<link href="../bower_components/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css" type="text/css" rel="stylesheet" />
+<link href="../bower_components/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap-tokenfield/dist/bootstrap-tokenfield.min.js"></script>
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="../bower_components/angular-selectize2/dist/selectize.js"></script>
 
-<div ng-app="mailcup" ng-controller="mailcupCtrl">
-  <selectize config="myConfig" options="myOptions" ng-model="myModel"></selectize>
+<div ng-app="mailcup">
+  <tokenfield></tokenfield>
 </div>
 
 <script type="text/javascript">
-angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($scope) {
-  $scope.myModel = 1;
 
-  $scope.myOptions = [
-    {address: 'chun@mailcup.com', name: 'Spectrometer'},
-    {address: 'zhao@mailcup.com', name: 'Star Chart'},
-    {address: 'chai@mailcup.com', name: 'Three'},
-    {address: 'gb@mailcup.com', name: 'Second'},
-    {address: 'ck@mailcup.com', name: 'Four five'}
-  ];
+angular.module('mailcup', [])
+  .directive('tokenfield', function () {
+    return {
+      restrict: 'EA',
+      replace: true,
+      transclude: true,
+      scope: false,
+      template: '<input type="text" class="form-control" id="tokenfield" value="red,green,blue" />',
+      controller: function ($scope) {
 
-  $scope.dbclick = function() {
-    console.log('DBCLICK');
-  };
-
-  $scope.myConfig = {
-    create: true,
-    valueField: 'address',
-    labelField: 'name',
-    delimiter: '|',
-    searchField: ['name', 'address'],
-    placeholder: 'Input emial address',
-    onInitialize: function(selectize){
-      // receives the selectize object as an argument
-    },
-    render: {
-        item: function(item, escape) {
-          // console.log('item', item)
-          return '<div>' +
-              (item.name ? '<span class="name" ng-click="dbclick()">' + escape(item.name) + '</span>' : '')
-              + '</div>';
-        },
-        option: function(item, escape) {
-          var label = item.name || item.address;
-          var caption = item.name ? item.address : null;
-          return '<div>' +
-              '<span class="name" style="color:#000">' + escape(label) + '</span>' +
-              (caption ? '<span class="email" style="color:#000">' + escape('<' + caption + '>') + '</span>' : '') +
-          '</div>';
-        }
       },
-    // maxItems: 5
-  };
-});
-</script></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/selectize/dist/css/selectize.bootstrap3.css "</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/selectize/dist/js/standalone/selectize.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular-selectize2/dist/selectize.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+      link: function($scope, element, attrs) {
+        angular.element('#tokenfield').tokenfield({
+          autocomplete: {
+            source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
+            delay: 100
+          },
+          showAutocompleteOnFocus: true
+        })
+      }
+    };
+  });
 
-<span class="nt">&lt;div</span> <span class="na">ng-app=</span><span class="s">"mailcup"</span> <span class="na">ng-controller=</span><span class="s">"mailcupCtrl"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;selectize</span> <span class="na">config=</span><span class="s">'myConfig'</span> <span class="na">options=</span><span class="s">'myOptions'</span> <span class="na">ng-model=</span><span class="s">"myModel"</span><span class="nt">&gt;&lt;/selectize&gt;</span>
+</script></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/bootstrap/dist/css/bootstrap.min.css "</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"../bower_components/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"../bower_components/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/bootstrap-tokenfield/dist/bootstrap-tokenfield.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">ng-app=</span><span class="s">"mailcup"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;tokenfield&gt;&lt;/tokenfield&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'selectize'</span><span class="p">]).</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'mailcupCtrl'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myModel</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myOptions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chun@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Spectrometer'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'zhao@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Star Chart'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chai@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Three'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'gb@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Second'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'ck@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Four five'</span><span class="p">}</span>
-  <span class="p">];</span>
+<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[])</span>
+  <span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">'tokenfield'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="na">restrict</span><span class="p">:</span> <span class="s1">'EA'</span><span class="p">,</span>
+      <span class="na">replace</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="na">transclude</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="na">scope</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="na">template</span><span class="p">:</span> <span class="s1">'&lt;input type="text" class="form-control" id="tokenfield" value="red,green,blue" /&gt;'</span><span class="p">,</span>
+      <span class="na">controller</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
 
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">dbclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'DBCLICK'</span><span class="p">);</span>
-  <span class="p">};</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myConfig</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">create</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="na">valueField</span><span class="p">:</span> <span class="s1">'address'</span><span class="p">,</span>
-    <span class="na">labelField</span><span class="p">:</span> <span class="s1">'name'</span><span class="p">,</span>
-    <span class="na">delimiter</span><span class="p">:</span> <span class="s1">'|'</span><span class="p">,</span>
-    <span class="na">searchField</span><span class="p">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">],</span>
-    <span class="na">placeholder</span><span class="p">:</span> <span class="s1">'Input emial address'</span><span class="p">,</span>
-    <span class="na">onInitialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">selectize</span><span class="p">){</span>
-      <span class="c1">// receives the selectize object as an argument</span>
-    <span class="p">},</span>
-    <span class="na">render</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">item</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="c1">// console.log('item', item)</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="s1">'&lt;span class="name" ng-click="dbclick()"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span>
-              <span class="o">+</span> <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">},</span>
-        <span class="na">option</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="o">||</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span><span class="p">;</span>
-          <span class="kd">var</span> <span class="nx">caption</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span> <span class="p">:</span> <span class="kc">null</span><span class="p">;</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="s1">'&lt;span class="name" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">label</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">caption</span> <span class="p">?</span> <span class="s1">'&lt;span class="email" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="s1">'&lt;'</span> <span class="o">+</span> <span class="nx">caption</span> <span class="o">+</span> <span class="s1">'&gt;'</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span> <span class="o">+</span>
-          <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">}</span>
       <span class="p">},</span>
-    <span class="c1">// maxItems: 5</span>
-  <span class="p">};</span>
-<span class="p">});</span>
+      <span class="na">link</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">angular</span><span class="p">.</span><span class="nx">element</span><span class="p">(</span><span class="s1">'#tokenfield'</span><span class="p">).</span><span class="nx">tokenfield</span><span class="p">({</span>
+          <span class="na">autocomplete</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">source</span><span class="p">:</span> <span class="p">[</span><span class="s1">'red'</span><span class="p">,</span><span class="s1">'blue'</span><span class="p">,</span><span class="s1">'green'</span><span class="p">,</span><span class="s1">'yellow'</span><span class="p">,</span><span class="s1">'violet'</span><span class="p">,</span><span class="s1">'brown'</span><span class="p">,</span><span class="s1">'purple'</span><span class="p">,</span><span class="s1">'black'</span><span class="p">,</span><span class="s1">'white'</span><span class="p">],</span>
+            <span class="na">delay</span><span class="p">:</span> <span class="mi">100</span>
+          <span class="p">},</span>
+          <span class="na">showAutocompleteOnFocus</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">})</span>
+      <span class="p">}</span>
+    <span class="p">};</span>
+  <span class="p">});</span>
+
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
     </div>
