@@ -52,21 +52,6 @@ title: Compose
       </div>
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
-        <span class="mc-label-info">label</span>
-        <div class="btn-group">
-          <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <span class="mc-icon-label"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu" id="mc-label-select">
-            <li><a>Label as:</a></li>
-            <li class="divider"></li>
-            <li><a><input type="checkbox" id="mc-checkbox-green" checked/><label for="mc-checkbox-green"></label> green</a></li>
-            <li><a><input type="checkbox" id="mc-checkbox-blue" checked/><label for="mc-checkbox-blue"></label> blue</a></li>
-            <li><a><input type="checkbox" id="mc-checkbox-orange" checked/><label for="mc-checkbox-orange"></label> orange</a></li>
-            <li class="divider"></li>
-            <li><a class="mc-icon-plus"> &nbsp;Create new...</a></li>
-          </ul>
-        </div>
       </div>
       <div class='mc-compose-body-editor' contenteditable="true">
       </div>
