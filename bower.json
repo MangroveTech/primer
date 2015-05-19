@@ -22,6 +22,7 @@
     "primer-css": "*",
     "angular": "*",
     "angular-selectize2": "*",
-    "toastr": "*"
+    "toastr": "*",
+    "bootstrap-tokenfield": "*"
   }
 }
