@@ -6,7 +6,6 @@
   box-shadow: 0px 0px 8px #494949;
   border: none;
   margin-top: 155px;
-
 }
 
 .mc-modal-big{
@@ -96,21 +95,22 @@
 
 .mc-modal-footer{
   @extend .panel-footer;
-  height: 68px;
+  height: 60px;
   background-color:white;
   border-style: none;
+  padding: 10px;
   .mc-modal-footer-left{
     float:left;
     .mc-button-nobg{
       font-size: 17px;
-      margin: 4px 2px 0 2px;
+      margin: 2px 2px 0 2px;
     }
   }
 
   .mc-modal-footer-right{
     float:right;
     button{
-      margin: 7px 2px 0 2px;    
+      margin: 3px 2px 0 2px;    
     }
   }
 }

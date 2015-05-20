@@ -14,7 +14,7 @@ title: Messagelist
         </div>
         <div class='mc-messagelist-item-content'>
           <div class='mc-messagelist-headline'><strong>Gary Chai</strong></div>
-          <div class='mc-messagelist-content'>Hey Zachary, I see you profile and glad to help, please check the</div>
+          <div class='mc-messagelist-content'>Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac</div>
         </div>
         <span class='divider'></span>
       </div>
