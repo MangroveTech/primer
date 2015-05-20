@@ -38,11 +38,14 @@
       text-align: right;
     }
     .mc-messagelist-headline{
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 13px;
+        letter-spacing: 0.1px;
         float: left;
         width: 100%;
         margin: 0px 0 0 0;
         padding: 0 15px 0 0;
+
     }
     .mc-messagelist-content{
       font-size: 13px;
@@ -50,8 +53,8 @@
       float: left;
       width: 100%;
       height: 20px;
-      padding: 3px 15px 0 0;
-      font-family: arial, sans-serif;
+      padding: 4px 15px 0 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       overflow: hidden;
       
         button{
@@ -60,6 +63,14 @@
         margin: 0px 0 2px 2px;
         display: inline-block;
       }      
+    }
+
+    .mc-messagelist-deatil-button{
+      font-size: 13px;
+      padding: 4px 0 0 0px;
+      color: #a1a1a1;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-decoration: none;
     }
   }
 

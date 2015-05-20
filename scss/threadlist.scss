@@ -70,6 +70,7 @@ $mc-icon-pin-color: #4A90E2;
       color:#a1a1a1;
       margin: 0 15px 0 0;
       text-align: right;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     .mc-threadlist-headline{
       font-size: 14px;
@@ -77,15 +78,23 @@ $mc-icon-pin-color: #4A90E2;
       width: 100%;
       margin: -20px 0 0 0;
       padding: 0 15px 0 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      letter-spacing: 0.1px;
+
     }
     .mc-threadlist-subject{
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size:13px;
+      letter-spacing: 0.1px;
       float:left;
       width:100%;
       padding: 2px 15px 0 0;
+      letter-spacing: 0.1px;
     }
     .mc-threadlist-content{
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 13px;
+      letter-spacing: 0.1px;
       color: #a1a1a1;
       float: left;
       width: 100%;
