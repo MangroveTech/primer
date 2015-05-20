@@ -9,7 +9,11 @@ title: Modal
 
 ##Layout
 {% example html %}
-<div style='height:300px;width:100%;background-color:#f1f1f1'>
+<div style='height:30px;width:100%;'>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+  show modal
+</button>
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class='mc-modal'>
     <div class='mc-modal-header'>
       <div class='mc-modal-title'>New Label</div>
@@ -45,8 +49,15 @@ title: Modal
       </div>
     </div>
   </div>
+  </div>
 
 </div>
+
+<script type="text/javascript">
+  $('#myModal1').modal({
+    show: false
+  });
+</script>
 
 {% endexample %}
 
@@ -56,7 +67,11 @@ title: Modal
 * `mc-modal-big` 720px 大尺寸
 
 {% example html %}
-<div style='height:300px;width:100%;background-color:#f1f1f1'>
+<div style='height:30px;width:100%;'>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+  show modal
+</button>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class='mc-modal mc-modal-big'>
     <div class='mc-modal-header'>
       <div class='mc-modal-title'>Settings</div>
@@ -80,8 +95,15 @@ title: Modal
       </div>
     </div>
   </div>
+  </div>
 
 </div>
+
+<script type="text/javascript">
+  $('#myModal2').modal({
+    show: false
+  });
+</script>
 
 {% endexample %}
 
@@ -90,8 +112,12 @@ title: Modal
 * 在 `mc-modal-body` 中添加 `mc-modal-body-left` 和 `mc-modal-body-right` 可变为双列
 
 {% example html %}
-<div style='height:300px;width:100%;background-color:#f1f1f1'>
-  <div class='mc-modal mc-modal-twocolumn'>
+<div style='height:30px;width:100%;'>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+  show modal
+</button>
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class='mc-modal'>
     <div class='mc-modal-header'>
       <div class='mc-modal-title'>Settings</div>
       <button type="button" class="mc-button-nobg">
@@ -104,13 +130,46 @@ title: Modal
         <span class="mc-icon-unfocus"></span>
       </button>
     </div>
-    <div class='mc-modal-body'>
-      <div class='mc-modal-body-left'> Menu <br><br><br><br></div>
-      <div class='mc-modal-body-right'> Content</div>
+    <div class='mc-modal-body-twocolumn'>
+      <div class="col-sm-2">
+        <div class='mc-modal-body-left'>
+          <div>Account</div>
+          <div>Labels</div>
+          <div>Groups</div>
+          <div>Templates</div>
+          <div>Notifications</div>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class='mc-modal-body-right'>
+          <div class="mc-form-group">
+            <div class="col-sm-3">namname</div>
+            <div class="col-sm-9"><input class="form-control" /></div>
+          </div>
+          <div class="mc-form-group">
+            <div class="col-sm-3">name</div>
+            <div class="col-sm-9"><input class="form-control" /></div>
+          </div>
+          <div class="mc-form-group">
+            <div class="col-sm-3">namname</div>
+            <div class="col-sm-9"><input class="form-control" /></div>
+          </div>
+          <div class="mc-form-group">
+            <div class="col-sm-3">namname</div>
+            <div class="col-sm-9"><input class="form-control" /></div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
   </div>
 
 </div>
+<script type="text/javascript">
+  $('#myModal3').modal({
+    show: false
+  });
+</script>
 
 {% endexample %}
 
@@ -123,18 +182,44 @@ title: Modal
 </button>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">创建新的标签</h4>
+  <div class='mc-modal'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body-twocolumn'>
+      <div class="col-sm-2">
+        <div class='mc-modal-body-left'>
+          <div class="active">Account</div>
+          <div>Labels</div>
+          <div>Groups</div>
+          <div>Templates</div>
+          <div>Notifications</div>
+        </div>
       </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-primary">创建</button>
+      <div class="col-sm-10">
+        <div class='mc-modal-body-right'>
+          <div class="mc-form-group">
+            <div class="col-sm-3">name</div>
+            <div class="col-sm-9"><input class="form-control" /></div>
+          </div>
+          <div class="mc-form-group">
+            <div class="col-sm-3">namname</div>
+            <div class="col-sm-9"><input class="form-control" /></div>
+          </div>
+          <div class="mc-form-group">
+            <div class="col-sm-3">namname</div>
+            <div class="col-sm-9"><input class="form-control" /></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
