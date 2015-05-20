@@ -3,6 +3,7 @@
   width:100%;
   padding: 20px 20px 10px 20px;
 
+
   .mc-replysection{
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     background-color: white;
@@ -25,7 +26,7 @@
 
       .mc-replybox-editor{
         div,span{
-          font-family: arial, sans-serif;
+         font-family: arial, sans-serif;
         }
         
         width: 100%;
@@ -68,7 +69,8 @@
 
   .mc-replybox-placeholder{
       float: left;
-      margin: 24px 0 0 5px;
+      margin: 25px 0 0 5px;
+      font-family: arial, sans-serif;
       font-size: 14px;
       color:#999999;
   }
