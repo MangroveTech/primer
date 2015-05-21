@@ -111,15 +111,17 @@
 }
 
 .mc-leftmenu-footer {
-  padding: 0 0 0px 6px;
-  position: fixed;
-  z-index: 1030;
-  bottom: 0;
-  width: 210px;
-
   ul{
   	li {
 			padding:0 0 0 0 !important;
   	}
   }
+}
+
+.mc-lefemenu-fixed {
+	padding: 0 0 0px 6px;
+  position: fixed;
+  z-index: 1030;
+  bottom: 0;
+  width: 210px;
 }

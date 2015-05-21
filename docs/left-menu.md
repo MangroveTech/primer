@@ -3,7 +3,7 @@ layout: page
 title: Left Menu
 ---
 
-* 如果在webmial中的最下方使用Settings，那么需要在`mc-leftmenu-section`后面加入`mc-leftmenu-footer`
+* 如果在webmial中的最下方使用Settings，那么需要在`mc-leftmenu-section`后面加入`mc-leftmenu-fixed`
 
 {% example html %}
 <div style='height:500px;'>
@@ -43,7 +43,7 @@ title: Left Menu
         <a href="#"><li>Trash</li></a>
       </ul>
     </div>
-    <div class="mc-leftmenu-section">
+    <div class="mc-leftmenu-section mc-leftmenu-footer">
     <span class="mc-leftmenu-section-title">
       <span class="btn-group dropup">
       <span class='mc-leftmenu-section-text' data-toggle="dropdown" aria-expanded="false">
