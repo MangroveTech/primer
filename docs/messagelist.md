@@ -5,7 +5,7 @@ title: Messagelist
 
 {% example html %}
 
-<div style='height:800px;width:100%;background-color:#f1f1f1'>
+<div style='height:800px;width:100%;background-color:#ececec'>
   <div class='mc-messagelist'>
     <div class='mc-section'>
       <div class='mc-messagelist-item'>
@@ -36,6 +36,7 @@ title: Messagelist
         <div class='mc-messagelist-item-left'>
           <div class='mc-avatar-mid'></div>
         </div>
+
         <div class='mc-messagelist-item-content'>
           <div class='mc-messagelist-headline'>Gary Chai</div>
 
@@ -51,20 +52,28 @@ title: Messagelist
             </ul>
           </div>
 
-          <div class="btn-group mc-replybox-header-replystatus">
-              <button type="button" class="mc-messagelist-deatil-button btn btn-link ng-binding" data-toggle="dropdown" aria-expanded="false">to gary
-              <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu" id="mc-messagelist-info">
-                <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
-                <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
-                <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
-                <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
-              </ul>
-            </div>
+          <div class="mc-messagelist-item-content">
+            <div class="mc-messagelist-headline ng-binding">gary</div>
+            
+            <span ng-if="expandObj[$index]" class="ng-binding ng-scope">
+                
+                to Arthur li
+                <div class="btn-group">
+                  <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <span class="mc-icon-arrow-down"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" id="mc-messagelist-info">
+                    <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
+                    <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
+                    <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
+                    <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
+                  </ul>
+                </div>
+               
+              </span>
+            
+          </div>
 
-
-        </div>
         <div class='mc-messagelist-item-body'>
           Hey Gary and Mangrove Team:<br><br>
 

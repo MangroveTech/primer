@@ -8,7 +8,7 @@ title: Threadlist
 
 {% example html %}
 
-<div style='height:400px;width:100%;background-color:#f1f1f1'>
+<div style='height:400px;width:100%;background-color:#ececec'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Today</span>
