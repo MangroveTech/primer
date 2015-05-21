@@ -43,7 +43,7 @@ title: Left Menu
         <a href="#"><li>Trash</li></a>
       </ul>
     </div>
-    <div class="mc-leftmenu-section mc-leftmenu-footer">
+    <div class="mc-leftmenu-section">
     <span class="mc-leftmenu-section-title">
       <span class="btn-group dropup">
       <span class='mc-leftmenu-section-text' data-toggle="dropdown" aria-expanded="false">
