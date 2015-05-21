@@ -60,6 +60,17 @@
 			cursor: pointer;
 
 		}
+
+		.mc-left-menu-section-text{
+			font-size:12px;
+			line-height:15px;
+			cursor:pointer;
+
+			ul {
+				margin-left:40px;
+				cursor:pointer
+			}
+		}
 	}
 
 	ul{
@@ -97,4 +108,9 @@
 			padding:0 0 0 20px;
 		}
 	}
+}
+
+.mc-fixed-bottom {
+	@extend .navbar-fixed-bottom;
+	padding:0 0 6px 6px;
 }

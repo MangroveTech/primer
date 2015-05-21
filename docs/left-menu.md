@@ -3,6 +3,8 @@ layout: page
 title: Left Menu
 ---
 
+* 如果在webmial中的最下方使用Settings，那么需要在`mc-leftmenu-section`后面加入`mc-fixed-bottom`
+
 {% example html %}
 <div style='height:500px;'>
   <div class='mc-leftmenu'>
@@ -41,6 +43,22 @@ title: Left Menu
         <a href="#"><li>Trash</li></a>
       </ul>
     </div>
+    <div class="mc-leftmenu-section">
+    <span class="mc-leftmenu-section-title">
+      <span class="btn-group dropup">
+      <span class='mc-leftmenu-section-text' data-toggle="dropdown" aria-expanded="false">
+        <span class='mc-icon-setting'></span>
+        Settings
+      </span>
+        <ul class="dropdown-menu mc-text-small" style="font-weight" role="menu">
+          <li>Settings</li>
+          <li>Domain Management</li>
+          <li>Feedback & Help</li>
+          <li>Sign out</li>
+        </ul>
+      </span>
+    </span>
+  </div>
   </div>
 </div>
 
