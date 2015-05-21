@@ -40,6 +40,10 @@ $mc-icon-pin-color: #4A90E2;
   float: left;
   color:black;
 
+  &:hover{
+    color: black;
+  }
+
   .mc-threadlist-item-left{
     width: 70px;
     height: 90px;

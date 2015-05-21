@@ -50,6 +50,20 @@ title: Messagelist
                 <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
             </ul>
           </div>
+
+          <div class="btn-group mc-replybox-header-replystatus">
+              <button type="button" class="mc-messagelist-deatil-button btn btn-link ng-binding" data-toggle="dropdown" aria-expanded="false">to gary
+              <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" id="mc-messagelist-info">
+                <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
+                <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
+                <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
+                <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
+              </ul>
+            </div>
+
+
         </div>
         <div class='mc-messagelist-item-body'>
           Hey Gary and Mangrove Team:<br><br>
