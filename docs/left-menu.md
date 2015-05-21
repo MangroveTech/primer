@@ -48,7 +48,7 @@ title: Left Menu
       <span class="btn-group dropup">
       <span class='mc-leftmenu-section-text' data-toggle="dropdown" aria-expanded="false">
         <span class='mc-icon-setting'></span>
-        Settings
+        <span class="mc-leftmenu-name">Settings</span>
       </span>
         <ul class="dropdown-menu mc-text-small" style="font-weight" role="menu">
           <li><a>Settings</a></li>
