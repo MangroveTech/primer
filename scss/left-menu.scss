@@ -111,6 +111,15 @@
 }
 
 .mc-leftmenu-footer {
+	.mc-leftmenu-section-title {
+		font-size:16px;
+		line-height:32px;
+		height:16px
+
+		.mc-leftmenu-name {
+			font-size:13px;
+		}
+	}
   ul{
   	li {
 			padding:0 0 0 0 !important;
