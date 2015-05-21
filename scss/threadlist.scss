@@ -47,7 +47,7 @@ $mc-icon-pin-color: #4A90E2;
   .mc-threadlist-item-left{
     width: 70px;
     height: 90px;
-    position: absolute;
+    float: left;
     cursor: pointer;
 
     .mc-avatar-mid{
@@ -64,8 +64,8 @@ $mc-icon-pin-color: #4A90E2;
 
   .mc-threadlist-item-content{
     float: left;
-    padding: 16px 0 18px 70px;
-    width: 100%;
+    padding: 16px 0 18px 0px;
+    width: calc(100% - 70px);
     cursor: pointer;
 
     .mc-threadlist-date{
@@ -119,7 +119,7 @@ $mc-icon-pin-color: #4A90E2;
   &:hover{
     background-color:$mc-color-lightyellow;
     .mc-threadlist-item-content {
-      width: calc(100% - 200px);
+      width: calc(100% - 270px);
       .mc-threadlist-date{
         color:$mc-color-lightyellow; 
       }
