@@ -110,7 +110,16 @@
 	}
 }
 
-.mc-fixed-bottom {
-	@extend .navbar-fixed-bottom;
-	padding:0 0 6px 6px;
+.mc-leftmenu-footer {
+  padding: 0 0 0px 6px;
+  position: fixed;
+  z-index: 1030;
+  bottom: 0;
+  width: 210px;
+
+  ul{
+  	li {
+			padding:0 0 0 0 !important;
+  	}
+  }
 }

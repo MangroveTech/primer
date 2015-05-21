@@ -45,7 +45,7 @@ title: Notification
     "debug": false,
     "toastClass": '',
     "positionClass": "",
-    "messageClass": 'mc-notification-right',
+    "messageClass": 'mc-notification-center',
     "containerId": null,
     "onclick": null,
     "showDuration": "300",
