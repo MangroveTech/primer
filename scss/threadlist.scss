@@ -96,6 +96,7 @@ $mc-icon-pin-color: #4A90E2;
       height: 20px;
       overflow: hidden;
       padding: 2px 15px 0 0;      
+      word-wrap: break-word;
     }
   }
 
@@ -114,7 +115,7 @@ $mc-icon-pin-color: #4A90E2;
   &:hover{
     background-color:$mc-color-lightyellow;
     .mc-threadlist-item-content {
-      width: $mc-threadlist-item-content-hover-width;
+      width: calc(100% - 200px);
       .mc-threadlist-date{
         color:$mc-color-lightyellow; 
       }
@@ -124,6 +125,7 @@ $mc-icon-pin-color: #4A90E2;
       float: right;
       width: 200px;
       height: 90px;
+
       text-decoration: none;
       div {
         display: inline-block;
@@ -133,7 +135,7 @@ $mc-icon-pin-color: #4A90E2;
           color: #666666;
           display: inline-block;
           margin-top: -1px;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
     }
