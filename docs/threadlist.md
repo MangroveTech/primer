@@ -43,7 +43,7 @@ title: Threadlist
           <div class='mc-threadlist-date'>12:22 PM</div>
           <div class='mc-threadlist-headline'>Gary Chai, me (4)</div>
           <div class='mc-threadlist-subject'>Pull Request questions</div>
-          <div class='mc-threadlist-content'>Hi Jack, I have few questions about title</div>
+          <div class='mc-threadlist-content'>This was originally a 5 part series on my blog at stuartkhall.com titled An App Store Experiment, but here is a summary of the entire story.</div>
         </div>
         <div class='mc-threadlist-item-right'>
           <div><button class='mc-button-nobg'><span class="mc-icon-done"></span></button></div>     <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
