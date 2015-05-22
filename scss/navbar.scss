@@ -68,7 +68,8 @@
 	@extend .mc-button-nobg;
 
 	float:left;
-	color:#666666;
+	color:#A3A3A3;
+	font-size: 18px;
 	margin:8px 0 0 10px;
 }
 
@@ -84,7 +85,7 @@
 .mc-navbar-toolbutton{
 	float:right;
 	margin:0 20px 0 0;
-	color:#666666;
+	color:#A3A3A3;
 
 	.mc-button-nobg{
 		margin:8px 10px 0 10px;

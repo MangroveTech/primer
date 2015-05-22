@@ -10,7 +10,7 @@ title: Left Menu
   <div class='mc-leftmenu'>
     <div class='mc-leftmenu-logo'></div>
     <div class='mc-leftmenu-section'>
-      <ul>
+      <ul class="mc-leftmenu-section-ul">
         <a class="active" href="#">
           <span class='active-ind'></span>
           <li><span class='mc-leftmenu-icon mc-icon-inbox'></span><strong>Inbox</strong></li>
@@ -28,7 +28,7 @@ title: Left Menu
         <span class='glyphicon glyphicon-triangle-bottom'></span>
         LABELS
       </span>
-      <ul>
+      <ul class="mc-leftmenu-section-ul">
         <a href="#"><li><span class="mc-leftmenu-item-label"></span>Team</li></a>
         <a href="#"><li><span class="mc-leftmenu-item-label"></span>Feedback</li></a>
       </ul>
@@ -38,27 +38,25 @@ title: Left Menu
         <span class='glyphicon glyphicon-triangle-bottom'></span>
         OTHERS
       </span>
-      <ul>
-        <a href="#"><li>Spam</li></a>
-        <a href="#"><li>Trash</li></a>
+      <ul class="mc-leftmenu-section-ul">
+        <a href="#"><li><span class='mc-leftmenu-icon mc-icon-spam'></span>Spam</li></a>
+        <a href="#"><li><span class='mc-leftmenu-icon mc-icon-trash'></span>Trash</li></a>
       </ul>
     </div>
     <div class="mc-leftmenu-section mc-leftmenu-footer">
-    <span class="mc-leftmenu-section-title">
-      <span class="btn-group dropup">
-      <span class='mc-leftmenu-section-text' data-toggle="dropdown" aria-expanded="false">
-        <span class='mc-icon-setting'></span>
-        <span class="mc-leftmenu-name">Settings</span>
-      </span>
-        <ul class="dropdown-menu mc-text-small" style="font-weight" role="menu">
-          <li><a>Settings</a></li>
-          <li><a>Domain Management</a></li>
-          <li><a>Feedback & Help</a></li>
-          <li><a>Sign out</a></li>
+      <div class="btn-group dropup">
+        <button type="button" class="mc-leftmenu-footer-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class='mc-leftmenu-icon mc-icon-setting'></span>
+          Settings
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Domain Manger</a></li>
+          <li><a href="#">Feedback & Help</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign out</a></li>
         </ul>
-      </span>
-    </span>
-  </div>
+      </div>
+    </div>
   </div>
 </div>
 
