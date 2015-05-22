@@ -141,7 +141,7 @@
   <div class="mc-leftmenu">
     <div class="mc-leftmenu-logo"></div>
     <div class="mc-leftmenu-section">
-      <ul>
+      <ul class="mc-leftmenu-section-ul">
         <a class="active" href="#">
           <span class="active-ind"></span>
           <li><span class="mc-leftmenu-icon mc-icon-inbox"></span><strong>Inbox</strong></li>
@@ -159,7 +159,7 @@
         <span class="glyphicon glyphicon-triangle-bottom"></span>
         LABELS
       </span>
-      <ul>
+      <ul class="mc-leftmenu-section-ul">
         <a href="#"><li><span class="mc-leftmenu-item-label"></span>Team</li></a>
         <a href="#"><li><span class="mc-leftmenu-item-label"></span>Feedback</li></a>
       </ul>
@@ -169,27 +169,25 @@
         <span class="glyphicon glyphicon-triangle-bottom"></span>
         OTHERS
       </span>
-      <ul>
-        <a href="#"><li>Spam</li></a>
-        <a href="#"><li>Trash</li></a>
+      <ul class="mc-leftmenu-section-ul">
+        <a href="#"><li><span class="mc-leftmenu-icon mc-icon-spam"></span>Spam</li></a>
+        <a href="#"><li><span class="mc-leftmenu-icon mc-icon-trash"></span>Trash</li></a>
       </ul>
     </div>
     <div class="mc-leftmenu-section mc-leftmenu-footer">
-    <span class="mc-leftmenu-section-title">
-      <span class="btn-group dropup">
-      <span class="mc-leftmenu-section-text" data-toggle="dropdown" aria-expanded="false">
-        <span class="mc-icon-setting"></span>
-        <span class="mc-leftmenu-name">Settings</span>
-      </span>
-        <ul class="dropdown-menu mc-text-small" style="font-weight" role="menu">
-          <li><a>Settings</a></li>
-          <li><a>Domain Management</a></li>
-          <li><a>Feedback &amp; Help</a></li>
-          <li><a>Sign out</a></li>
+      <div class="btn-group dropup">
+        <button type="button" class="mc-leftmenu-footer-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="mc-leftmenu-icon mc-icon-setting"></span>
+          Settings
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Domain Manger</a></li>
+          <li><a href="#">Feedback &amp; Help</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign out</a></li>
         </ul>
-      </span>
-    </span>
-  </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -209,7 +207,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-leftmenu'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-leftmenu-logo'</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-leftmenu-section'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-ul"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'active-ind'</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-inbox'</span><span class="nt">&gt;&lt;/span&gt;&lt;strong&gt;</span>Inbox<span class="nt">&lt;/strong&gt;&lt;/li&gt;</span>
@@ -227,7 +225,7 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'glyphicon glyphicon-triangle-bottom'</span><span class="nt">&gt;&lt;/span&gt;</span>
         LABELS
       <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-ul"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Team<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Feedback<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
       <span class="nt">&lt;/ul&gt;</span>
@@ -237,27 +235,25 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'glyphicon glyphicon-triangle-bottom'</span><span class="nt">&gt;&lt;/span&gt;</span>
         OTHERS
       <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;ul&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;</span>Spam<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;</span>Trash<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-ul"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-spam'</span><span class="nt">&gt;&lt;/span&gt;</span>Spam<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-trash'</span><span class="nt">&gt;&lt;/span&gt;</span>Trash<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section mc-leftmenu-footer"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-title"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-group dropup"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-section-text'</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-icon-setting'</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-name"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-text-small"</span> <span class="na">style=</span><span class="s">"font-weight"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Domain Management<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Feedback <span class="err">&amp;</span> Help<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Sign out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropup"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-leftmenu-footer-button btn btn-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-setting'</span><span class="nt">&gt;&lt;/span&gt;</span>
+          Settings
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Domain Manger<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Feedback <span class="err">&amp;</span> Help<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sign out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
@@ -384,7 +380,7 @@
   <div class="mc-leftmenu">
     <div class="mc-leftmenu-logo"></div>
     <div class="mc-leftmenu-section">
-      <ul>
+      <ul class="mc-leftmenu-section-ul">
         <a class="active" href="#">
           <span class="active-ind"></span>
           <li><span class="mc-leftmenu-icon mc-icon-inbox"></span><strong>Inbox</strong></li>
@@ -402,7 +398,7 @@
         <span class="glyphicon glyphicon-triangle-bottom"></span>
         LABELS
       </span>
-      <ul>
+      <ul class="mc-leftmenu-section-ul">
         <a href="#"><li><span class="mc-leftmenu-item-label"></span>Team</li></a>
         <a href="#"><li><span class="mc-leftmenu-item-label"></span>Feedback</li></a>
       </ul>
@@ -412,27 +408,25 @@
         <span class="glyphicon glyphicon-triangle-bottom"></span>
         OTHERS
       </span>
-      <ul>
-        <a href="#"><li>Spam</li></a>
-        <a href="#"><li>Trash</li></a>
+      <ul class="mc-leftmenu-section-ul">
+        <a href="#"><li><span class="mc-leftmenu-icon mc-icon-spam"></span>Spam</li></a>
+        <a href="#"><li><span class="mc-leftmenu-icon mc-icon-trash"></span>Trash</li></a>
       </ul>
     </div>
     <div class="mc-leftmenu-section mc-leftmenu-footer">
-    <span class="mc-leftmenu-section-title">
-      <span class="btn-group dropup">
-      <span class="mc-leftmenu-section-text" data-toggle="dropdown" aria-expanded="false">
-        <span class="mc-icon-setting"></span>
-        <span class="mc-leftmenu-name">Settings</span>
-      </span>
-        <ul class="dropdown-menu mc-text-small" style="font-weight" role="menu">
-          <li><a>Settings</a></li>
-          <li><a>Domain Management</a></li>
-          <li><a>Feedback &amp; Help</a></li>
-          <li><a>Sign out</a></li>
+      <div class="btn-group dropup">
+        <button type="button" class="mc-leftmenu-footer-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="mc-leftmenu-icon mc-icon-setting"></span>
+          Settings
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Domain Manger</a></li>
+          <li><a href="#">Feedback &amp; Help</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign out</a></li>
         </ul>
-      </span>
-    </span>
-  </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -452,7 +446,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-leftmenu'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-leftmenu-logo'</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-leftmenu-section'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-ul"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'active-ind'</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-inbox'</span><span class="nt">&gt;&lt;/span&gt;&lt;strong&gt;</span>Inbox<span class="nt">&lt;/strong&gt;&lt;/li&gt;</span>
@@ -470,7 +464,7 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'glyphicon glyphicon-triangle-bottom'</span><span class="nt">&gt;&lt;/span&gt;</span>
         LABELS
       <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-ul"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Team<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Feedback<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
       <span class="nt">&lt;/ul&gt;</span>
@@ -480,27 +474,25 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'glyphicon glyphicon-triangle-bottom'</span><span class="nt">&gt;&lt;/span&gt;</span>
         OTHERS
       <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;ul&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;</span>Spam<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;</span>Trash<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-ul"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-spam'</span><span class="nt">&gt;&lt;/span&gt;</span>Spam<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;li&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-trash'</span><span class="nt">&gt;&lt;/span&gt;</span>Trash<span class="nt">&lt;/li&gt;&lt;/a&gt;</span>
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section mc-leftmenu-footer"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-section-title"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-group dropup"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-section-text'</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-icon-setting'</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-name"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-text-small"</span> <span class="na">style=</span><span class="s">"font-weight"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Domain Management<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Feedback <span class="err">&amp;</span> Help<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a&gt;</span>Sign out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropup"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-leftmenu-footer-button btn btn-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-leftmenu-icon mc-icon-setting'</span><span class="nt">&gt;&lt;/span&gt;</span>
+          Settings
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Domain Manger<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Feedback <span class="err">&amp;</span> Help<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sign out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
