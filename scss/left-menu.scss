@@ -109,12 +109,12 @@
 
 .mc-leftmenu-footer {
   margin: 10px 0 0 0;
-	height: 50px;
+	height: 60px;
   background: $mc-color-darkblue;
   padding: 12px 0 0 0;
 
 	.btn-group{
-		margin: 0 0 0 20px;
+		margin: 0 0 0 18px;
 	}
 
 	.mc-leftmenu-footer-button{
@@ -123,6 +123,7 @@
 	  text-decoration: none;
 	  line-height: 32px;
 	  padding: 0px;
+	  font-size: 13px;
 	}
 }
 
