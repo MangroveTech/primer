@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      Mailcup &middot; Table
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="/primer/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/primer/docs.css">
+    <script type="text/javascript" src="/primer/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/primer/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/primer/">Mailcup</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="/primer/styleguide">Docs</a></li>
+            <li ><a href="/primer/about">About</a></li>
+            <li><a href="https://github.com/zhaokun/primer" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- /导航 -->
+
+
+    
+
+    <div class="container-fluid">
+      <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      
+        <h4>Rules</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/styleguide/">
+    Styleguide
+  </a></li>
+</ul>
+
+<h4>Foundation</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/layout/">
+    Layout
+  </a></li>
+  <li class=""><a href="/primer/color/">
+    Color
+  </a></li>
+  <li class=""><a href="/primer/typography/">
+    Typography
+  </a></li>
+  <li class=""><a href="/primer/icon/">
+    Icon
+  </a></li>
+</ul>
+
+<h4>Components</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/avatar/">
+    Avatar
+  </a></li>
+  <li class=""><a href="/primer/button/">
+    Button
+  </a></li>
+  <li class=""><a href="/primer/textfield/">
+    Textfield
+  </a></li>
+  <li class=""><a href="/primer/dropdown/">
+    Dropdown
+  </a></li>
+  <li class=""><a href="/primer/notification/">
+    Notification
+  </a></li>
+  <li class=""><a href="/primer/modal/">
+    Modal
+  </a></li>
+  <li class=""><a href="/primer/label/">
+    Label
+  </a></li>
+  <li class=""><a href="/primer/checkbox/">
+    Checkbox
+  </a></li>
+  <li class=""><a href="/primer/form/">
+    Form
+  </a></li>
+  <li class="active"><a href="/primer/table/">
+    Table
+  </a></li>
+  <li class=""><a href="/primer/token/">
+    Token
+  </a></li>
+  <li class=""><a href="/primer/attachment/">
+    Attachment
+  </a></li>
+</ul>
+
+<h4>Patterns</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/left-menu/">
+    Left Menu
+  </a></li>
+  <li class=""><a href="/primer/navbar/">
+    Navbar
+  </a></li>
+  <li class=""><a href="/primer/threadlist/">
+    Threadlist
+  </a></li>
+  <li class=""><a href="/primer/messagelist/">
+    Messagelist
+  </a></li>
+  <li class=""><a href="/primer/compose/">
+    Compose
+  </a></li>
+  <li class=""><a href="/primer/replybox/">
+    Replybox
+  </a></li>
+</ul>
+
+      
+    </div>
+    <div class="col-md-9 markdown-body">
+      <h1 class="page-title">
+        Table
+      </h1>
+      <div class="markdown-body">
+        <p>Table 提供了 Mailcup 所有表格方案</p>
+
+<p>你可以在下面的CSS文件里找到 <code>table.scss</code>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">尺寸</a></li>
+</ul>
+
+<h2 id="section">尺寸</h2>
+
+<div class="docs-example clearfix"><table class="mc-table table-hover">
+      <tbody>
+        <tr>
+          <th scope="row"><span class="mc-leftmenu-item-label"></span>Team</th>
+          <td><button class="mc-button-link">Edit</button></td>
+          <td><button class="mc-button-link-danger">Remove</button></td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="mc-leftmenu-item-label"></span>Feedback</th>
+          <td><button class="mc-button-link">Edit</button></td>
+          <td><button class="mc-button-link-danger">Remove</button></td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="mc-leftmenu-item-label"></span>Product</th>
+          <td><button class="mc-button-link">Edit</button></td>
+          <td><button class="mc-button-link-danger">Remove</button></td>
+        </tr>
+      </tbody>
+</table></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"mc-table table-hover"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Team<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link-danger'</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Feedback<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link-danger'</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Product<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link-danger'</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+
+<div class="columns docs-layout">
+  <div class="one-fourth column">
+    
+      <h4>Rules</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/styleguide/">
+    Styleguide
+  </a></li>
+</ul>
+
+<h4>Foundation</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/layout/">
+    Layout
+  </a></li>
+  <li class=""><a href="/primer/color/">
+    Color
+  </a></li>
+  <li class=""><a href="/primer/typography/">
+    Typography
+  </a></li>
+  <li class=""><a href="/primer/icon/">
+    Icon
+  </a></li>
+</ul>
+
+<h4>Components</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/avatar/">
+    Avatar
+  </a></li>
+  <li class=""><a href="/primer/button/">
+    Button
+  </a></li>
+  <li class=""><a href="/primer/textfield/">
+    Textfield
+  </a></li>
+  <li class=""><a href="/primer/dropdown/">
+    Dropdown
+  </a></li>
+  <li class=""><a href="/primer/notification/">
+    Notification
+  </a></li>
+  <li class=""><a href="/primer/modal/">
+    Modal
+  </a></li>
+  <li class=""><a href="/primer/label/">
+    Label
+  </a></li>
+  <li class=""><a href="/primer/checkbox/">
+    Checkbox
+  </a></li>
+  <li class=""><a href="/primer/form/">
+    Form
+  </a></li>
+  <li class="active"><a href="/primer/table/">
+    Table
+  </a></li>
+  <li class=""><a href="/primer/token/">
+    Token
+  </a></li>
+  <li class=""><a href="/primer/attachment/">
+    Attachment
+  </a></li>
+</ul>
+
+<h4>Patterns</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/left-menu/">
+    Left Menu
+  </a></li>
+  <li class=""><a href="/primer/navbar/">
+    Navbar
+  </a></li>
+  <li class=""><a href="/primer/threadlist/">
+    Threadlist
+  </a></li>
+  <li class=""><a href="/primer/messagelist/">
+    Messagelist
+  </a></li>
+  <li class=""><a href="/primer/compose/">
+    Compose
+  </a></li>
+  <li class=""><a href="/primer/replybox/">
+    Replybox
+  </a></li>
+</ul>
+
+    
+  </div>
+  <div class="three-fourths column markdown-body">
+    <h1 class="page-title">
+      Table
+    </h1>
+    <div class="markdown-body">
+      <p>Table 提供了 Mailcup 所有表格方案</p>
+
+<p>你可以在下面的CSS文件里找到 <code>table.scss</code>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">尺寸</a></li>
+</ul>
+
+<h2 id="section">尺寸</h2>
+
+<div class="docs-example clearfix"><table class="mc-table table-hover">
+      <tbody>
+        <tr>
+          <th scope="row"><span class="mc-leftmenu-item-label"></span>Team</th>
+          <td><button class="mc-button-link">Edit</button></td>
+          <td><button class="mc-button-link-danger">Remove</button></td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="mc-leftmenu-item-label"></span>Feedback</th>
+          <td><button class="mc-button-link">Edit</button></td>
+          <td><button class="mc-button-link-danger">Remove</button></td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="mc-leftmenu-item-label"></span>Product</th>
+          <td><button class="mc-button-link">Edit</button></td>
+          <td><button class="mc-button-link-danger">Remove</button></td>
+        </tr>
+      </tbody>
+</table></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"mc-table table-hover"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Team<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link-danger'</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Feedback<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link-danger'</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-leftmenu-item-label"</span><span class="nt">&gt;&lt;/span&gt;</span>Product<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link'</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-link-danger'</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/button&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
+
+
+    </div>
+  </div>
+</div> -->
+
+
+      <footer style="margin:20px auto;text-align:center;">
+        &copy; Just 2015.
+      </footer>
+    </div>
+  </body>
+</html>
