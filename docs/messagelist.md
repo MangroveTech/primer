@@ -13,6 +13,7 @@ title: Messagelist
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-messagelist-item-content'>
+          <div class='mc-messagelist-date'>12:22 PM</div>
           <div class='mc-messagelist-headline'>Gary Chai</div>
           <div class='mc-messagelist-content'>Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac</div>
         </div>
@@ -23,21 +24,20 @@ title: Messagelist
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-messagelist-item-content'>
+          <div class='mc-messagelist-date'>12:22 PM</div>
           <div class='mc-messagelist-headline'>Zachary Foster</div>
           <div class='mc-messagelist-content'>Hey Gary, thanks for the reply, this is a very glad to help</div>
         </div>
+        <span class='divider'></span>
       </div>
-    </div>
-  </div>
-
-  <div class='mc-messagelist'>
-    <div class='mc-section'>
       <div class='mc-messagelist-item'>
         <div class='mc-messagelist-item-left'>
           <div class='mc-avatar-mid'></div>
         </div>
 
         <div class='mc-messagelist-item-content'>
+          <div class='mc-messagelist-date'>12:22 PM</div>
+
           <div class='mc-messagelist-headline'>Gary Chai</div>
 
           <div class="btn-group mc-replybox-header-replystatus">
@@ -78,6 +78,7 @@ title: Messagelist
         </div>
     </div>
   </div>
+
 
 </div>
 

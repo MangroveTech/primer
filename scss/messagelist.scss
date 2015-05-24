@@ -32,18 +32,18 @@
     cursor: pointer;
 
     .mc-messagelist-date{
-      float:right;
-      font-size:13px;
-      color:#a1a1a1;
-      margin: 0 15px 0 0;
+      float: right;
+      margin: 0px 15px 0 0px;
       text-align: right;
+      color: #a1a1a1;
+      font-size: 13px;
     }
     .mc-messagelist-headline{
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 14px;
         float: left;
         width: 100%;
-        margin: 0px 0 0 0;
+        margin: -18px 0 0 0;
         padding: 0 15px 0 0;
         font-weight: 500;
     }
@@ -82,7 +82,7 @@
   .divider{
     height: 1px;
     overflow: hidden;
-    background-color: #EFEFEF;
+    background-color: #F4F4F4;
     float: left;
     width: 100%;
   }
