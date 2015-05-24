@@ -117,7 +117,7 @@ title: Modal
   show modal
 </button>
 <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class='mc-modal'>
+  <div class='mc-modal mc-modal-big'>
     <div class='mc-modal-header'>
       <div class='mc-modal-title'>Settings</div>
       <button type="button" class="mc-button-nobg">
@@ -131,33 +131,45 @@ title: Modal
       </button>
     </div>
     <div class='mc-modal-body-twocolumn'>
-      <div class="col-sm-2">
-        <div class='mc-modal-body-left'>
-          <div>Account</div>
-          <div>Labels</div>
-          <div>Groups</div>
-          <div>Templates</div>
-          <div>Notifications</div>
+      <div class="col-sm-3 mc-modal-body-left">
+        <div class="list-group">
+          <a href="#" class="list-group-item active">
+            Account
+          </a>
+          <a href="#" class="list-group-item">Label</a>
+          <a href="#" class="list-group-item">Group</a>
+          <a href="#" class="list-group-item">Notification</a>
+          <a href="#" class="list-group-item">Filehub</a>
         </div>
       </div>
-      <div class="col-sm-10">
+      <div class="col-sm-9">
         <div class='mc-modal-body-right'>
-          <div class="mc-form-group">
-            <div class="col-sm-3">namname</div>
-            <div class="col-sm-9"><input class="form-control" /></div>
-          </div>
-          <div class="mc-form-group">
-            <div class="col-sm-3">name</div>
-            <div class="col-sm-9"><input class="form-control" /></div>
-          </div>
-          <div class="mc-form-group">
-            <div class="col-sm-3">namname</div>
-            <div class="col-sm-9"><input class="form-control" /></div>
-          </div>
-          <div class="mc-form-group">
-            <div class="col-sm-3">namname</div>
-            <div class="col-sm-9"><input class="form-control" /></div>
-          </div>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div for="inputAvatar" class="col-sm-3 control-label">Avatar</div>
+              <div class="col-sm-8">
+                <img class="mc-avatar-big" src="https://avatar.tower.im/2458b7b4c2814259813404ce21749c2e"/><br>
+              </div>
+            </div>
+            <div class="form-group">
+              <div for="inputLabelName" class="col-sm-3 control-label">Name</div>
+              <div class="col-sm-8">
+                <input type="name" class="form-control" id="inputName" placeholder="Please input your name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div for="inputSignature" class="col-sm-3 control-label">Signature</div>
+              <div class="col-sm-8">
+                <div id="inputSignature" contenteditable="true" class='mc-modal-signature-editor'>--<br>Sent by Mailcup</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div for="save" class="col-sm-3 control-label"></div>
+              <div class="col-sm-8">
+              <button class='mc-button'>Save</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
