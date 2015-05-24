@@ -1,0 +1,11 @@
+.mc-table{
+  @extend .table;
+
+}
+
+.mc-table>thead>tr>th, .mc-table>thead>tr>td, .mc-table>tbody>tr>th, .mc-table>tbody>tr>td, .mc-table>tfoot>tr>th,.mc-table>tfoot>tr>td{
+  padding: 6px;
+  line-height: 32px;
+  vertical-align: middle;
+  border-top: 1px solid #ddd;
+}

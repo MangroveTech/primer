@@ -33,6 +33,11 @@
 	@extend .btn-link;
 }
 
+.mc-button-link-danger{
+	@extend .mc-button-link;
+	color: #d9534f;
+}
+
 .mc-button-nobg{
 	@extend .btn;
 	@extend .btn-default;
@@ -41,5 +46,6 @@
 	border-style:none;
 	font-size:18px;
 	color:#B6B6B6;
-
 }
+
+

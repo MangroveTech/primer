@@ -52,10 +52,12 @@
     height: 360px;
 
     .list-group-item{
+      cursor: pointer;
       border:none;
       border-radius: 4px;
       .active{
         border-raidus:4px;
+        background-color:$mc-color-midblue;
       }
     }
   }
