@@ -29,10 +29,10 @@ title: Navbar
         <input type="text" class="mc-searchfield" placeholder="Search">
         <div class='mc-navbar-toolbutton'>
           <button type="button" class="mc-button-nobg">
-            <span class="mc-icon-pin"></span>
+            <span class="mc-icon-done"></span>
           </button>
           <button type="button" class="mc-button-nobg">
-            <span class="mc-icon-done"></span>
+            <span class="mc-icon-pin"></span>
           </button>
           <div class="btn-group">
             <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">

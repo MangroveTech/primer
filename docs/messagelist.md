@@ -51,28 +51,7 @@ title: Messagelist
                 <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
             </ul>
           </div>
-
-          <div class="mc-messagelist-item-content">
-            <div class="mc-messagelist-headline ng-binding">gary</div>
-            
-            <span ng-if="expandObj[$index]" class="ng-binding ng-scope">
-                
-                to Arthur li
-                <div class="btn-group">
-                  <button type="button" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                  <span class="mc-icon-arrow-down"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu" id="mc-messagelist-info">
-                    <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
-                    <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
-                    <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
-                    <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
-                  </ul>
-                </div>
-               
-              </span>
-            
-          </div>
+        </div>
 
         <div class='mc-messagelist-item-body'>
           Hey Gary and Mangrove Team:<br><br>
