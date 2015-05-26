@@ -39,29 +39,6 @@ title: Notification
 <button class="btn btn-danger" href="click" id="showToastr">Click</button>
 
 <script type="text/javascript">
-  // toastr.options = {
-  //   "closeButton": false,
-  //   "debug": false,
-  //   "toastClass": '',
-  //   "positionClass": "toast-bottom-center",
-  //   // "messageClass": 'mc-notification-center',
-  //   "containerId": null,
-  //   "onclick": null,
-  //   "showDuration": "300",
-  //   "hideDuration": "1000",
-  //   "timeOut": "5000",
-  //   "extendedTimeOut": "1000",
-  //   "showEasing": "swing",
-  //   "hideEasing": "linear",
-  //   "showMethod": "fadeIn",
-  //   "hideMethod": "fadeOut",
-  //   "iconClasses": {
-  //     "error": '',
-  //     "info": '',
-  //     "success": '',
-  //     "warning": ''
-  //   }
-  // }
   toastr.options = {
     "closeButton": false,
     "debug": false,
@@ -71,8 +48,8 @@ title: Notification
     "positionClass": "",
     "preventDuplicates": false,
     "onclick": null,
-    "showDuration": "300",
-    "hideDuration": "1000",
+    "showDuration": "200",
+    "hideDuration": "200",
     "timeOut": "5000",
     "extendedTimeOut": "1000",
     "showEasing": "swing",

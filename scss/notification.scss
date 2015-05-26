@@ -13,13 +13,14 @@
     line-height: 14px;
     font-size: 14px;
     border-style: none;
+    margin: -2px 0 0 0;
   }
 }
 
 #toast-container {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
   z-index: 99999;
 }
@@ -32,7 +33,7 @@
   border-radius: 4px;
   text-align: center;
   font-size:14px;
-  margin:14px auto;
+  margin:10px auto 10px auto;
 
   button{
     padding: 0px 0px 0 12px;
