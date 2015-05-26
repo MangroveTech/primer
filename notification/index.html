@@ -179,18 +179,41 @@
 
 <div class="docs-example clearfix"><script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="../bower_components/toastr/toastr.min.js"></script>
-<link rel="stylesheet" href="../bower_components/toastr/toastr.min.css" />
 
-<button class="btn btn-danger" href="click" id="shownotifi">Click</button>
+<button class="btn btn-danger" href="click" id="showToastr">Click</button>
 
 <script type="text/javascript">
+  // toastr.options = {
+  //   "closeButton": false,
+  //   "debug": false,
+  //   "toastClass": '',
+  //   "positionClass": "toast-bottom-center",
+  //   // "messageClass": 'mc-notification-center',
+  //   "containerId": null,
+  //   "onclick": null,
+  //   "showDuration": "300",
+  //   "hideDuration": "1000",
+  //   "timeOut": "5000",
+  //   "extendedTimeOut": "1000",
+  //   "showEasing": "swing",
+  //   "hideEasing": "linear",
+  //   "showMethod": "fadeIn",
+  //   "hideMethod": "fadeOut",
+  //   "iconClasses": {
+  //     "error": '',
+  //     "info": '',
+  //     "success": '',
+  //     "warning": ''
+  //   }
+  // }
   toastr.options = {
     "closeButton": false,
     "debug": false,
-    "toastClass": '',
+    "newestOnTop": false,
+    "progressBar": false,
+    "toastClass": "mc-notification-center",
     "positionClass": "",
-    "messageClass": 'mc-notification-center',
-    "containerId": null,
+    "preventDuplicates": false,
     "onclick": null,
     "showDuration": "300",
     "hideDuration": "1000",
@@ -199,34 +222,50 @@
     "showEasing": "swing",
     "hideEasing": "linear",
     "showMethod": "fadeIn",
-    "hideMethod": "fadeOut",
-    "iconClasses": {
-      "error": '',
-      "info": '',
-      "success": '',
-      "warning": ''
-    }
+    "hideMethod": "fadeOut"
   }
 
-  $('#shownotifi').click(function () {
-    console.log('chuangjianshibai');
-    toastr.error('创建失败!');
+  $('#showToastr').click(function () {
+    toastr.error("创建失败!");
   });
 </script></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/toastr/toastr.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/toastr/toastr.min.css"</span><span class="nt">&gt;</span>
 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">href=</span><span class="s">"click"</span> <span class="na">id=</span><span class="s">"shownotifi"</span><span class="nt">&gt;</span>Click<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">href=</span><span class="s">"click"</span> <span class="na">id=</span><span class="s">"showToastr"</span><span class="nt">&gt;</span>Click<span class="nt">&lt;/button&gt;</span>
 
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="c1">// toastr.options = {</span>
+  <span class="c1">//   "closeButton": false,</span>
+  <span class="c1">//   "debug": false,</span>
+  <span class="c1">//   "toastClass": '',</span>
+  <span class="c1">//   "positionClass": "toast-bottom-center",</span>
+  <span class="c1">//   // "messageClass": 'mc-notification-center',</span>
+  <span class="c1">//   "containerId": null,</span>
+  <span class="c1">//   "onclick": null,</span>
+  <span class="c1">//   "showDuration": "300",</span>
+  <span class="c1">//   "hideDuration": "1000",</span>
+  <span class="c1">//   "timeOut": "5000",</span>
+  <span class="c1">//   "extendedTimeOut": "1000",</span>
+  <span class="c1">//   "showEasing": "swing",</span>
+  <span class="c1">//   "hideEasing": "linear",</span>
+  <span class="c1">//   "showMethod": "fadeIn",</span>
+  <span class="c1">//   "hideMethod": "fadeOut",</span>
+  <span class="c1">//   "iconClasses": {</span>
+  <span class="c1">//     "error": '',</span>
+  <span class="c1">//     "info": '',</span>
+  <span class="c1">//     "success": '',</span>
+  <span class="c1">//     "warning": ''</span>
+  <span class="c1">//   }</span>
+  <span class="c1">// }</span>
   <span class="nx">toastr</span><span class="p">.</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"closeButton"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="s2">"debug"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="s2">"toastClass"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="s2">"newestOnTop"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">"progressBar"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">"toastClass"</span><span class="p">:</span> <span class="s2">"mc-notification-center"</span><span class="p">,</span>
     <span class="s2">"positionClass"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
-    <span class="s2">"messageClass"</span><span class="p">:</span> <span class="s1">'mc-notification-center'</span><span class="p">,</span>
-    <span class="s2">"containerId"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="s2">"preventDuplicates"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="s2">"onclick"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
     <span class="s2">"showDuration"</span><span class="p">:</span> <span class="s2">"300"</span><span class="p">,</span>
     <span class="s2">"hideDuration"</span><span class="p">:</span> <span class="s2">"1000"</span><span class="p">,</span>
@@ -235,18 +274,11 @@
     <span class="s2">"showEasing"</span><span class="p">:</span> <span class="s2">"swing"</span><span class="p">,</span>
     <span class="s2">"hideEasing"</span><span class="p">:</span> <span class="s2">"linear"</span><span class="p">,</span>
     <span class="s2">"showMethod"</span><span class="p">:</span> <span class="s2">"fadeIn"</span><span class="p">,</span>
-    <span class="s2">"hideMethod"</span><span class="p">:</span> <span class="s2">"fadeOut"</span><span class="p">,</span>
-    <span class="s2">"iconClasses"</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">"error"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-      <span class="s2">"info"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-      <span class="s2">"success"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-      <span class="s2">"warning"</span><span class="p">:</span> <span class="s1">''</span>
-    <span class="p">}</span>
+    <span class="s2">"hideMethod"</span><span class="p">:</span> <span class="s2">"fadeOut"</span>
   <span class="p">}</span>
 
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'#shownotifi'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'chuangjianshibai'</span><span class="p">);</span>
-    <span class="nx">toastr</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'创建失败!'</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#showToastr'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">toastr</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"创建失败!"</span><span class="p">);</span>
   <span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
@@ -398,18 +430,41 @@
 
 <div class="docs-example clearfix"><script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="../bower_components/toastr/toastr.min.js"></script>
-<link rel="stylesheet" href="../bower_components/toastr/toastr.min.css" />
 
-<button class="btn btn-danger" href="click" id="shownotifi">Click</button>
+<button class="btn btn-danger" href="click" id="showToastr">Click</button>
 
 <script type="text/javascript">
+  // toastr.options = {
+  //   "closeButton": false,
+  //   "debug": false,
+  //   "toastClass": '',
+  //   "positionClass": "toast-bottom-center",
+  //   // "messageClass": 'mc-notification-center',
+  //   "containerId": null,
+  //   "onclick": null,
+  //   "showDuration": "300",
+  //   "hideDuration": "1000",
+  //   "timeOut": "5000",
+  //   "extendedTimeOut": "1000",
+  //   "showEasing": "swing",
+  //   "hideEasing": "linear",
+  //   "showMethod": "fadeIn",
+  //   "hideMethod": "fadeOut",
+  //   "iconClasses": {
+  //     "error": '',
+  //     "info": '',
+  //     "success": '',
+  //     "warning": ''
+  //   }
+  // }
   toastr.options = {
     "closeButton": false,
     "debug": false,
-    "toastClass": '',
+    "newestOnTop": false,
+    "progressBar": false,
+    "toastClass": "mc-notification-center",
     "positionClass": "",
-    "messageClass": 'mc-notification-center',
-    "containerId": null,
+    "preventDuplicates": false,
     "onclick": null,
     "showDuration": "300",
     "hideDuration": "1000",
@@ -418,34 +473,50 @@
     "showEasing": "swing",
     "hideEasing": "linear",
     "showMethod": "fadeIn",
-    "hideMethod": "fadeOut",
-    "iconClasses": {
-      "error": '',
-      "info": '',
-      "success": '',
-      "warning": ''
-    }
+    "hideMethod": "fadeOut"
   }
 
-  $('#shownotifi').click(function () {
-    console.log('chuangjianshibai');
-    toastr.error('创建失败!');
+  $('#showToastr').click(function () {
+    toastr.error("创建失败!");
   });
 </script></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/toastr/toastr.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/toastr/toastr.min.css"</span><span class="nt">&gt;</span>
 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">href=</span><span class="s">"click"</span> <span class="na">id=</span><span class="s">"shownotifi"</span><span class="nt">&gt;</span>Click<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">href=</span><span class="s">"click"</span> <span class="na">id=</span><span class="s">"showToastr"</span><span class="nt">&gt;</span>Click<span class="nt">&lt;/button&gt;</span>
 
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="c1">// toastr.options = {</span>
+  <span class="c1">//   "closeButton": false,</span>
+  <span class="c1">//   "debug": false,</span>
+  <span class="c1">//   "toastClass": '',</span>
+  <span class="c1">//   "positionClass": "toast-bottom-center",</span>
+  <span class="c1">//   // "messageClass": 'mc-notification-center',</span>
+  <span class="c1">//   "containerId": null,</span>
+  <span class="c1">//   "onclick": null,</span>
+  <span class="c1">//   "showDuration": "300",</span>
+  <span class="c1">//   "hideDuration": "1000",</span>
+  <span class="c1">//   "timeOut": "5000",</span>
+  <span class="c1">//   "extendedTimeOut": "1000",</span>
+  <span class="c1">//   "showEasing": "swing",</span>
+  <span class="c1">//   "hideEasing": "linear",</span>
+  <span class="c1">//   "showMethod": "fadeIn",</span>
+  <span class="c1">//   "hideMethod": "fadeOut",</span>
+  <span class="c1">//   "iconClasses": {</span>
+  <span class="c1">//     "error": '',</span>
+  <span class="c1">//     "info": '',</span>
+  <span class="c1">//     "success": '',</span>
+  <span class="c1">//     "warning": ''</span>
+  <span class="c1">//   }</span>
+  <span class="c1">// }</span>
   <span class="nx">toastr</span><span class="p">.</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"closeButton"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="s2">"debug"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="s2">"toastClass"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="s2">"newestOnTop"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">"progressBar"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">"toastClass"</span><span class="p">:</span> <span class="s2">"mc-notification-center"</span><span class="p">,</span>
     <span class="s2">"positionClass"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
-    <span class="s2">"messageClass"</span><span class="p">:</span> <span class="s1">'mc-notification-center'</span><span class="p">,</span>
-    <span class="s2">"containerId"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="s2">"preventDuplicates"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="s2">"onclick"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
     <span class="s2">"showDuration"</span><span class="p">:</span> <span class="s2">"300"</span><span class="p">,</span>
     <span class="s2">"hideDuration"</span><span class="p">:</span> <span class="s2">"1000"</span><span class="p">,</span>
@@ -454,18 +525,11 @@
     <span class="s2">"showEasing"</span><span class="p">:</span> <span class="s2">"swing"</span><span class="p">,</span>
     <span class="s2">"hideEasing"</span><span class="p">:</span> <span class="s2">"linear"</span><span class="p">,</span>
     <span class="s2">"showMethod"</span><span class="p">:</span> <span class="s2">"fadeIn"</span><span class="p">,</span>
-    <span class="s2">"hideMethod"</span><span class="p">:</span> <span class="s2">"fadeOut"</span><span class="p">,</span>
-    <span class="s2">"iconClasses"</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">"error"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-      <span class="s2">"info"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-      <span class="s2">"success"</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-      <span class="s2">"warning"</span><span class="p">:</span> <span class="s1">''</span>
-    <span class="p">}</span>
+    <span class="s2">"hideMethod"</span><span class="p">:</span> <span class="s2">"fadeOut"</span>
   <span class="p">}</span>
 
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'#shownotifi'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'chuangjianshibai'</span><span class="p">);</span>
-    <span class="nx">toastr</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'创建失败!'</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#showToastr'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">toastr</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"创建失败!"</span><span class="p">);</span>
   <span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
