@@ -184,8 +184,28 @@
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
       </div>
-      <div class="mc-compose-body-editor" contenteditable="true">
+      <div class="mc-compose-body-content">
+
+       <div class="mc-compose-body-editor ng-pristine ng-valid ng-touched" contenteditable="true" ng-model="content"></div>
+       <div class="mc-attachemnt-container" contenteditable="false">
+          <div class="mc-attachment-box ng-scope" ng-repeat="attachment in attachments">
+           <button type="button" class="close" ng-click="deleteAttachment(attachment.id)">×</button>
+           <span class="mc-attachment-unknow"></span>
+           <div class="mc-attachment-info">
+             <div class="mc-attachment-title ng-binding">Filehub.sketch</div>
+             <div class="mc-attachment-size ng-binding">2.4 MB</div>
+           </div>
+         </div>
+         <div class="mc-attachment-box ng-scope" ng-repeat="attachment in attachments">
+           <button type="button" class="close" ng-click="deleteAttachment(attachment.id)">×</button>
+           <span class="mc-attachment-unknow"></span>
+           <div class="mc-attachment-info">
+             <div class="mc-attachment-title ng-binding">Mailcup-avatar-default.png</div>
+             <div class="mc-attachment-size ng-binding">1.3 kB</div>
+           </div>
+         </div>
       </div>
+    </div>
     </div>
     <div class="mc-compose-footer">
      <div class="mc-compose-footer-left">
@@ -320,8 +340,28 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body-editor'</span> <span class="na">contenteditable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-content"</span><span class="nt">&gt;</span>
+
+       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-editor ng-pristine ng-valid ng-touched"</span> <span class="na">contenteditable=</span><span class="s">"true"</span> <span class="na">ng-model=</span><span class="s">"content"</span><span class="nt">&gt;&lt;/div&gt;</span>
+       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachemnt-container"</span> <span class="na">contenteditable=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-box ng-scope"</span> <span class="na">ng-repeat=</span><span class="s">"attachment in attachments"</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">ng-click=</span><span class="s">"deleteAttachment(attachment.id)"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/button&gt;</span>
+           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-unknow"</span><span class="nt">&gt;&lt;/span&gt;</span>
+           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-info"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-title ng-binding"</span><span class="nt">&gt;</span>Filehub.sketch<span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-size ng-binding"</span><span class="nt">&gt;</span>2.4 MB<span class="nt">&lt;/div&gt;</span>
+           <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-box ng-scope"</span> <span class="na">ng-repeat=</span><span class="s">"attachment in attachments"</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">ng-click=</span><span class="s">"deleteAttachment(attachment.id)"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/button&gt;</span>
+           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-unknow"</span><span class="nt">&gt;&lt;/span&gt;</span>
+           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-info"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-title ng-binding"</span><span class="nt">&gt;</span>Mailcup-avatar-default.png<span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-size ng-binding"</span><span class="nt">&gt;</span>1.3 kB<span class="nt">&lt;/div&gt;</span>
+           <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;</span>
      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-left'</span><span class="nt">&gt;</span>
@@ -411,336 +451,6 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
 
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
-<h2 id="compose-1">附件展示Compose样式</h2>
-
-<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.bootstrap3.css " />
-<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
-<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="../bower_components/angular-selectize2/dist/selectize.js"></script>
-
-<div style="height:600px;width:100%;background-color:#f1f1f1">
-  <div class="mc-compose">
-    <div class="mc-compose-header">
-      <div class="mc-compose-title">New message</div>
-      <button type="button" class="mc-button-nobg">
-        <span class="mc-icon-close"></span>
-      </button>
-      <button type="button" class="mc-button-nobg">
-        <span class="mc-icon-focus"></span>
-      </button>
-      <button type="button" class="mc-button-nobg">
-        <span class="mc-icon-unfocus"></span>
-      </button>
-    </div>
-    <div class="mc-compose-body">
-      <div class="mc-compose-body-label to">
-        <div style="float:left">
-          To&nbsp;
-        </div>
-        <div class="mc-select" ng-app="mailcup" ng-controller="mailcupCtrl">
-          <selectize config="myConfig" options="myOptions" ng-model="myModel"></selectize>
-        </div>
-        <span class="mc-cc bcc">Bcc</span>
-        <span class="mc-cc cc">Cc</span>
-      </div>
-      <div class="mc-compose-body-label cc">
-        <div style="float:left">
-        Cc&nbsp;
-        </div>
-        <input />
-      </div>
-      <div class="mc-compose-body-label bcc">
-        <div style="float:left">
-          Bcc&nbsp;
-        </div>
-        <input />
-      </div>
-      <div class="mc-compose-body-label">
-        <input placeholder="Subject" />
-        <span class="mc-label-info">Mailcup</span>
-        <span class="mc-icon-label mc-span-right"></span>
-      </div>
-      <div class="mc-compose-body-editor" contenteditable="true">
-      </div>
-      <div class="mc-compose-body-editor">
-      <div class="mc-col-xs-6 alert alert-dismissible">
-        <div class="alert mc-alert alert-dismissible">
-          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close mc-alert-close"><span aria-hidden="true">&times;</span></button>
-          <div class="mc-alert-text">
-            <span class="mc-attachment-doc"></span>
-          </div>
-          <div class="mc-alert-text">
-            <div class="mc-alert-title">Report.pdf</div>
-            <div class="mc-alert-filesize">120Kb</div>
-          </div>
-        </div>
-        </div>
-        <div class="mc-col-xs-6 alert alert-dismissible">
-        <div class="mc-alert">
-          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close mc-alert-close"><span aria-hidden="true">&times;</span></button>
-          <div class="mc-alert-text">
-            <span class="mc-attachment-doc"></span>
-          </div>
-          <div class="mc-alert-text">
-            <div class="mc-alert-title">Report.pdf</div>
-            <div class="mc-alert-filesize">120Kb</div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div class="mc-compose-footer">
-     <div class="mc-compose-footer-left">
-       <button type="button" class="mc-button-nobg">
-         <span class="mc-icon-clip"></span>
-       </button>
-       <button type="button" class="mc-button-nobg">
-         <span class="mc-icon-text"></span>
-       </button>
-       <button type="button" class="mc-button-nobg">
-         <span class="mc-icon-template"></span>
-       </button>
-     </div>
-     <div class="mc-compose-footer-right">
-       <button class="mc-button-primary">Send</button>
-     </div>
-   </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-  $('span.cc').click(function() {
-    $('span.cc').css('display', 'none');
-    $('.mc-compose-body-label.cc').css('display', 'block');
-    $('.mc-compose-body-label.cc input').blur(function() {
-      if (!$(this).val()) {
-        $('.mc-compose-body-label.cc').css('display', 'none');
-        $('span.cc').css('display', 'block');
-      }
-    });
-  });
-  $('span.bcc').click(function() {
-    $('span.bcc').css('display', 'none');
-    $('.mc-compose-body-label.bcc').css('display', 'block');
-    $('.mc-compose-body-label.bcc input').blur(function() {
-      if (!$(this).val()) {
-        $('.mc-compose-body-label.bcc').css('display', 'none');
-        $('span.bcc').css('display', 'block');
-      }
-    });
-  });
-
-angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($scope) {
-  $scope.myModel = 1;
-
-  $scope.myOptions = [
-    {address: 'chun@mailcup.com', name: 'Spectrometer'},
-    {address: 'zhao@mailcup.com', name: 'Star Chart'},
-    {address: 'chai@mailcup.com', name: 'Three'},
-    {address: 'gb@mailcup.com', name: 'Second'},
-    {address: 'ck@mailcup.com', name: 'Four five'}
-  ];
-
-  $scope.dbclick = function() {
-    console.log('DBCLICK');
-  };
-
-  $scope.myConfig = {
-    create: true,
-    valueField: 'address',
-    labelField: 'name',
-    delimiter: '|',
-    searchField: ['name', 'address'],
-    placeholder: '',
-    onInitialize: function(selectize){
-      // receives the selectize object as an argument
-    },
-    render: {
-        item: function(item, escape) {
-          // console.log('item', item)
-          return '<div>' +
-              (item.name ? '<span class="name" ng-click="dbclick()">' + escape(item.name) + '</span>' : '')
-              + '</div>';
-        },
-        option: function(item, escape) {
-          var label = item.name || item.address;
-          var caption = item.name ? item.address : null;
-          return '<div>' +
-              '<span class="name" style="color:#000">' + escape(label) + '</span>' +
-              (caption ? '<span class="email" style="color:#000">' + escape('<' + caption + '>') + '</span>' : '') +
-          '</div>';
-        }
-      },
-    // maxItems: 5
-  };
-});
-
-</script></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/selectize/dist/css/selectize.bootstrap3.css "</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/selectize/dist/js/standalone/selectize.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular-selectize2/dist/selectize.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose'</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-header'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-title'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label to"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
-          To<span class="ni">&amp;nbsp;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-select"</span> <span class="na">ng-app=</span><span class="s">"mailcup"</span> <span class="na">ng-controller=</span><span class="s">"mailcupCtrl"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;selectize</span> <span class="na">config=</span><span class="s">'myConfig'</span> <span class="na">options=</span><span class="s">'myOptions'</span> <span class="na">ng-model=</span><span class="s">"myModel"</span><span class="nt">&gt;&lt;/selectize&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-cc bcc"</span><span class="nt">&gt;</span>Bcc<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-cc cc"</span><span class="nt">&gt;</span>Cc<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label cc"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
-        Cc<span class="ni">&amp;nbsp;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label bcc"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
-          Bcc<span class="ni">&amp;nbsp;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-label-info"</span><span class="nt">&gt;</span>Mailcup<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label mc-span-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body-editor'</span> <span class="na">contenteditable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-editor"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-col-xs-6 alert alert-dismissible"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert mc-alert alert-dismissible"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">class=</span><span class="s">"close mc-alert-close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-doc"</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-title"</span><span class="nt">&gt;</span>Report.pdf<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-filesize"</span><span class="nt">&gt;</span>120Kb<span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-col-xs-6 alert alert-dismissible"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">class=</span><span class="s">"close mc-alert-close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-doc"</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-title"</span><span class="nt">&gt;</span>Report.pdf<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-filesize"</span><span class="nt">&gt;</span>120Kb<span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;</span>
-     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-left'</span><span class="nt">&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-clip"</span><span class="nt">&gt;&lt;/span&gt;</span>
-       <span class="nt">&lt;/button&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-text"</span><span class="nt">&gt;&lt;/span&gt;</span>
-       <span class="nt">&lt;/button&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-template"</span><span class="nt">&gt;&lt;/span&gt;</span>
-       <span class="nt">&lt;/button&gt;</span>
-     <span class="nt">&lt;/div&gt;</span>
-     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-right'</span><span class="nt">&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Send<span class="nt">&lt;/button&gt;</span>
-     <span class="nt">&lt;/div&gt;</span>
-   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">});</span>
-  <span class="p">});</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">});</span>
-  <span class="p">});</span>
-
-<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'selectize'</span><span class="p">]).</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'mailcupCtrl'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myModel</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myOptions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chun@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Spectrometer'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'zhao@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Star Chart'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chai@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Three'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'gb@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Second'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'ck@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Four five'</span><span class="p">}</span>
-  <span class="p">];</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">dbclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'DBCLICK'</span><span class="p">);</span>
-  <span class="p">};</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myConfig</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">create</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="na">valueField</span><span class="p">:</span> <span class="s1">'address'</span><span class="p">,</span>
-    <span class="na">labelField</span><span class="p">:</span> <span class="s1">'name'</span><span class="p">,</span>
-    <span class="na">delimiter</span><span class="p">:</span> <span class="s1">'|'</span><span class="p">,</span>
-    <span class="na">searchField</span><span class="p">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">],</span>
-    <span class="na">placeholder</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-    <span class="na">onInitialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">selectize</span><span class="p">){</span>
-      <span class="c1">// receives the selectize object as an argument</span>
-    <span class="p">},</span>
-    <span class="na">render</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">item</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="c1">// console.log('item', item)</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="s1">'&lt;span class="name" ng-click="dbclick()"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span>
-              <span class="o">+</span> <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">},</span>
-        <span class="na">option</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="o">||</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span><span class="p">;</span>
-          <span class="kd">var</span> <span class="nx">caption</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span> <span class="p">:</span> <span class="kc">null</span><span class="p">;</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="s1">'&lt;span class="name" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">label</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">caption</span> <span class="p">?</span> <span class="s1">'&lt;span class="email" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="s1">'&lt;'</span> <span class="o">+</span> <span class="nx">caption</span> <span class="o">+</span> <span class="s1">'&gt;'</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span> <span class="o">+</span>
-          <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">}</span>
-      <span class="p">},</span>
-    <span class="c1">// maxItems: 5</span>
-  <span class="p">};</span>
-<span class="p">});</span>
-
-<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
       </div>
     </div>
@@ -895,8 +605,28 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
       </div>
-      <div class="mc-compose-body-editor" contenteditable="true">
+      <div class="mc-compose-body-content">
+
+       <div class="mc-compose-body-editor ng-pristine ng-valid ng-touched" contenteditable="true" ng-model="content"></div>
+       <div class="mc-attachemnt-container" contenteditable="false">
+          <div class="mc-attachment-box ng-scope" ng-repeat="attachment in attachments">
+           <button type="button" class="close" ng-click="deleteAttachment(attachment.id)">×</button>
+           <span class="mc-attachment-unknow"></span>
+           <div class="mc-attachment-info">
+             <div class="mc-attachment-title ng-binding">Filehub.sketch</div>
+             <div class="mc-attachment-size ng-binding">2.4 MB</div>
+           </div>
+         </div>
+         <div class="mc-attachment-box ng-scope" ng-repeat="attachment in attachments">
+           <button type="button" class="close" ng-click="deleteAttachment(attachment.id)">×</button>
+           <span class="mc-attachment-unknow"></span>
+           <div class="mc-attachment-info">
+             <div class="mc-attachment-title ng-binding">Mailcup-avatar-default.png</div>
+             <div class="mc-attachment-size ng-binding">1.3 kB</div>
+           </div>
+         </div>
       </div>
+    </div>
     </div>
     <div class="mc-compose-footer">
      <div class="mc-compose-footer-left">
@@ -1031,8 +761,28 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body-editor'</span> <span class="na">contenteditable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-content"</span><span class="nt">&gt;</span>
+
+       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-editor ng-pristine ng-valid ng-touched"</span> <span class="na">contenteditable=</span><span class="s">"true"</span> <span class="na">ng-model=</span><span class="s">"content"</span><span class="nt">&gt;&lt;/div&gt;</span>
+       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachemnt-container"</span> <span class="na">contenteditable=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-box ng-scope"</span> <span class="na">ng-repeat=</span><span class="s">"attachment in attachments"</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">ng-click=</span><span class="s">"deleteAttachment(attachment.id)"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/button&gt;</span>
+           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-unknow"</span><span class="nt">&gt;&lt;/span&gt;</span>
+           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-info"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-title ng-binding"</span><span class="nt">&gt;</span>Filehub.sketch<span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-size ng-binding"</span><span class="nt">&gt;</span>2.4 MB<span class="nt">&lt;/div&gt;</span>
+           <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-box ng-scope"</span> <span class="na">ng-repeat=</span><span class="s">"attachment in attachments"</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">ng-click=</span><span class="s">"deleteAttachment(attachment.id)"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/button&gt;</span>
+           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-unknow"</span><span class="nt">&gt;&lt;/span&gt;</span>
+           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-info"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-title ng-binding"</span><span class="nt">&gt;</span>Mailcup-avatar-default.png<span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-attachment-size ng-binding"</span><span class="nt">&gt;</span>1.3 kB<span class="nt">&lt;/div&gt;</span>
+           <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;</span>
      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-left'</span><span class="nt">&gt;</span>
@@ -1122,336 +872,6 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
 
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
 
-<h2 id="compose-1">附件展示Compose样式</h2>
-
-<div class="docs-example clearfix"><link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.bootstrap3.css " />
-<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
-<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="../bower_components/angular-selectize2/dist/selectize.js"></script>
-
-<div style="height:600px;width:100%;background-color:#f1f1f1">
-  <div class="mc-compose">
-    <div class="mc-compose-header">
-      <div class="mc-compose-title">New message</div>
-      <button type="button" class="mc-button-nobg">
-        <span class="mc-icon-close"></span>
-      </button>
-      <button type="button" class="mc-button-nobg">
-        <span class="mc-icon-focus"></span>
-      </button>
-      <button type="button" class="mc-button-nobg">
-        <span class="mc-icon-unfocus"></span>
-      </button>
-    </div>
-    <div class="mc-compose-body">
-      <div class="mc-compose-body-label to">
-        <div style="float:left">
-          To&nbsp;
-        </div>
-        <div class="mc-select" ng-app="mailcup" ng-controller="mailcupCtrl">
-          <selectize config="myConfig" options="myOptions" ng-model="myModel"></selectize>
-        </div>
-        <span class="mc-cc bcc">Bcc</span>
-        <span class="mc-cc cc">Cc</span>
-      </div>
-      <div class="mc-compose-body-label cc">
-        <div style="float:left">
-        Cc&nbsp;
-        </div>
-        <input />
-      </div>
-      <div class="mc-compose-body-label bcc">
-        <div style="float:left">
-          Bcc&nbsp;
-        </div>
-        <input />
-      </div>
-      <div class="mc-compose-body-label">
-        <input placeholder="Subject" />
-        <span class="mc-label-info">Mailcup</span>
-        <span class="mc-icon-label mc-span-right"></span>
-      </div>
-      <div class="mc-compose-body-editor" contenteditable="true">
-      </div>
-      <div class="mc-compose-body-editor">
-      <div class="mc-col-xs-6 alert alert-dismissible">
-        <div class="alert mc-alert alert-dismissible">
-          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close mc-alert-close"><span aria-hidden="true">&times;</span></button>
-          <div class="mc-alert-text">
-            <span class="mc-attachment-doc"></span>
-          </div>
-          <div class="mc-alert-text">
-            <div class="mc-alert-title">Report.pdf</div>
-            <div class="mc-alert-filesize">120Kb</div>
-          </div>
-        </div>
-        </div>
-        <div class="mc-col-xs-6 alert alert-dismissible">
-        <div class="mc-alert">
-          <button type="button" role="alert" data-dismiss="alert" aria-label="Close" class="close mc-alert-close"><span aria-hidden="true">&times;</span></button>
-          <div class="mc-alert-text">
-            <span class="mc-attachment-doc"></span>
-          </div>
-          <div class="mc-alert-text">
-            <div class="mc-alert-title">Report.pdf</div>
-            <div class="mc-alert-filesize">120Kb</div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div class="mc-compose-footer">
-     <div class="mc-compose-footer-left">
-       <button type="button" class="mc-button-nobg">
-         <span class="mc-icon-clip"></span>
-       </button>
-       <button type="button" class="mc-button-nobg">
-         <span class="mc-icon-text"></span>
-       </button>
-       <button type="button" class="mc-button-nobg">
-         <span class="mc-icon-template"></span>
-       </button>
-     </div>
-     <div class="mc-compose-footer-right">
-       <button class="mc-button-primary">Send</button>
-     </div>
-   </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-  $('span.cc').click(function() {
-    $('span.cc').css('display', 'none');
-    $('.mc-compose-body-label.cc').css('display', 'block');
-    $('.mc-compose-body-label.cc input').blur(function() {
-      if (!$(this).val()) {
-        $('.mc-compose-body-label.cc').css('display', 'none');
-        $('span.cc').css('display', 'block');
-      }
-    });
-  });
-  $('span.bcc').click(function() {
-    $('span.bcc').css('display', 'none');
-    $('.mc-compose-body-label.bcc').css('display', 'block');
-    $('.mc-compose-body-label.bcc input').blur(function() {
-      if (!$(this).val()) {
-        $('.mc-compose-body-label.bcc').css('display', 'none');
-        $('span.bcc').css('display', 'block');
-      }
-    });
-  });
-
-angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($scope) {
-  $scope.myModel = 1;
-
-  $scope.myOptions = [
-    {address: 'chun@mailcup.com', name: 'Spectrometer'},
-    {address: 'zhao@mailcup.com', name: 'Star Chart'},
-    {address: 'chai@mailcup.com', name: 'Three'},
-    {address: 'gb@mailcup.com', name: 'Second'},
-    {address: 'ck@mailcup.com', name: 'Four five'}
-  ];
-
-  $scope.dbclick = function() {
-    console.log('DBCLICK');
-  };
-
-  $scope.myConfig = {
-    create: true,
-    valueField: 'address',
-    labelField: 'name',
-    delimiter: '|',
-    searchField: ['name', 'address'],
-    placeholder: '',
-    onInitialize: function(selectize){
-      // receives the selectize object as an argument
-    },
-    render: {
-        item: function(item, escape) {
-          // console.log('item', item)
-          return '<div>' +
-              (item.name ? '<span class="name" ng-click="dbclick()">' + escape(item.name) + '</span>' : '')
-              + '</div>';
-        },
-        option: function(item, escape) {
-          var label = item.name || item.address;
-          var caption = item.name ? item.address : null;
-          return '<div>' +
-              '<span class="name" style="color:#000">' + escape(label) + '</span>' +
-              (caption ? '<span class="email" style="color:#000">' + escape('<' + caption + '>') + '</span>' : '') +
-          '</div>';
-        }
-      },
-    // maxItems: 5
-  };
-});
-
-</script></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../bower_components/selectize/dist/css/selectize.bootstrap3.css "</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/jquery/dist/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/selectize/dist/js/standalone/selectize.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../bower_components/angular-selectize2/dist/selectize.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:600px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose'</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-header'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-title'</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-focus"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-unfocus"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label to"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
-          To<span class="ni">&amp;nbsp;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-select"</span> <span class="na">ng-app=</span><span class="s">"mailcup"</span> <span class="na">ng-controller=</span><span class="s">"mailcupCtrl"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;selectize</span> <span class="na">config=</span><span class="s">'myConfig'</span> <span class="na">options=</span><span class="s">'myOptions'</span> <span class="na">ng-model=</span><span class="s">"myModel"</span><span class="nt">&gt;&lt;/selectize&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-cc bcc"</span><span class="nt">&gt;</span>Bcc<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-cc cc"</span><span class="nt">&gt;</span>Cc<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label cc"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
-        Cc<span class="ni">&amp;nbsp;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label bcc"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
-          Bcc<span class="ni">&amp;nbsp;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-label"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Subject"</span> <span class="nt">/&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-label-info"</span><span class="nt">&gt;</span>Mailcup<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label mc-span-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-body-editor'</span> <span class="na">contenteditable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-compose-body-editor"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-col-xs-6 alert alert-dismissible"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert mc-alert alert-dismissible"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">class=</span><span class="s">"close mc-alert-close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-doc"</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-title"</span><span class="nt">&gt;</span>Report.pdf<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-filesize"</span><span class="nt">&gt;</span>120Kb<span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-col-xs-6 alert alert-dismissible"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">class=</span><span class="s">"close mc-alert-close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-attachment-doc"</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-text"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-title"</span><span class="nt">&gt;</span>Report.pdf<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-alert-filesize"</span><span class="nt">&gt;</span>120Kb<span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer'</span><span class="nt">&gt;</span>
-     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-left'</span><span class="nt">&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-clip"</span><span class="nt">&gt;&lt;/span&gt;</span>
-       <span class="nt">&lt;/button&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-text"</span><span class="nt">&gt;&lt;/span&gt;</span>
-       <span class="nt">&lt;/button&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-button-nobg"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-template"</span><span class="nt">&gt;&lt;/span&gt;</span>
-       <span class="nt">&lt;/button&gt;</span>
-     <span class="nt">&lt;/div&gt;</span>
-     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-compose-footer-right'</span><span class="nt">&gt;</span>
-       <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-primary'</span><span class="nt">&gt;</span>Send<span class="nt">&lt;/button&gt;</span>
-     <span class="nt">&lt;/div&gt;</span>
-   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.cc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">});</span>
-  <span class="p">});</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc input'</span><span class="p">).</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'.mc-compose-body-label.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'none'</span><span class="p">);</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'span.bcc'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'display'</span><span class="p">,</span> <span class="s1">'block'</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">});</span>
-  <span class="p">});</span>
-
-<span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'mailcup'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'selectize'</span><span class="p">]).</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'mailcupCtrl'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myModel</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myOptions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chun@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Spectrometer'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'zhao@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Star Chart'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'chai@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Three'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'gb@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Second'</span><span class="p">},</span>
-    <span class="p">{</span><span class="na">address</span><span class="p">:</span> <span class="s1">'ck@mailcup.com'</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Four five'</span><span class="p">}</span>
-  <span class="p">];</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">dbclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'DBCLICK'</span><span class="p">);</span>
-  <span class="p">};</span>
-
-  <span class="nx">$scope</span><span class="p">.</span><span class="nx">myConfig</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">create</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="na">valueField</span><span class="p">:</span> <span class="s1">'address'</span><span class="p">,</span>
-    <span class="na">labelField</span><span class="p">:</span> <span class="s1">'name'</span><span class="p">,</span>
-    <span class="na">delimiter</span><span class="p">:</span> <span class="s1">'|'</span><span class="p">,</span>
-    <span class="na">searchField</span><span class="p">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">],</span>
-    <span class="na">placeholder</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-    <span class="na">onInitialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">selectize</span><span class="p">){</span>
-      <span class="c1">// receives the selectize object as an argument</span>
-    <span class="p">},</span>
-    <span class="na">render</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">item</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="c1">// console.log('item', item)</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="s1">'&lt;span class="name" ng-click="dbclick()"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span>
-              <span class="o">+</span> <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">},</span>
-        <span class="na">option</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">escape</span><span class="p">)</span> <span class="p">{</span>
-          <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="o">||</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span><span class="p">;</span>
-          <span class="kd">var</span> <span class="nx">caption</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="p">?</span> <span class="nx">item</span><span class="p">.</span><span class="nx">address</span> <span class="p">:</span> <span class="kc">null</span><span class="p">;</span>
-          <span class="k">return</span> <span class="s1">'&lt;div&gt;'</span> <span class="o">+</span>
-              <span class="s1">'&lt;span class="name" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">label</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="o">+</span>
-              <span class="p">(</span><span class="nx">caption</span> <span class="p">?</span> <span class="s1">'&lt;span class="email" style="color:#000"&gt;'</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="s1">'&lt;'</span> <span class="o">+</span> <span class="nx">caption</span> <span class="o">+</span> <span class="s1">'&gt;'</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'&lt;/span&gt;'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">)</span> <span class="o">+</span>
-          <span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
-        <span class="p">}</span>
-      <span class="p">},</span>
-    <span class="c1">// maxItems: 5</span>
-  <span class="p">};</span>
-<span class="p">});</span>
-
-<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
     </div>
   </div>
