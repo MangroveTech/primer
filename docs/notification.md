@@ -35,18 +35,41 @@ title: Notification
 {% example html %}
 <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="../bower_components/toastr/toastr.min.js"></script>
-<link rel="stylesheet" href="../bower_components/toastr/toastr.min.css">
 
-<button class="btn btn-danger" href="click" id="shownotifi">Click</button>
+<button class="btn btn-danger" href="click" id="showToastr">Click</button>
 
 <script type="text/javascript">
+  // toastr.options = {
+  //   "closeButton": false,
+  //   "debug": false,
+  //   "toastClass": '',
+  //   "positionClass": "toast-bottom-center",
+  //   // "messageClass": 'mc-notification-center',
+  //   "containerId": null,
+  //   "onclick": null,
+  //   "showDuration": "300",
+  //   "hideDuration": "1000",
+  //   "timeOut": "5000",
+  //   "extendedTimeOut": "1000",
+  //   "showEasing": "swing",
+  //   "hideEasing": "linear",
+  //   "showMethod": "fadeIn",
+  //   "hideMethod": "fadeOut",
+  //   "iconClasses": {
+  //     "error": '',
+  //     "info": '',
+  //     "success": '',
+  //     "warning": ''
+  //   }
+  // }
   toastr.options = {
     "closeButton": false,
     "debug": false,
-    "toastClass": '',
+    "newestOnTop": false,
+    "progressBar": false,
+    "toastClass": "mc-notification-center",
     "positionClass": "",
-    "messageClass": 'mc-notification-center',
-    "containerId": null,
+    "preventDuplicates": false,
     "onclick": null,
     "showDuration": "300",
     "hideDuration": "1000",
@@ -55,18 +78,11 @@ title: Notification
     "showEasing": "swing",
     "hideEasing": "linear",
     "showMethod": "fadeIn",
-    "hideMethod": "fadeOut",
-    "iconClasses": {
-      "error": '',
-      "info": '',
-      "success": '',
-      "warning": ''
-    }
+    "hideMethod": "fadeOut"
   }
 
-  $('#shownotifi').click(function () {
-    console.log('chuangjianshibai');
-    toastr.error('创建失败!');
+  $('#showToastr').click(function () {
+    toastr.error("创建失败!");
   });
 </script>
 
