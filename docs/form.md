@@ -104,3 +104,115 @@ title: Form
 </div>
 
 {% endexample %}
+
+##FileHub
+
+###用于在FileHub的使用
+
+{% example html %}
+
+<div style='height:400px;width:100%;background-color:#f1f1f1'>
+  <div class='mc-modal mc-modal-big'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body-twocolumn'>
+      <div class="col-sm-3 mc-modal-body-left">
+        <div class="list-group">
+          <a href="#" class="list-group-item">
+            Account
+          </a>
+          <a href="#" class="list-group-item">Label</a>
+          <a href="#" class="list-group-item">Group</a>
+          <a href="#" class="list-group-item">Notification</a>
+          <a href="#" class="list-group-item active">Filehub</a>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div class='mc-modal-body-right'>
+          <form class="form-horizontal">
+            <table class="mc-table table-hover">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="mc-attachment-filehub">
+                      <span class="mc-attachment-zip"></span>
+                      <div class="mc-attachment-info">
+                        <div class="mc-attachment-title">Mailcup-PD-0.5.2.zip</div>
+                        <div class="mc-attachment-size">144.2kb</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><button class='mc-button-link'>Download</button></td>
+                  <td><button class='mc-button-link-danger'>Delete</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="mc-table table-hover">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="mc-attachment-filehub">
+                      <span class="mc-attachment-zip"></span>
+                      <div class="mc-attachment-info">
+                        <div class="mc-attachment-title">Mailcup-PD-0.5.2.zip</div>
+                        <div class="mc-attachment-size">144.2kb</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><button class='mc-button-link'>Download</button></td>
+                  <td><button class='mc-button-link-danger'>Delete</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="mc-table table-hover">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="mc-attachment-filehub">
+                      <span class="mc-attachment-zip"></span>
+                      <div class="mc-attachment-info">
+                        <div class="mc-attachment-title">Mailcup-PD-0.5.2.zip</div>
+                        <div class="mc-attachment-size">144.2kb</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><button class='mc-button-link'>Download</button></td>
+                  <td><button class='mc-button-link-danger'>Delete</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="mc-table table-hover">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="mc-attachment-filehub">
+                      <span class="mc-attachment-zip"></span>
+                      <div class="mc-attachment-info">
+                        <div class="mc-attachment-title">Mailcup-PD-0.5.2.zip</div>
+                        <div class="mc-attachment-size">144.2kb</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><button class='mc-button-link'>Download</button></td>
+                  <td><button class='mc-button-link-danger'>Delete</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endexample %}
