@@ -13,21 +13,27 @@
     line-height: 14px;
     font-size: 14px;
     border-style: none;
+    margin: -2px 0 0 0;
   }
 }
 
-.mc-notification-center{
+#toast-container {
   position: fixed;
-  z-index: 999999;
-  bottom: 0;
   right: 0;
+  bottom: 30px;
+  width: 100%;
+  z-index: 99999;
+}
+
+.mc-notification-center{
+  width: 250px;
   background-color:#FFF3C3;
   box-shadow: 0px 0px 6px #A8A8A8;
   padding: 12px 25px;
   border-radius: 4px;
   text-align: center;
   font-size:14px;
-  margin:14px;
+  margin:10px auto 10px auto;
 
   button{
     padding: 0px 0px 0 12px;

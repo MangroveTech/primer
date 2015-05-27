@@ -20,7 +20,6 @@ Attachment 提供了 Mailcup 所用到的附件图标方案，此处附件图标
 ##所有可用的附件图标
 在需要使用附件图标的地方直接使用
 
-{% example html %}
 <div class="row" style="margin:15px 0px 15px 0px">
 <div class="col-md-3">
   <span class="mc-attachment-ai"></span>
@@ -95,5 +94,30 @@ Attachment 提供了 Mailcup 所用到的附件图标方案，此处附件图标
   <span class="mc-attachment-zip"></span>
   <div style="width:41px;text-align:center;margin:5px 0px 5px 0px">zip</div>
 </div>
+</div>
+
+
+
+{% example html %}
+<div class="mc-attachment-box">
+  <button type="button" class="close">×</button>
+  <span class="mc-attachment-zip"></span>
+  <div class="mc-attachment-info">
+    <div class="mc-attachment-title">Mailcup-PD-0.5.2.zip</div>
+    <div class="mc-attachment-size">144.2kb</div>
+  </div>
+</div>
+
+<div class="mc-attachment-box">
+  <button type="button" class="close">×</button>
+  <span class="mc-attachment-pdf"></span>
+  <div class="mc-attachment-info">
+    <div class="mc-attachment-title">2015年度报告.pdf</div>
+    <div class="mc-progress-percent">45%</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+      </div>
+    </div>
+  </div>
 </div>
 {% endexample %}

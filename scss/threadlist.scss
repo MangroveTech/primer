@@ -10,7 +10,7 @@ $mc-icon-pin-color: #4A90E2;
     float: left;
     width: 100%;
     height: 32px;
-    margin: 6px 0;
+    margin: 16px 0 6px 0;
 
     button{
       float:right;
@@ -36,7 +36,7 @@ $mc-icon-pin-color: #4A90E2;
 
 .mc-threadlist-item{
   width: 100%;
-  height: 90px;
+  height: 70px;
   float: left;
   color:black;
 
@@ -46,50 +46,51 @@ $mc-icon-pin-color: #4A90E2;
 
   .mc-threadlist-item-left{
     width: 70px;
-    height: 90px;
+    height: 70px;
     float: left;
     cursor: pointer;
 
     .mc-avatar-mid{
-      margin: 15px 0 18px 16px;
+      margin: 15px 14px 18px 0px;
       background-color:#a1a1a1;
+      float:right;
     }
     .mc-threadlist-item-unread{
       width: 5px;
       background-color: #4A90E2;
-      height: 91px;
-      position: absolute;
+      height: 71px;
+      float:left;
     }
   }
 
   .mc-threadlist-item-content{
     float: left;
-    padding: 16px 0 18px 0px;
-    width: calc(100% - 70px);
+    padding: 34px 0 18px 0px;
+    width: calc(100% - 160px);
     cursor: pointer;
 
-    .mc-threadlist-date{
-      float:right;
-      font-size:13px;
-      color:#a1a1a1;
-      margin: 0 15px 0 0;
-      text-align: right;
-    }
     .mc-threadlist-headline{
       font-size: 14px;
       float: left;
       width: 100%;
-      margin: -20px 0 0 0;
+      margin: -20px 0 3px 0;
       padding: 0 15px 0 0;
-      letter-spacing: 0.2px;
-
+      word-wrap:break-word;
+      .mc-icon-clip{
+        margin: 0 0 0 10px;
+        font-size: 13px;
+      }
     }
     .mc-threadlist-subject{
       font-size:13px;
       float:left;
       width:100%;
       padding: 2px 15px 0 0;
-      letter-spacing: 0.2px;
+      overflow: hidden;
+      height: 22px;      
+      .mc-threadlist-summary{
+        color: #a1a1a1;
+      }
     }
     .mc-threadlist-content{
       font-size: 13px;
@@ -102,6 +103,16 @@ $mc-icon-pin-color: #4A90E2;
       padding: 2px 15px 0 0;      
       word-wrap: break-word;
     }
+  }
+
+  .mc-threadlist-date{
+    float: left;
+    font-size: 12px;
+    color: #a1a1a1;
+    padding: 27px 15px 0 0;
+    text-align: right;
+    width: 90px;
+    height: 70px;
   }
 
   .mc-threadlist-item-right{
@@ -119,27 +130,28 @@ $mc-icon-pin-color: #4A90E2;
   &:hover{
     background-color:$mc-color-lightyellow;
     .mc-threadlist-item-content {
-      width: calc(100% - 270px);
-      .mc-threadlist-date{
-        color:$mc-color-lightyellow; 
-      }
+      width: calc(100% - 340px);
     }
     .mc-threadlist-item-right{
       display: block;
-      float: right;
-      width: 200px;
-      height: 90px;
+      float: left;
+      width: 180px;
+      height: 70px;
 
       text-decoration: none;
       div {
         display: inline-block;
         width: 30%;
-        line-height: 90px;
+        line-height: 70px;
         button {
           color: #B6B6B6;
           display: inline-block;
           margin-top: -1px;
           font-size: 18px;
+          &:hover{
+            color: #6D6D6D;
+            background-color:#EEEEEE;
+          }
         }
       }
     }
@@ -169,3 +181,27 @@ $mc-icon-pin-color: #4A90E2;
     }
   }
 }
+
+.mc-section-marked{
+  
+  .mc-threadlist-item-content{
+    width: calc(100% - 200px);
+  }
+
+  .mc-threadlist-mark{
+    display: inline-block;
+    margin-top: -1px;
+    font-size: 18px;
+    width: 40px;
+    float: left;
+    padding: 24px 0 0 0;
+  }
+
+  &:hover{
+    .mc-threadlist-mark{
+      display:none;
+    }
+  }
+
+}
+
