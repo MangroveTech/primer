@@ -29,6 +29,18 @@ Label 提供了 Mailcup 所有的Mailcup标签显示方案
 <span class="mc-label-success">Success</span>
 {% endexample %}
 
+##Label的颜色定义
+* 用下面的任何一个类即可改变标签的外观
+
+{% example html %}
+<span class="mc-label-grey">Grey</span>
+<span class="mc-label-blue">Blue</span>
+<span class="mc-label-red">Red</span>
+<span class="mc-label-cyan">Cyan</span>
+<span class="mc-label-yellow">Yellow</span>
+<span class="mc-label-success">Success</span>
+{% endexample %}
+
 ##Token
 * 结合angular和angular-selectize使用
 
@@ -89,6 +101,8 @@ angular.module('mailcup', ['selectize']).controller('mailcupCtrl', function($sco
 </script>
 
 {% endexample %}
+
+
 
 * 出现在需要输入联系人的Textfield里
 * 双击可变为 email 地址进行编辑
