@@ -29,7 +29,20 @@ title: Threadlist
         <div class='mc-threadlist-item-right'>
           <div><button class='mc-button-nobg' onclick="closeanimation()"><span class="mc-icon-done"></span></button></div>
           <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
+          <div>
+            <div class="mc-labels-group btn-group open" ng-click="preventDefault($event);">
+               <button id="554" class="mc-button-nobg dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span class="mc-icon-label"></span></button>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="554">
+                 <li class="mc-dropdown-title">Label as:</li>
+                 <li class="divider"></li>
+                 <li ng-repeat="label in labels" ng-if="label.type=='Cup'" ng-init="_checked=ifChecked(thread, label)" ng-click="_checked=!_checked;stopPropagation($event);" class="ng-binding ng-scope"><input type="checkbox" id="mc-checkbox-554-302" ng-checked="_checked"><label for="mc-checkbox-554-302" style="background-color:#7ED321"></label> Bug</li>
+                 <li ng-repeat="label in labels" ng-if="label.type=='Cup'" ng-init="_checked=ifChecked(thread, label)" ng-click="_checked=!_checked;stopPropagation($event);" class="ng-binding ng-scope"><input type="checkbox" id="mc-checkbox-554-339" ng-checked="_checked"><label for="mc-checkbox-554-339" style="background-color:#7ED321"></label> Mobile</li>
+                 <li ng-repeat="label in labels" ng-if="label.type=='Cup'" ng-init="_checked=ifChecked(thread, label)" ng-click="_checked=!_checked;stopPropagation($event);" class="ng-binding ng-scope"><input type="checkbox" id="mc-checkbox-554-285" ng-checked="_checked"><label for="mc-checkbox-554-285" style="background-color:#7ED321"></label> Team</li>
+                 <li ng-repeat="label in labels" ng-if="label.type=='Cup'" ng-init="_checked=ifChecked(thread, label)" ng-click="_checked=!_checked;stopPropagation($event);" class="ng-binding ng-scope"><input type="checkbox" id="mc-checkbox-554-368" ng-checked="_checked"><label for="mc-checkbox-554-368" style="background-color:#7ED321"></label> test</li>
+                <li class="divider"></li>
+                <li class="mc-dropdown-bottombutton"><span class="mc-icon-plus"></span> Create new...</li>
+               </ul>
+             </div></div>
         </div>
         <div class='mc-threadlist-date'>12:22 PM</div>
       </a>
@@ -97,14 +110,15 @@ Sheng fixing dsty-1282 Liu fixing dsty-479 Adam fixing dsty-1281</span>
 </div>
 
 <script type="text/javascript">
-$(".mc-button-nobg").click(function() {
-      var $p = $(this).parent().parent().parent().parent();
-      var $this = $(this);
-        $p.slideUp(200, function() {
-            //移除父级div
-            $p.remove();
-        });
-    });
+
+// $(".mc-button-nobg").click(function() {
+//       var $p = $(this).parent().parent().parent().parent();
+//       var $this = $(this);
+//         $p.slideUp(200, function() {
+//             //移除父级div
+//             $p.remove();
+//         });
+//     });
 </script>
 
 {% endexample %}
