@@ -37,3 +37,13 @@ Colors 提供了 Mailcup 所有组件所用到的配色
 {% example html %}
 <div class="midblue" style="width:200px; height:60px;"></div>
 {% endexample %}
+
+
+{% example html %}
+<div class="mc-color-default" style="width:200px; height:60px;"></div>
+<div class="mc-color-primary" style="width:200px; height:60px;"></div>
+<div class="mc-color-success" style="width:200px; height:60px;"></div>
+<div class="mc-color-info" style="width:200px; height:60px;"></div>
+<div class="mc-color-warning" style="width:200px; height:60px;"></div>
+<div class="mc-color-danger" style="width:200px; height:60px;"></div>
+{% endexample %}
