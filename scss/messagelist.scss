@@ -66,6 +66,18 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-decoration: none;
     }
+    .mc-messagelist-reply-button{
+      font-size: 13px;
+      padding: 4px 0 0 0px;
+      color: #a1a1a1;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-decoration: none;
+    }
+
+    .mc-messagelist-reply-dropdown {
+      left: 0;
+      min-width: 80px;
+    }
   }
 
   .mc-messagelist-item-body{

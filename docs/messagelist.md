@@ -13,7 +13,18 @@ title: Messagelist
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-messagelist-item-content'>
-          <div class='mc-messagelist-date'><span class="mc-icon-clip"></span> 12:22 PM</div>
+          <div class='mc-messagelist-date'><span class="mc-icon-clip"></span> 12:22 PM
+            <div class="btn-group mc-replybox-header-replystatus">
+              <button type="button" class="mc-messagelist-reply-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="mc-icon-caret-down"></span>
+              </button>
+              <ul class="dropdown-menu mc-messagelist-reply-dropdown" role="menu">
+                <li><a>Reply</a></li>
+                <li><a>Reply to all</a></li>
+                <li><a>Forward</a></li>
+              </ul>
+            </div>
+          </div>
           <div class='mc-messagelist-headline'>Gary Chai</div>
           <div class='mc-messagelist-content'>Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac</div>
         </div>
@@ -45,10 +56,10 @@ title: Messagelist
               To me, Jack Wang, Zachary Foster  <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
-                <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
-                <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
-                <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
-                <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
+              <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
+              <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
+              <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
+              <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
             </ul>
           </div>
         </div>
@@ -76,10 +87,10 @@ title: Messagelist
           Thanks,<br>
           Zack
         </div>
+      </div>
     </div>
+
+
   </div>
 
-
-</div>
-
-{% endexample %}
+  {% endexample %}
