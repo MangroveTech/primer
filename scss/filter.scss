@@ -1,0 +1,20 @@
+.mc-filter {
+  @extend .panel;
+  @extend .panel-default;
+  margin-bottom:10px;
+  border:1px grey dashed;
+
+  .mc-filter-body {
+    @extend .panel-body;
+    padding: 6px;
+
+    .mc-filter-body-right {
+      float:right;
+      margin-left:10px;
+    }
+    .mc-filter-and {
+      margin: 5px 0px 0px 5px;
+      color: #4A90E2;
+    }
+  }
+}
