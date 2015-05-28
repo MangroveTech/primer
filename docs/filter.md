@@ -14,7 +14,7 @@ title: Filter
 <div class="mc-filter">
   <div class="mc-filter-body">
     <strong>From&nbsp;&nbsp;</strong><span>gary@mailcup.com</span><span class="mc-filter-and">and</span><strong>&nbsp;&nbsp;To&nbsp;&nbsp;</strong><span>gary@mailcup.com</span><span class="mc-filter-and">and</span>
-    <strong>&nbsp;&nbsp;Subject&nbsp;&nbsp;</strong><span>gary@mailcup.com</span><span class="mc-filter-and">and</span><strong>&nbsp;&nbsp;Includes&nbsp;&nbsp;</strong><span>gary@mailcup.com</span>
+    <strong>&nbsp;&nbsp;Subject&nbsp;&nbsp;</strong><span>gary</span><span class="mc-filter-and">and</span><strong>&nbsp;&nbsp;Includes&nbsp;&nbsp;</strong><span>gary</span>
     <span class="mc-filter-body-right"><span>Edit</span>&nbsp;&nbsp;<span class="mc-icon-trash"></span></span>
   </div>
 </div>
