@@ -55,32 +55,26 @@
 
 .mc-label-grey{
   @extend .mc-label;
-  @extend .mc-label-box;
 }
 
 .mc-label-blue{
   @extend .mc-label-primary;
-  @extend .mc-label-box;
 }
 
 .mc-label-red{
   @extend .mc-label-danger;
-  @extend .mc-label-box;
 }
 
 .mc-label-cyan{
   @extend .mc-label-info;
-  @extend .mc-label-box;
 }
 
 .mc-label-yellow{
   @extend .mc-label-warning;
-  @extend .mc-label-box;
 }
 
 .mc-label-green{
   @extend .mc-label-success;
-  @extend .mc-label-box;
 }
 
 #mc-label-select{

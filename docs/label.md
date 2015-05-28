@@ -38,7 +38,19 @@ Label 提供了 Mailcup 所有的Mailcup标签显示方案
 <span class="mc-label-red">Red</span>
 <span class="mc-label-cyan">Cyan</span>
 <span class="mc-label-yellow">Yellow</span>
-<span class="mc-label-success">Success</span>
+<span class="mc-label-green">Success</span>
+{% endexample %}
+
+##Label的小方块
+* 需要加一个类叫做`mc-label-box`
+
+{% example html %}
+<span class="mc-label-grey mc-label-box">&nbsp;</span>
+<span class="mc-label-blue mc-label-box">&nbsp;</span>
+<span class="mc-label-red mc-label-box">&nbsp;</span>
+<span class="mc-label-cyan mc-label-box">&nbsp;</span>
+<span class="mc-label-yellow mc-label-box">&nbsp;</span>
+<span class="mc-label-green mc-label-box">&nbsp;</span>
 {% endexample %}
 
 ##Token
