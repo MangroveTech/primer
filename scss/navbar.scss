@@ -71,13 +71,16 @@
 }
 
 .mc-navbar-subject{
-	font-size: 18px;
+	font-size: 16px;
 	float: left;
-	margin: -2px 0 0 0;
 	width: 100%;
 	line-height: 40px;
 	padding: 4px 0 0 20px;
 	-webkit-user-select: initial;
+
+	span{
+		vertical-align: middle;
+	}
 }
 
 .mc-navbar-toolbutton{
