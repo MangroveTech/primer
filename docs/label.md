@@ -33,24 +33,24 @@ Label 提供了 Mailcup 所有的Mailcup标签显示方案
 * 用下面的任何一个类即可改变标签的外观
 
 {% example html %}
-<span class="mc-label-grey">Grey</span>
-<span class="mc-label-blue">Blue</span>
-<span class="mc-label-red">Red</span>
-<span class="mc-label-cyan">Cyan</span>
-<span class="mc-label-yellow">Yellow</span>
-<span class="mc-label-green">Success</span>
+<span class="mc-label mc-label-grey">Grey</span>
+<span class="mc-label mc-label-blue">Blue</span>
+<span class="mc-label mc-label-red">Red</span>
+<span class="mc-label mc-label-cyan">Cyan</span>
+<span class="mc-label mc-label-yellow">Yellow</span>
+<span class="mc-label mc-label-green">Success</span>
 {% endexample %}
 
 ##Label的小方块
-* 需要加一个类叫做`mc-label-box`
+* 需要加两个个类叫做`mc-label` 和 `mc-label-box` 
 
 {% example html %}
-<span class="mc-label-grey mc-label-box">&nbsp;</span>
-<span class="mc-label-blue mc-label-box">&nbsp;</span>
-<span class="mc-label-red mc-label-box">&nbsp;</span>
-<span class="mc-label-cyan mc-label-box">&nbsp;</span>
-<span class="mc-label-yellow mc-label-box">&nbsp;</span>
-<span class="mc-label-green mc-label-box">&nbsp;</span>
+<span class="mc-label mc-label-box mc-label-grey">&nbsp;</span>
+<span class="mc-label mc-label-box mc-label-blue">&nbsp;</span>
+<span class="mc-label mc-label-box mc-label-red">&nbsp;</span>
+<span class="mc-label mc-label-box mc-label-cyan">&nbsp;</span>
+<span class="mc-label mc-label-box mc-label-yellow">&nbsp;</span>
+<span class=" mc-label mc-label-box mc-label-green">&nbsp;</span>
 {% endexample %}
 
 ##Token

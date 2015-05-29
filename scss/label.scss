@@ -54,27 +54,27 @@
 }
 
 .mc-label-grey{
-  @extend .mc-label;
+  @extend .label-default;
 }
 
 .mc-label-blue{
-  @extend .mc-label-primary;
+  @extend .label-primary;
 }
 
 .mc-label-red{
-  @extend .mc-label-danger;
+  @extend .label-danger;
 }
 
 .mc-label-cyan{
-  @extend .mc-label-info;
+  @extend .label-info;
 }
 
 .mc-label-yellow{
-  @extend .mc-label-warning;
+  @extend .label-warning;
 }
 
 .mc-label-green{
-  @extend .mc-label-success;
+  @extend .label-success;
 }
 
 #mc-label-select{
