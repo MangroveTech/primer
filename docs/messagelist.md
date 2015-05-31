@@ -13,15 +13,13 @@ title: Messagelist
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-messagelist-item-content'>
-          <div class='mc-messagelist-date'><span class="mc-icon-clip"></span> 12:22 PM
+          <div class="mc-messagelist-date ng-binding"> 4:33 PM
             <div class="btn-group mc-replybox-header-replystatus">
-              <button type="button" class="mc-messagelist-reply-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="mc-icon-caret-down"></span>
-              </button>
-              <ul class="dropdown-menu mc-messagelist-reply-dropdown" role="menu">
-                <li><a>Reply</a></li>
-                <li><a>Reply to all</a></li>
-                <li><a>Forward</a></li>
+              <button class='mc-messagelist-info-button mc-button-link' type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret" ></span></button>
+              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
+                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
+                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length > 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
+                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
               </ul>
             </div>
           </div>
@@ -35,7 +33,16 @@ title: Messagelist
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-messagelist-item-content'>
-          <div class='mc-messagelist-date'>12:22 PM</div>
+          <div class="mc-messagelist-date ng-binding"> 4:33 PM
+            <div class="btn-group mc-replybox-header-replystatus">
+              <button class='mc-messagelist-info-button mc-button-link' type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret" ></span></button>
+              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
+                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
+                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length > 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
+                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
+              </ul>
+            </div>
+          </div>
           <div class='mc-messagelist-headline'>Zachary Foster</div>
           <div class='mc-messagelist-content'>Hey Gary, thanks for the reply, this is a very glad to help</div>
         </div>
@@ -47,8 +54,16 @@ title: Messagelist
         </div>
 
         <div class='mc-messagelist-item-content'>
-          <div class='mc-messagelist-date'>12:22 PM</div>
-
+          <div class="mc-messagelist-date ng-binding"> 4:33 PM
+            <div class="btn-group mc-replybox-header-replystatus">
+              <button class='mc-messagelist-info-button mc-button-link' type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret" ></span></button>
+              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
+                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
+                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length > 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
+                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
+              </ul>
+            </div>
+          </div>
           <div class='mc-messagelist-headline'>Gary Chai</div>
 
           <div class="btn-group mc-replybox-header-replystatus">
