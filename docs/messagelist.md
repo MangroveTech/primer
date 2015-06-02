@@ -66,16 +66,10 @@ title: Messagelist
           </div>
           <div class='mc-messagelist-headline'>Gary Chai</div>
 
-          <div class="btn-group mc-replybox-header-replystatus">
-            <button type="button" class="mc-messagelist-deatil-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-              To me, Jack Wang, Zachary Foster  <span class="caret"></span>
+          <div class="mc-messagelist-content">To me, Jack Wang
+            <button type="button" class="mc-messagelist-deatil-button btn btn-link" data-toggle="popover" data-content='<table rules="none" class="table table-condensed table-bordered"><tbody><tr><th scope="row">from:</th><td>Zachary Foster (zfoster@clearslide.com)</td></tr><tr><th scope="row">to:</th><td>Gary Chai (gary@clearslide.com)<br>Arthur li (arthurli1991@gmail.com)</td></tr><tr><th scope="row">cc:</th><td colspan="2">Larry the Bird (arthurli1991@gmail.com)</td></tr><tr><th scope="row">date:</th><td colspan="2">Fri,May 29,2015 at 2:50 PM</td></tr></tbody></table>' aria-expanded="false">
+            <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu" role="menu">
-              <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
-            </ul>
           </div>
         </div>
 
@@ -104,8 +98,17 @@ title: Messagelist
         </div>
       </div>
     </div>
-
-
   </div>
+<script type="text/javascript">
+
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    html:true,
+    placement:'bottom',
+    trigger:'click'
+  })
+})
+
+</script>
 
   {% endexample %}

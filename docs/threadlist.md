@@ -111,14 +111,14 @@ Sheng fixing dsty-1282 Liu fixing dsty-479 Adam fixing dsty-1281</span>
 
 <script type="text/javascript">
 
-// $(".mc-button-nobg").click(function() {
-//       var $p = $(this).parent().parent().parent().parent();
-//       var $this = $(this);
-//         $p.slideUp(200, function() {
-//             //移除父级div
-//             $p.remove();
-//         });
-//     });
+$(".mc-button-nobg").click(function() {
+      var $p = $(this).parent().parent().parent().parent();
+      var $this = $(this);
+        $p.slideUp(200, function() {
+            //移除父级div
+            $p.remove();
+        });
+    });
 </script>
 
 {% endexample %}

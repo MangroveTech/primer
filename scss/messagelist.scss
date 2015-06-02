@@ -70,9 +70,15 @@
 
     .mc-messagelist-deatil-button{
       font-size: 13px;
-      padding: 4px 0 0 0px;
+      padding: 0px;
       color: #a1a1a1;
       text-decoration: none;
+      outline:0;
+      width: 20px;
+
+      &:hover{
+        color: black;
+      }
     }
     .mc-messagelist-reply-button{
       font-size: 12px;
@@ -83,6 +89,31 @@
     .mc-messagelist-reply-dropdown {
       left: 0;
       min-width: 80px;
+    }
+
+    .popover{
+      max-width: 502px;
+      min-width: 400px;
+      font-size: 13px;
+      color: black;
+      span{
+        color: #a1a1a1;
+      }
+
+      .table{
+        margin-bottom: 10px;
+        border: 1px solid white;
+      }
+      .table-bordered > thead > tr > th,
+        .table-bordered > tbody > tr > th,
+        .table-bordered > tfoot > tr > th,
+        .table-bordered > thead > tr > td,
+        .table-bordered > tbody > tr > td,
+        .table-bordered > tfoot > tr > td {
+          border: 1px solid white;
+          border-right-width:0px;
+          border-left-width:0px;
+      }
     }
   }
 
