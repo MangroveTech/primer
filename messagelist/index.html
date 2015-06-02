@@ -200,16 +200,10 @@
           </div>
           <div class="mc-messagelist-headline">Gary Chai</div>
 
-          <div class="btn-group mc-replybox-header-replystatus">
-            <button type="button" class="mc-messagelist-deatil-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-              To me, Jack Wang, Zachary Foster  <span class="caret"></span>
+          <div class="mc-messagelist-content">To me, Jack Wang
+            <button type="button" class="mc-messagelist-deatil-button btn btn-link" data-toggle="popover" data-content="&lt;table rules=&quot;none&quot; class=&quot;table table-condensed table-bordered&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;from:&lt;/th&gt;&lt;td&gt;Zachary Foster (zfoster@clearslide.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;to:&lt;/th&gt;&lt;td&gt;Gary Chai (gary@clearslide.com)&lt;br&gt;Arthur li (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;cc:&lt;/th&gt;&lt;td colspan=&quot;2&quot;&gt;Larry the Bird (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;date:&lt;/th&gt;&lt;td colspan=&quot;2&quot;&gt;Fri,May 29,2015 at 2:50 PM&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" aria-expanded="false">
+            <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu" role="menu">
-              <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
-            </ul>
           </div>
         </div>
 
@@ -238,9 +232,18 @@
         </div>
       </div>
     </div>
+  </div>
+<script type="text/javascript">
 
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    html:true,
+    placement:'bottom',
+    trigger:'click'
+  })
+})
 
-  </div></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:800px;width:100%;background-color:#ececec'</span><span class="nt">&gt;</span>
+</script></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:800px;width:100%;background-color:#ececec'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-section'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
@@ -301,16 +304,10 @@
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-headline'</span><span class="nt">&gt;</span>Gary Chai<span class="nt">&lt;/div&gt;</span>
 
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-messagelist-deatil-button btn btn-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-              To me, Jack Wang, Zachary Foster  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-content"</span><span class="nt">&gt;</span>To me, Jack Wang
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-messagelist-deatil-button btn btn-link"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-content=</span><span class="s">'&lt;table rules="none" class="table table-condensed table-bordered"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope="row"&gt;from:&lt;/th&gt;&lt;td&gt;Zachary Foster (zfoster@clearslide.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row"&gt;to:&lt;/th&gt;&lt;td&gt;Gary Chai (gary@clearslide.com)&lt;br&gt;Arthur li (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row"&gt;cc:&lt;/th&gt;&lt;td colspan="2"&gt;Larry the Bird (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row"&gt;date:&lt;/th&gt;&lt;td colspan="2"&gt;Fri,May 29,2015 at 2:50 PM&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;'</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
             <span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>From: <span class="nt">&lt;/span&gt;</span> shuangchun@mailcup.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>To: <span class="nt">&lt;/span&gt;</span> shuangchun@mailcup.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>Cc: <span class="nt">&lt;/span&gt;</span> shuangchun@mailcup.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>Date: <span class="nt">&lt;/span&gt;</span> 2014-10-20 10:30<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
@@ -339,9 +336,18 @@
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
 
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'[data-toggle="popover"]'</span><span class="p">).</span><span class="nx">popover</span><span class="p">({</span>
+    <span class="na">html</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span><span class="s1">'bottom'</span><span class="p">,</span>
+    <span class="na">trigger</span><span class="p">:</span><span class="s1">'click'</span>
+  <span class="p">})</span>
+<span class="p">})</span>
 
-  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 </div>
 
       </div>
@@ -513,16 +519,10 @@
           </div>
           <div class="mc-messagelist-headline">Gary Chai</div>
 
-          <div class="btn-group mc-replybox-header-replystatus">
-            <button type="button" class="mc-messagelist-deatil-button btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-              To me, Jack Wang, Zachary Foster  <span class="caret"></span>
+          <div class="mc-messagelist-content">To me, Jack Wang
+            <button type="button" class="mc-messagelist-deatil-button btn btn-link" data-toggle="popover" data-content="&lt;table rules=&quot;none&quot; class=&quot;table table-condensed table-bordered&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;from:&lt;/th&gt;&lt;td&gt;Zachary Foster (zfoster@clearslide.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;to:&lt;/th&gt;&lt;td&gt;Gary Chai (gary@clearslide.com)&lt;br&gt;Arthur li (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;cc:&lt;/th&gt;&lt;td colspan=&quot;2&quot;&gt;Larry the Bird (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;date:&lt;/th&gt;&lt;td colspan=&quot;2&quot;&gt;Fri,May 29,2015 at 2:50 PM&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" aria-expanded="false">
+            <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu" role="menu">
-              <li><a><span>From: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>To: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>Cc: </span> shuangchun@mailcup.com</a></li>
-              <li><a><span>Date: </span> 2014-10-20 10:30</a></li>
-            </ul>
           </div>
         </div>
 
@@ -551,9 +551,18 @@
         </div>
       </div>
     </div>
+  </div>
+<script type="text/javascript">
 
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    html:true,
+    placement:'bottom',
+    trigger:'click'
+  })
+})
 
-  </div></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:800px;width:100%;background-color:#ececec'</span><span class="nt">&gt;</span>
+</script></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:800px;width:100%;background-color:#ececec'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-section'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
@@ -614,16 +623,10 @@
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-headline'</span><span class="nt">&gt;</span>Gary Chai<span class="nt">&lt;/div&gt;</span>
 
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-messagelist-deatil-button btn btn-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-              To me, Jack Wang, Zachary Foster  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-content"</span><span class="nt">&gt;</span>To me, Jack Wang
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"mc-messagelist-deatil-button btn btn-link"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-content=</span><span class="s">'&lt;table rules="none" class="table table-condensed table-bordered"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope="row"&gt;from:&lt;/th&gt;&lt;td&gt;Zachary Foster (zfoster@clearslide.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row"&gt;to:&lt;/th&gt;&lt;td&gt;Gary Chai (gary@clearslide.com)&lt;br&gt;Arthur li (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row"&gt;cc:&lt;/th&gt;&lt;td colspan="2"&gt;Larry the Bird (arthurli1991@gmail.com)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope="row"&gt;date:&lt;/th&gt;&lt;td colspan="2"&gt;Fri,May 29,2015 at 2:50 PM&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;'</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
             <span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>From: <span class="nt">&lt;/span&gt;</span> shuangchun@mailcup.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>To: <span class="nt">&lt;/span&gt;</span> shuangchun@mailcup.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>Cc: <span class="nt">&lt;/span&gt;</span> shuangchun@mailcup.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;li&gt;&lt;a&gt;&lt;span&gt;</span>Date: <span class="nt">&lt;/span&gt;</span> 2014-10-20 10:30<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
@@ -652,9 +655,18 @@
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
 
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'[data-toggle="popover"]'</span><span class="p">).</span><span class="nx">popover</span><span class="p">({</span>
+    <span class="na">html</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span><span class="s1">'bottom'</span><span class="p">,</span>
+    <span class="na">trigger</span><span class="p">:</span><span class="s1">'click'</span>
+  <span class="p">})</span>
+<span class="p">})</span>
 
-  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 </div>
 
     </div>
