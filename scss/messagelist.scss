@@ -132,15 +132,14 @@
     padding: 5px 15px 20px 15px;    
     color: #232323;
   }
+}
 
-  .divider{
-    height: 1px;
-    overflow: hidden;
-    background-color: #F4F4F4;
-    float: left;
-    width: 100%;
-  }
-  
+.divider{
+  height: 1px;
+  overflow: hidden;
+  background-color: #F4F4F4;
+  float: left;
+  width: 100%;
 }
 
 .mc-message-list-dropdown{
@@ -149,5 +148,20 @@
 
 #mc-label-select{
   width: 228px;
+}
+
+#mc-message-blockquote-mark{
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #e7e7e7;
+  line-height: 4px;
+  padding: 0px 6px 0px 6px;
+  vertical-align: middle;
+  border-radius: 2px;
+  height: 12px;
+  color: #a1a1a1;
+  margin: 10px 0;
+  cursor:pointer;
 }
 
