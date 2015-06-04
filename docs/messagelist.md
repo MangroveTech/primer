@@ -10,6 +10,7 @@ title: Messagelist
     <div class='mc-section'>
       <div class='mc-messagelist-item'>
         <div class='mc-messagelist-item-left'>
+          <div class='mc-messagelist-item-left-mark'></div>
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-messagelist-item-content'>
@@ -30,6 +31,7 @@ title: Messagelist
       </div>
       <div class='mc-messagelist-item'>
         <div class='mc-messagelist-item-left'>
+          <div class='mc-messagelist-item-left-mark'></div>
           <div class='mc-avatar-mid'></div>
         </div>
         <div class='mc-messagelist-item-content'>

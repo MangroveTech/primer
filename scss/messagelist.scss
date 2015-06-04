@@ -17,12 +17,20 @@
 
   .mc-messagelist-item-left{
     width: 70px;
-    height: 70px;
+    height: 75px;
     position: absolute;
     .mc-avatar-mid{
-      margin: 15px 0 15px 16px;
+      margin: 15px 14px 15px 0;;
       background-color:#a1a1a1;
+      float: right;
     }
+    .mc-messagelist-item-left-mark{
+      width: 2px;
+      height: 100%;
+      float: left;
+      background-color: #a1a1a1;
+    }
+
   }
 
   .mc-messagelist-item-content{
@@ -124,8 +132,9 @@
 
     }
     blockquote{
-      font-size: 14px;
+      font-size: 13px;
     }
+    font-size: 13px;
     float: left;
     width: 100%;
     height: auto;
