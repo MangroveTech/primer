@@ -148,18 +148,13 @@
       <div class="mc-messagelist-item">
         <div class="mc-messagelist-item-left">
           <div class="mc-messagelist-item-left-mark"></div>
-          <div class="mc-avatar-mid"></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
         </div>
         <div class="mc-messagelist-item-content">
-          <div class="mc-messagelist-date ng-binding"> 4:33 PM
-            <div class="btn-group mc-replybox-header-replystatus">
-              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret"></span></button>
-              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
-                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
-                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length &gt; 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
-                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
-              </ul>
-            </div>
+          <div class="mc-messagelist-date ng-binding"> 4:33 PM           
+              <button class="mc-messagelist-info-button mc-button-link">
+                <span class="mc-icon-caret-down"></span>
+              </button>
           </div>
           <div class="mc-messagelist-headline">Gary Chai</div>
           <div class="mc-messagelist-content">Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac</div>
@@ -169,18 +164,11 @@
       <div class="mc-messagelist-item">
         <div class="mc-messagelist-item-left">
           <div class="mc-messagelist-item-left-mark"></div>
-          <div class="mc-avatar-mid"></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
         </div>
         <div class="mc-messagelist-item-content">
           <div class="mc-messagelist-date ng-binding"> 4:33 PM
-            <div class="btn-group mc-replybox-header-replystatus">
-              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret"></span></button>
-              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
-                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
-                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length &gt; 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
-                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
-              </ul>
-            </div>
+            <button class="mc-messagelist-info-button mc-button-link" aria-expanded="true"><span class="mc-icon-caret-down"></span></button>
           </div>
           <div class="mc-messagelist-headline">Zachary Foster</div>
           <div class="mc-messagelist-content">Hey Gary, thanks for the reply, this is a very glad to help</div>
@@ -189,13 +177,13 @@
       </div>
       <div class="mc-messagelist-item">
         <div class="mc-messagelist-item-left">
-          <div class="mc-avatar-mid"></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
         </div>
 
         <div class="mc-messagelist-item-content">
           <div class="mc-messagelist-date ng-binding"> 4:33 PM
             <div class="btn-group mc-replybox-header-replystatus">
-              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret"></span></button>
+              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="mc-icon-more"></span></button>
               <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
                 <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
                 <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length &gt; 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
@@ -254,18 +242,13 @@ $(function () {
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left-mark'</span><span class="nt">&gt;&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">&gt;&lt;/img&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-content'</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">aria-labelledby=</span><span class="s">"replyDropdown"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToOne(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">ng-show=</span><span class="s">"message.to.length + message.from.length + message.cc.length &gt; 2"</span> <span class="na">class=</span><span class="s">"ng-hide"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToAll(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply to all<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"forwardMsg(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Forward<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM           
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-caret-down"</span> <span class="nt">&gt;&lt;/span&gt;</span>
+              <span class="nt">&lt;/button&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-headline'</span><span class="nt">&gt;</span>Gary Chai<span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-content'</span><span class="nt">&gt;</span>Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac<span class="nt">&lt;/div&gt;</span>
@@ -275,18 +258,11 @@ $(function () {
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left-mark'</span><span class="nt">&gt;&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">&gt;&lt;/img&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-content'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">aria-labelledby=</span><span class="s">"replyDropdown"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToOne(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">ng-show=</span><span class="s">"message.to.length + message.from.length + message.cc.length &gt; 2"</span> <span class="na">class=</span><span class="s">"ng-hide"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToAll(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply to all<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"forwardMsg(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Forward<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-caret-down"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-headline'</span><span class="nt">&gt;</span>Zachary Foster<span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-content'</span><span class="nt">&gt;</span>Hey Gary, thanks for the reply, this is a very glad to help<span class="nt">&lt;/div&gt;</span>
@@ -295,13 +271,13 @@ $(function () {
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left'</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">&gt;&lt;/img&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-content'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-more"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">aria-labelledby=</span><span class="s">"replyDropdown"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToOne(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">ng-show=</span><span class="s">"message.to.length + message.from.length + message.cc.length &gt; 2"</span> <span class="na">class=</span><span class="s">"ng-hide"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToAll(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply to all<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -474,18 +450,13 @@ $(function () {
       <div class="mc-messagelist-item">
         <div class="mc-messagelist-item-left">
           <div class="mc-messagelist-item-left-mark"></div>
-          <div class="mc-avatar-mid"></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
         </div>
         <div class="mc-messagelist-item-content">
-          <div class="mc-messagelist-date ng-binding"> 4:33 PM
-            <div class="btn-group mc-replybox-header-replystatus">
-              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret"></span></button>
-              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
-                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
-                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length &gt; 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
-                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
-              </ul>
-            </div>
+          <div class="mc-messagelist-date ng-binding"> 4:33 PM           
+              <button class="mc-messagelist-info-button mc-button-link">
+                <span class="mc-icon-caret-down"></span>
+              </button>
           </div>
           <div class="mc-messagelist-headline">Gary Chai</div>
           <div class="mc-messagelist-content">Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac</div>
@@ -495,18 +466,11 @@ $(function () {
       <div class="mc-messagelist-item">
         <div class="mc-messagelist-item-left">
           <div class="mc-messagelist-item-left-mark"></div>
-          <div class="mc-avatar-mid"></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
         </div>
         <div class="mc-messagelist-item-content">
           <div class="mc-messagelist-date ng-binding"> 4:33 PM
-            <div class="btn-group mc-replybox-header-replystatus">
-              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret"></span></button>
-              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
-                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
-                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length &gt; 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
-                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
-              </ul>
-            </div>
+            <button class="mc-messagelist-info-button mc-button-link" aria-expanded="true"><span class="mc-icon-caret-down"></span></button>
           </div>
           <div class="mc-messagelist-headline">Zachary Foster</div>
           <div class="mc-messagelist-content">Hey Gary, thanks for the reply, this is a very glad to help</div>
@@ -515,13 +479,13 @@ $(function () {
       </div>
       <div class="mc-messagelist-item">
         <div class="mc-messagelist-item-left">
-          <div class="mc-avatar-mid"></div>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
         </div>
 
         <div class="mc-messagelist-item-content">
           <div class="mc-messagelist-date ng-binding"> 4:33 PM
             <div class="btn-group mc-replybox-header-replystatus">
-              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret"></span></button>
+              <button class="mc-messagelist-info-button mc-button-link" type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="mc-icon-more"></span></button>
               <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
                 <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
                 <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length &gt; 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
@@ -580,18 +544,13 @@ $(function () {
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left-mark'</span><span class="nt">&gt;&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">&gt;&lt;/img&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-content'</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">aria-labelledby=</span><span class="s">"replyDropdown"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToOne(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">ng-show=</span><span class="s">"message.to.length + message.from.length + message.cc.length &gt; 2"</span> <span class="na">class=</span><span class="s">"ng-hide"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToAll(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply to all<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"forwardMsg(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Forward<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM           
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-caret-down"</span> <span class="nt">&gt;&lt;/span&gt;</span>
+              <span class="nt">&lt;/button&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-headline'</span><span class="nt">&gt;</span>Gary Chai<span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-content'</span><span class="nt">&gt;</span>Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac<span class="nt">&lt;/div&gt;</span>
@@ -601,18 +560,11 @@ $(function () {
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left-mark'</span><span class="nt">&gt;&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">&gt;&lt;/img&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-content'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">aria-labelledby=</span><span class="s">"replyDropdown"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToOne(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">ng-show=</span><span class="s">"message.to.length + message.from.length + message.cc.length &gt; 2"</span> <span class="na">class=</span><span class="s">"ng-hide"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToAll(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply to all<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"forwardMsg(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Forward<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-              <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-caret-down"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-headline'</span><span class="nt">&gt;</span>Zachary Foster<span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-content'</span><span class="nt">&gt;</span>Hey Gary, thanks for the reply, this is a very glad to help<span class="nt">&lt;/div&gt;</span>
@@ -621,13 +573,13 @@ $(function () {
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-left'</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">'mc-avatar-mid'</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">&gt;&lt;/img&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-messagelist-item-content'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mc-messagelist-date ng-binding"</span><span class="nt">&gt;</span> 4:33 PM
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mc-replybox-header-replystatus"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-messagelist-info-button mc-button-link'</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"replyDropdown"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-more"</span> <span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu mc-dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">aria-labelledby=</span><span class="s">"replyDropdown"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToOne(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">ng-show=</span><span class="s">"message.to.length + message.from.length + message.cc.length &gt; 2"</span> <span class="na">class=</span><span class="s">"ng-hide"</span><span class="nt">&gt;&lt;a</span> <span class="na">ng-click=</span><span class="s">"replyToAll(message)"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Reply to all<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
