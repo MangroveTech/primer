@@ -25,10 +25,10 @@
       float: right;
     }
     .mc-messagelist-item-left-mark{
-      width: 2px;
+      width: 3px;
       height: 100%;
       float: left;
-      background-color: #a1a1a1;
+      background-color: #BCBCBC;
     }
 
   }
@@ -41,16 +41,23 @@
 
     .mc-messagelist-date{
       float: right;
-      margin: 0px 15px 0 0px;
+      margin: 2px 15px 0 0px;
       text-align: right;
       color: #a1a1a1;
       font-size: 13px;
 
+
       .mc-messagelist-info-button{
         outline: 0;
+        font-size: 12px;
         color: #a1a1a1;
-        padding: 0px 4px 0 6px;
+        padding: 0px 7px 0 8px;
+        text-decoration: none;
 
+        .mc-icon-caret-down{
+          font-size: 9px;
+          padding: 0 2px 0 2px;
+        }
         &:hover{
           color: black;
         }

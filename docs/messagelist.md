@@ -11,18 +11,13 @@ title: Messagelist
       <div class='mc-messagelist-item'>
         <div class='mc-messagelist-item-left'>
           <div class='mc-messagelist-item-left-mark'></div>
-          <div class='mc-avatar-mid'></div>
+          <img class='mc-avatar-mid' src="../img/Mailcup-avatar-default.png"></img>
         </div>
         <div class='mc-messagelist-item-content'>
-          <div class="mc-messagelist-date ng-binding"> 4:33 PM
-            <div class="btn-group mc-replybox-header-replystatus">
-              <button class='mc-messagelist-info-button mc-button-link' type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret" ></span></button>
-              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
-                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
-                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length > 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
-                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
-              </ul>
-            </div>
+          <div class="mc-messagelist-date ng-binding"> 4:33 PM           
+              <button class='mc-messagelist-info-button mc-button-link'>
+                <span class="mc-icon-caret-down" ></span>
+              </button>
           </div>
           <div class='mc-messagelist-headline'>Gary Chai</div>
           <div class='mc-messagelist-content'>Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently. Koala can run in windows, linux and mac</div>
@@ -32,18 +27,11 @@ title: Messagelist
       <div class='mc-messagelist-item'>
         <div class='mc-messagelist-item-left'>
           <div class='mc-messagelist-item-left-mark'></div>
-          <div class='mc-avatar-mid'></div>
+          <img class='mc-avatar-mid' src="../img/Mailcup-avatar-default.png"></img>
         </div>
         <div class='mc-messagelist-item-content'>
           <div class="mc-messagelist-date ng-binding"> 4:33 PM
-            <div class="btn-group mc-replybox-header-replystatus">
-              <button class='mc-messagelist-info-button mc-button-link' type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret" ></span></button>
-              <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
-                <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
-                <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length > 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
-                <li role="presentation"><a ng-click="forwardMsg(message)" role="menuitem" tabindex="-1">Forward</a></li>
-              </ul>
-            </div>
+            <button class='mc-messagelist-info-button mc-button-link' aria-expanded="true"><span class="mc-icon-caret-down" ></span></button>
           </div>
           <div class='mc-messagelist-headline'>Zachary Foster</div>
           <div class='mc-messagelist-content'>Hey Gary, thanks for the reply, this is a very glad to help</div>
@@ -52,13 +40,13 @@ title: Messagelist
       </div>
       <div class='mc-messagelist-item'>
         <div class='mc-messagelist-item-left'>
-          <div class='mc-avatar-mid'></div>
+          <img class='mc-avatar-mid' src="../img/Mailcup-avatar-default.png"></img>
         </div>
 
         <div class='mc-messagelist-item-content'>
           <div class="mc-messagelist-date ng-binding"> 4:33 PM
             <div class="btn-group mc-replybox-header-replystatus">
-              <button class='mc-messagelist-info-button mc-button-link' type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="caret" ></span></button>
+              <button class='mc-messagelist-info-button mc-button-link' type="button" id="replyDropdown" data-toggle="dropdown" aria-expanded="true"><span class="mc-icon-more" ></span></button>
               <ul class="dropdown-menu mc-dropdown-menu" role="menu" aria-labelledby="replyDropdown">
                 <li role="presentation"><a ng-click="replyToOne(message)" role="menuitem" tabindex="-1">Reply</a></li>
                 <li role="presentation" ng-show="message.to.length + message.from.length + message.cc.length > 2" class="ng-hide"><a ng-click="replyToAll(message)" role="menuitem" tabindex="-1">Reply to all</a></li>
