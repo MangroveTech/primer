@@ -75,6 +75,7 @@ $mc-icon-pin-color: #4A90E2;
       margin: -20px 0 3px 0;
       padding: 0 15px 0 0;
       word-wrap:break-word;
+      letter-spacing: 0.2px;
       color: #232323;
       .mc-icon-clip{
         margin: 0 0 0 10px;
@@ -88,6 +89,7 @@ $mc-icon-pin-color: #4A90E2;
       padding: 2px 15px 0 0;
       overflow: hidden;
       height: 22px;
+      letter-spacing: 0.2px;
       color: #232323;      
       .mc-threadlist-summary{
         color: #a1a1a1;
@@ -95,7 +97,7 @@ $mc-icon-pin-color: #4A90E2;
     }
     .mc-threadlist-content{
       font-size: 13px;
-      letter-spacing: 0.1px;
+      letter-spacing: 0.2px;
       color: #999999;
       float: left;
       width: 100%;
@@ -131,7 +133,7 @@ $mc-icon-pin-color: #4A90E2;
   &:hover{
     background-color:$mc-color-lightblue;
     transition: 0.2s;
-    
+
     .mc-threadlist-item-content {
       width: calc(100% - 340px);
     }

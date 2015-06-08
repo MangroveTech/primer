@@ -79,9 +79,11 @@
 		a{
 			color:$mc-color-midgrey;
 			text-decoration:none;
+			letter-spacing: 0.3px;
+  		text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 
 			:hover{
-				transition: 0.2s;
+				transition: 0.3s;
 				color:$mc-color-midgrey;
 				background-color:#191A22;
 			}
@@ -89,6 +91,7 @@
 
 		.active{
 			color:white;
+			font-weight: 500;
 			:hover{
 				color:white;
 			}
