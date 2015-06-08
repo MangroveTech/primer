@@ -2,6 +2,9 @@
   @extend .btn;
   @extend .btn-default;
   outline:0;
+  &:hover{
+    transition: 0.3s;
+  }
 }
 
 .mc-button-primary {
@@ -11,8 +14,10 @@
  	border-color: #4A90E2;
  	text-shadow: 0 0 0.5px #555555;
  	font-weight: 400;
- 	:hover,:focus,:active{
- 		background-color: #326DB2;
+ 	&:hover{
+ 		background-color: #2C7CD9 !important;
+    border-color: #2C7CD9 !important;
+    transition: 0.3s;
  	}
  	outline:0;
 }
@@ -52,6 +57,7 @@
 	color:#B6B6B6;
   &:hover{
     color: #6D6D6D;
+    transition: 0.3s;
   }
 }
 

@@ -130,6 +130,8 @@ $mc-icon-pin-color: #4A90E2;
 
   &:hover{
     background-color:$mc-color-lightblue;
+    transition: 0.2s;
+    
     .mc-threadlist-item-content {
       width: calc(100% - 340px);
     }

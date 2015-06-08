@@ -42,7 +42,6 @@
 	margin: 10px 0 10px 0;
 	float:left;
 	width:100%;
-	font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;;
 
 	.mc-leftmenu-section-title{
 		padding:0 0 12px 6px;
@@ -82,6 +81,7 @@
 			text-decoration:none;
 
 			:hover{
+				transition: 0.2s;
 				color:$mc-color-midgrey;
 				background-color:#191A22;
 			}
@@ -118,7 +118,6 @@
 	}
 
 	.mc-leftmenu-footer-button{
-		font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
 		color:$mc-color-midgrey;
 	  text-decoration: none;
 	  line-height: 32px;
