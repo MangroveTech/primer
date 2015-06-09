@@ -53,6 +53,8 @@ $mc-icon-pin-color: #4A90E2;
     .mc-avatar-mid{
       margin: 15px 14px 18px 0px;
       float:right;
+      transform:rotate(0);
+      transition: 0.2s;
     }
     .mc-threadlist-item-unread{
       width: 3px;
@@ -132,7 +134,12 @@ $mc-icon-pin-color: #4A90E2;
 
   &:hover{
     background-color:$mc-color-lightblue;
-    transition: 0.2s;
+    
+
+    .mc-avatar-mid{
+      transform:rotate(-6deg);
+      transition: 0.2s;
+    }
 
     .mc-threadlist-item-content {
       width: calc(100% - 340px);
