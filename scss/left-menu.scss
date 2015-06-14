@@ -107,6 +107,23 @@
 		li{
 			padding:0 0 0 20px;
 		}
+
+		.mc-leftmenu-unread{
+			background: #4A90E2;
+		  float: right;
+		  line-height: 12px;
+		  padding: 3px 5px 3px 6px;
+		  font-weight: 400;
+		  border-radius: 3px;
+		  margin: 7px 10px 0 5px;
+		  text-shadow: none;
+		  font-size: 11px;
+		  color: white;
+		  &:hover{
+		  	background: #4A90E2;
+		  	color: white;
+		  }
+		}
 	}
 }
 
