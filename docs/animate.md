@@ -11,28 +11,24 @@ Animate 提供了 Mailcup 所有动画方案
 {:toc}
 
 ##引入动画
-在需要用到的地方的div、a、button等标签，在 class 上添加添加 `{动画名称} mc-animate`。
+在需要用到的地方的div、a、button等标签，在 class 上添加添加 `{动画名称} mc-animated`。
 
 {% example html %}
 <div>
-  <button class="">开始动画</button>
-
-</div>
-{% endexample %}
-
-##所有可用的动画
-在需要使用图标的地方直接使用
-
-{% example html %}
-<div>
-  <button class="">开始动画</button>
-  <div style='height:300px;width:100%;background-color:#f1f1f1'>
+  <form>
+      <select class="input input--dropdown js--animations">
+          <option value="fadeIn">fadeIn</option>
+          <option value="fadeOut">fadeOut</option>
+      </select>
+      <button class="mc-button-primary js--triggerAnimation">开始动画</button>
+    </form>
+  <div style='height:150px;width:100%;background-color:#f1f1f1'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Follow up</span>
       <button class='mc-button-nobg'><span class='mc-icon-alldone'></span></button>
     </div>
-    <div class='mc-section mc-section-marked'>
+    <div class='mc-section mc-section-marked' id="animationSandbox">
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
@@ -53,32 +49,26 @@ Animate 提供了 Mailcup 所有动画方案
       </a>
     </div>
   </div>
-  <div class='mc-threadlist-section'>
-    <div class='mc-section-header'>
-      <span class='mc-text-content'>Done</span>
-      <button class='mc-button-nobg'><span class='mc-icon-alldone'></span></button>
-    </div>
-    <div class='mc-section mc-section-marked'>
-      <a class='mc-threadlist-item'>
-        <div class='mc-threadlist-item-left'>
-          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
-        </div>
-        <div class='mc-threadlist-item-content'>
-          <div class='mc-threadlist-headline'>Gongbao (JIRA)</div>
-          <div class='mc-threadlist-subject'>
-           [JIRA] (MAILCUP-630) 从 Message list 回退 到 Thread list，记录滚动的位置 - <span class="mc-threadlist-summary">  Gongbao updated Story MAILCUP-630 MAILCUP / Story MAILCUP-630</span>
-          </div>
-        </div>
-        <div class='mc-threadlist-mark'><span class="mc-icon-done mc-color-icon-midgreen"></span></div>
-        <div class='mc-threadlist-item-right'>
-          <div><button class='mc-button-nobg' onclick="closeanimation()"><span class="mc-icon-done mc-color-icon-midgreen"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-pin"></span></button></div>
-          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
-        </div>
-        <div class='mc-threadlist-date'>11:51 PM</div>
-      </a>
-    </div>
-  </div>
 </div>
 </div>
+<script type="text/javascript">
+function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' mc-animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  };
+
+  $(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+      e.preventDefault();
+      var anim = $('.js--animations').val();
+      testAnim(anim);
+    });
+
+    $('.js--animations').change(function(){
+      var anim = $(this).val();
+      testAnim(anim);
+    });
+  });
+</script>
 {% endexample %}

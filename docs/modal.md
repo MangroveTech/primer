@@ -243,3 +243,47 @@ title: Modal
   });
 </script>
 {% endexample %}
+
+##用以兼容angular-bootstrap
+* 这里的样式只有宽度为 720px 的大尺寸
+
+{% example html %}
+<div style='height:30px;width:100%;'>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+  show modal
+</button>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class='modal-content'>
+    <div class='mc-modal-header'>
+      <div class='mc-modal-title'>Settings</div>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-close"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-focus"></span>
+      </button>
+      <button type="button" class="mc-button-nobg">
+        <span class="mc-icon-unfocus"></span>
+      </button>
+    </div>
+    <div class='mc-modal-body'>
+      <br><br><br><br>
+    </div>
+    <div class='mc-modal-footer'>
+      <div class='mc-modal-footer-right'>
+        <button class='mc-button-primary'>Save</button>
+        <button class='mc-button-link'>Cancel</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  $('#myModal2').modal({
+    show: false
+  });
+</script>
+
+{% endexample %}

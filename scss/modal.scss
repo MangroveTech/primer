@@ -137,3 +137,8 @@
     
   }
 }
+
+.modal-content{
+  @extend .mc-modal;
+  @extend .mc-modal-big;
+}
