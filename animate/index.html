@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      Mailcup &middot; Animate
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="/primer/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/primer/docs.css">
+    <script type="text/javascript" src="/primer/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/primer/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/primer/">Mailcup</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="/primer/styleguide">Docs</a></li>
+            <li ><a href="/primer/about">About</a></li>
+            <li><a href="https://github.com/zhaokun/primer" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- /导航 -->
+
+
+    
+
+    <div class="container-fluid">
+      <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      
+        <h4>Rules</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/styleguide/">
+    Styleguide
+  </a></li>
+</ul>
+
+<h4>Foundation</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/layout/">
+    Layout
+  </a></li>
+  <li class=""><a href="/primer/color/">
+    Color
+  </a></li>
+  <li class=""><a href="/primer/typography/">
+    Typography
+  </a></li>
+  <li class=""><a href="/primer/icon/">
+    Icon
+  </a></li>
+</ul>
+
+<h4>Components</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/avatar/">
+    Avatar
+  </a></li>
+  <li class=""><a href="/primer/button/">
+    Button
+  </a></li>
+  <li class=""><a href="/primer/textfield/">
+    Textfield
+  </a></li>
+  <li class=""><a href="/primer/dropdown/">
+    Dropdown
+  </a></li>
+  <li class=""><a href="/primer/notification/">
+    Notification
+  </a></li>
+  <li class=""><a href="/primer/modal/">
+    Modal
+  </a></li>
+  <li class=""><a href="/primer/label/">
+    Label
+  </a></li>
+  <li class=""><a href="/primer/checkbox/">
+    Checkbox
+  </a></li>
+  <li class=""><a href="/primer/form/">
+    Form
+  </a></li>
+  <li class=""><a href="/primer/table/">
+    Table
+  </a></li>
+  <li class=""><a href="/primer/token/">
+    Token
+  </a></li>
+  <li class=""><a href="/primer/attachment/">
+    Attachment
+  </a></li>
+  <li class="active"><a href="/primer/Animate/">
+    Animate
+  </a></li>
+</ul>
+
+<h4>Patterns</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/spinner/">
+    Spinner
+  </a></li>
+  <li class=""><a href="/primer/left-menu/">
+    Left Menu
+  </a></li>
+  <li class=""><a href="/primer/navbar/">
+    Navbar
+  </a></li>
+  <li class=""><a href="/primer/threadlist/">
+    Threadlist
+  </a></li>
+  <li class=""><a href="/primer/messagelist/">
+    Messagelist
+  </a></li>
+  <li class=""><a href="/primer/compose/">
+    Compose
+  </a></li>
+  <li class=""><a href="/primer/replybox/">
+    Replybox
+  </a></li>
+  <li class=""><a href="/primer/search/">
+    Search
+  </a></li>
+  <li class=""><a href="/primer/filter/">
+    Filter
+  </a></li>
+</ul>
+      
+    </div>
+    <div class="col-md-9 markdown-body">
+      <h1 class="page-title">
+        Animate
+      </h1>
+      <div class="markdown-body">
+        <p>Animate 提供了 Mailcup 所有动画方案</p>
+
+<p>你可以在下面的CSS文件里找到 <code>animate.scss</code>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">引入动画</a></li>
+</ul>
+
+<h2 id="section">引入动画</h2>
+<p>在需要用到的地方的div、a、button等标签，在 class 上添加添加 <code>{动画名称} mc-animated</code>。</p>
+
+<div class="docs-example clearfix"><div>
+  <form>
+      <select class="input input--dropdown js--animations">
+          <option value="fadeIn">fadeIn</option>
+          <option value="fadeOut">fadeOut</option>
+      </select>
+      <button class="mc-button-primary js--triggerAnimation">开始动画</button>
+    </form>
+  <div style="height:150px;width:100%;background-color:#f1f1f1">
+  <div class="mc-threadlist-section">
+    <div class="mc-section-header">
+      <span class="mc-text-content">Follow up</span>
+      <button class="mc-button-nobg"><span class="mc-icon-alldone"></span></button>
+    </div>
+    <div class="mc-section mc-section-marked" id="animationSandbox">
+      <a class="mc-threadlist-item">
+        <div class="mc-threadlist-item-left">
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
+        </div>
+        <div class="mc-threadlist-item-content">
+          <div class="mc-threadlist-headline">Jacky Li, Gate Johnason, me (5)</div>
+          <div class="mc-threadlist-subject">
+            A World Of Indexes In Your Inbox - <span class="mc-threadlist-summary">Dubsmash saw a 2nd wind in terms of downloads, and TurboTax remained a top contender in revenue</span>
+          </div>
+        </div>
+        <div class="mc-threadlist-mark"><span class="mc-icon-pin mc-color-icon-midblue"></span></div>
+        <div class="mc-threadlist-item-right">
+          <div><button class="mc-button-nobg" onclick="closeanimation()"><span class="mc-icon-done"></span></button></div>
+          <div><button class="mc-button-nobg"><span class="mc-icon-pin mc-color-icon-midblue"></span></button></div>
+          <div><button class="mc-button-nobg"><span class="mc-icon-label"></span></button></div>
+        </div>
+        <div class="mc-threadlist-date">11:51 PM</div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' mc-animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  };
+
+  $(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+      e.preventDefault();
+      var anim = $('.js--animations').val();
+      testAnim(anim);
+    });
+
+    $('.js--animations').change(function(){
+      var anim = $(this).val();
+      testAnim(anim);
+    });
+  });
+</script></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;form&gt;</span>
+      <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"input input--dropdown js--animations"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"fadeIn"</span><span class="nt">&gt;</span>fadeIn<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"fadeOut"</span><span class="nt">&gt;</span>fadeOut<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"mc-button-primary js--triggerAnimation"</span><span class="nt">&gt;</span>开始动画<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:150px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-section'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-section-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-text-content'</span><span class="nt">&gt;</span>Follow up<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-icon-alldone'</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-section mc-section-marked'</span> <span class="na">id=</span><span class="s">"animationSandbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">'mc-threadlist-item'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-item-left'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mc-avatar-mid"</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-item-content'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-headline'</span><span class="nt">&gt;</span>Jacky Li, Gate Johnason, me (5)<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-subject'</span><span class="nt">&gt;</span>
+            A World Of Indexes In Your Inbox - <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-threadlist-summary"</span><span class="nt">&gt;</span>Dubsmash saw a 2nd wind in terms of downloads, and TurboTax remained a top contender in revenue<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-mark'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin mc-color-icon-midblue"</span><span class="nt">&gt;&lt;/span&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-item-right'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span> <span class="na">onclick=</span><span class="s">"closeanimation()"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-done"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin mc-color-icon-midblue"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-date'</span><span class="nt">&gt;</span>11:51 PM<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+<span class="kd">function</span> <span class="nx">testAnim</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#animationSandbox'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">().</span><span class="nx">addClass</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="s1">' mc-animated'</span><span class="p">).</span><span class="nx">one</span><span class="p">(</span><span class="s1">'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">();</span>
+    <span class="p">});</span>
+  <span class="p">};</span>
+
+  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.js--triggerAnimation'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+      <span class="kd">var</span> <span class="nx">anim</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'.js--animations'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+      <span class="nx">testAnim</span><span class="p">(</span><span class="nx">anim</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.js--animations'</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+      <span class="kd">var</span> <span class="nx">anim</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+      <span class="nx">testAnim</span><span class="p">(</span><span class="nx">anim</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+
+<div class="columns docs-layout">
+  <div class="one-fourth column">
+    
+      <h4>Rules</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/styleguide/">
+    Styleguide
+  </a></li>
+</ul>
+
+<h4>Foundation</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/layout/">
+    Layout
+  </a></li>
+  <li class=""><a href="/primer/color/">
+    Color
+  </a></li>
+  <li class=""><a href="/primer/typography/">
+    Typography
+  </a></li>
+  <li class=""><a href="/primer/icon/">
+    Icon
+  </a></li>
+</ul>
+
+<h4>Components</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/avatar/">
+    Avatar
+  </a></li>
+  <li class=""><a href="/primer/button/">
+    Button
+  </a></li>
+  <li class=""><a href="/primer/textfield/">
+    Textfield
+  </a></li>
+  <li class=""><a href="/primer/dropdown/">
+    Dropdown
+  </a></li>
+  <li class=""><a href="/primer/notification/">
+    Notification
+  </a></li>
+  <li class=""><a href="/primer/modal/">
+    Modal
+  </a></li>
+  <li class=""><a href="/primer/label/">
+    Label
+  </a></li>
+  <li class=""><a href="/primer/checkbox/">
+    Checkbox
+  </a></li>
+  <li class=""><a href="/primer/form/">
+    Form
+  </a></li>
+  <li class=""><a href="/primer/table/">
+    Table
+  </a></li>
+  <li class=""><a href="/primer/token/">
+    Token
+  </a></li>
+  <li class=""><a href="/primer/attachment/">
+    Attachment
+  </a></li>
+  <li class="active"><a href="/primer/Animate/">
+    Animate
+  </a></li>
+</ul>
+
+<h4>Patterns</h4>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class=""><a href="/primer/spinner/">
+    Spinner
+  </a></li>
+  <li class=""><a href="/primer/left-menu/">
+    Left Menu
+  </a></li>
+  <li class=""><a href="/primer/navbar/">
+    Navbar
+  </a></li>
+  <li class=""><a href="/primer/threadlist/">
+    Threadlist
+  </a></li>
+  <li class=""><a href="/primer/messagelist/">
+    Messagelist
+  </a></li>
+  <li class=""><a href="/primer/compose/">
+    Compose
+  </a></li>
+  <li class=""><a href="/primer/replybox/">
+    Replybox
+  </a></li>
+  <li class=""><a href="/primer/search/">
+    Search
+  </a></li>
+  <li class=""><a href="/primer/filter/">
+    Filter
+  </a></li>
+</ul>
+    
+  </div>
+  <div class="three-fourths column markdown-body">
+    <h1 class="page-title">
+      Animate
+    </h1>
+    <div class="markdown-body">
+      <p>Animate 提供了 Mailcup 所有动画方案</p>
+
+<p>你可以在下面的CSS文件里找到 <code>animate.scss</code>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">引入动画</a></li>
+</ul>
+
+<h2 id="section">引入动画</h2>
+<p>在需要用到的地方的div、a、button等标签，在 class 上添加添加 <code>{动画名称} mc-animated</code>。</p>
+
+<div class="docs-example clearfix"><div>
+  <form>
+      <select class="input input--dropdown js--animations">
+          <option value="fadeIn">fadeIn</option>
+          <option value="fadeOut">fadeOut</option>
+      </select>
+      <button class="mc-button-primary js--triggerAnimation">开始动画</button>
+    </form>
+  <div style="height:150px;width:100%;background-color:#f1f1f1">
+  <div class="mc-threadlist-section">
+    <div class="mc-section-header">
+      <span class="mc-text-content">Follow up</span>
+      <button class="mc-button-nobg"><span class="mc-icon-alldone"></span></button>
+    </div>
+    <div class="mc-section mc-section-marked" id="animationSandbox">
+      <a class="mc-threadlist-item">
+        <div class="mc-threadlist-item-left">
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png" />
+        </div>
+        <div class="mc-threadlist-item-content">
+          <div class="mc-threadlist-headline">Jacky Li, Gate Johnason, me (5)</div>
+          <div class="mc-threadlist-subject">
+            A World Of Indexes In Your Inbox - <span class="mc-threadlist-summary">Dubsmash saw a 2nd wind in terms of downloads, and TurboTax remained a top contender in revenue</span>
+          </div>
+        </div>
+        <div class="mc-threadlist-mark"><span class="mc-icon-pin mc-color-icon-midblue"></span></div>
+        <div class="mc-threadlist-item-right">
+          <div><button class="mc-button-nobg" onclick="closeanimation()"><span class="mc-icon-done"></span></button></div>
+          <div><button class="mc-button-nobg"><span class="mc-icon-pin mc-color-icon-midblue"></span></button></div>
+          <div><button class="mc-button-nobg"><span class="mc-icon-label"></span></button></div>
+        </div>
+        <div class="mc-threadlist-date">11:51 PM</div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' mc-animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  };
+
+  $(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+      e.preventDefault();
+      var anim = $('.js--animations').val();
+      testAnim(anim);
+    });
+
+    $('.js--animations').change(function(){
+      var anim = $(this).val();
+      testAnim(anim);
+    });
+  });
+</script></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;form&gt;</span>
+      <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"input input--dropdown js--animations"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"fadeIn"</span><span class="nt">&gt;</span>fadeIn<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"fadeOut"</span><span class="nt">&gt;</span>fadeOut<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"mc-button-primary js--triggerAnimation"</span><span class="nt">&gt;</span>开始动画<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">'height:150px;width:100%;background-color:#f1f1f1'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-section'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-section-header'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'mc-text-content'</span><span class="nt">&gt;</span>Follow up<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">'mc-icon-alldone'</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-section mc-section-marked'</span> <span class="na">id=</span><span class="s">"animationSandbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">'mc-threadlist-item'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-item-left'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mc-avatar-mid"</span> <span class="na">src=</span><span class="s">"../img/Mailcup-avatar-default.png"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-item-content'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-headline'</span><span class="nt">&gt;</span>Jacky Li, Gate Johnason, me (5)<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-subject'</span><span class="nt">&gt;</span>
+            A World Of Indexes In Your Inbox - <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mc-threadlist-summary"</span><span class="nt">&gt;</span>Dubsmash saw a 2nd wind in terms of downloads, and TurboTax remained a top contender in revenue<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-mark'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin mc-color-icon-midblue"</span><span class="nt">&gt;&lt;/span&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-item-right'</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span> <span class="na">onclick=</span><span class="s">"closeanimation()"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-done"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-pin mc-color-icon-midblue"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div&gt;&lt;button</span> <span class="na">class=</span><span class="s">'mc-button-nobg'</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"mc-icon-label"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'mc-threadlist-date'</span><span class="nt">&gt;</span>11:51 PM<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+<span class="kd">function</span> <span class="nx">testAnim</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#animationSandbox'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">().</span><span class="nx">addClass</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="s1">' mc-animated'</span><span class="p">).</span><span class="nx">one</span><span class="p">(</span><span class="s1">'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">();</span>
+    <span class="p">});</span>
+  <span class="p">};</span>
+
+  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.js--triggerAnimation'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+      <span class="kd">var</span> <span class="nx">anim</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'.js--animations'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+      <span class="nx">testAnim</span><span class="p">(</span><span class="nx">anim</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.js--animations'</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+      <span class="kd">var</span> <span class="nx">anim</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+      <span class="nx">testAnim</span><span class="p">(</span><span class="nx">anim</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
+
+
+    </div>
+  </div>
+</div> -->
+
+
+      <footer style="margin:20px auto;text-align:center;">
+        &copy; Just 2015.
+      </footer>
+    </div>
+  </body>
+</html>
