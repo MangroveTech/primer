@@ -93,6 +93,54 @@
 
 }
 
+.mc-compose-tokenfield{
+  @extend .mc-modal-body;
+  padding: 0px;
+  border-bottom:1px solid #ECECEC;
+
+  .mc-compose-tokenfield-left {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .mc-compose-tokenfield-right {
+    width:100%;
+    height: auto;
+    padding-left: 12px;
+    
+    input{
+      font-family: arial, sans-serif;
+      width: 400px;
+      outline: none;
+      border: none;
+      line-height: 43px;
+      background: none;
+    }
+    &.cc, &.bcc {
+      display: none;
+    }
+    bcc{
+      padding: 0 5px 0 0;
+    }
+  }
+  }
+
+.mc-compose-tokenfield-item {
+  width: 370px;
+  height: auto;
+  float: left;
+
+  .selectize-input{
+    padding: 8px;
+    background: none;
+  }
+  .selectize-control.multi .selectize-input.has-items{
+    padding: 8px;
+    background: none;
+  }
+}
+
 .mc-select {
   width: 370px;
   height: 42px;
@@ -110,8 +158,11 @@
     background: none;
   }
 }
+
 .mc-cc {
-  padding: 0 12px 0 0px;
+  padding-right: 10px;
+  height: 45px;
+  line-height: 45px;
   cursor: pointer;
   float: right;
 }

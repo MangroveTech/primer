@@ -4,6 +4,7 @@ title: Compose
 ---
 
 ## 标准Compose样式
+### 在放入angular项目中的时候，应该注意显示的控制最好使用angular进行控制，此处关于cc、bcc部分无法直接使用上去。
 
 {% example html %}
 
@@ -27,29 +28,46 @@ title: Compose
         <span class="mc-icon-unfocus"></span>
       </button>
     </div>
-    <div class='mc-compose-body'>
-      <div class="mc-compose-body-label to">
-        <div style="float:left">
+    <div class="mc-compose-tokenfield">
+    <div class="mc-compose-tokenfield-right">
+    <div style="clear:both"></div>
+    
+    <div class="mc-compose-tokenfield-left">
           To&nbsp;
         </div>
-        <div class="mc-select" ng-app="mailcup" ng-controller="mailcupCtrl">
+        <div class="mc-compose-tokenfield-item" ng-app="mailcup" ng-controller="mailcupCtrl">
           <selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
         </div>
         <span class="mc-cc bcc">Bcc</span>
         <span class="mc-cc cc">Cc</span>
-      </div>
-      <div class="mc-compose-body-label cc">
-        <div style="float:left">
-        Cc&nbsp;
+    </div>
+    </div>
+
+    <div class="mc-compose-tokenfield cc">
+    <div class="mc-compose-tokenfield-right cc">
+    <div style="clear:both"></div>
+       <div class="mc-compose-tokenfield-left">
+       Cc&nbsp;
+       </div>
+       <div class="mc-compose-tokenfield-item" ng-app="mailcup" ng-controller="mailcupCtrl">
+          <selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
         </div>
-        <input />
-      </div>
-      <div class="mc-compose-body-label bcc">
-        <div style="float:left">
-          Bcc&nbsp;
+     </div>
+     </div>
+
+    <div class="mc-compose-tokenfield bcc">
+     <div class="mc-compose-tokenfield-right bcc">
+    <div style="clear:both"></div>
+       <div class="mc-compose-tokenfield-left">
+         Bcc&nbsp;
+       </div>
+       <div class="mc-compose-tokenfield-item" ng-app="mailcup" ng-controller="mailcupCtrl">
+          <selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
         </div>
-        <input />
-      </div>
+     </div>
+     </div>
+
+    <div class='mc-compose-body'>
       <div class="mc-compose-body-label">
         <input placeholder="Subject" />
       </div>
@@ -98,20 +116,20 @@ title: Compose
 <script type="text/javascript">
   $('span.cc').click(function() {
     $('span.cc').css('display', 'none');
-    $('.mc-compose-body-label.cc').css('display', 'block');
-    $('.mc-compose-body-label.cc input').blur(function() {
+    $('.mc-compose-tokenfield-right.cc').css('display', 'block');
+    $('.mc-compose-tokenfield-right.cc input').blur(function() {
       if (!$(this).val()) {
-        $('.mc-compose-body-label.cc').css('display', 'none');
+        $('.mc-compose-tokenfield-right.cc').css('display', 'none');
         $('span.cc').css('display', 'block');
       }
     });
   });
   $('span.bcc').click(function() {
     $('span.bcc').css('display', 'none');
-    $('.mc-compose-body-label.bcc').css('display', 'block');
-    $('.mc-compose-body-label.bcc input').blur(function() {
+    $('.mc-compose-tokenfield-right.bcc').css('display', 'block');
+    $('.mc-compose-tokenfield-right.bcc input').blur(function() {
       if (!$(this).val()) {
-        $('.mc-compose-body-label.bcc').css('display', 'none');
+        $('.mc-compose-tokenfield-right.bcc').css('display', 'none');
         $('span.bcc').css('display', 'block');
       }
     });
