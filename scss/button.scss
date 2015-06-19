@@ -1,3 +1,7 @@
+*:focus {
+    outline: 0;
+}
+
 .mc-button {
   @extend .btn;
   @extend .btn-default;
