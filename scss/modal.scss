@@ -2,7 +2,6 @@
   @extend .panel;
   @extend .panel-default;
   margin: 0 auto;
-  width: 560px;
   box-shadow: 0px 0px 8px #494949;
   border: none;
   margin-top: 120px;
@@ -139,6 +138,10 @@
 }
 
 .modal-content{
-  @extend .mc-modal;
-  @extend .modal-lg;
+  @extend .panel;
+  @extend .panel-default;
+  margin: 0 auto;
+  box-shadow: 0px 0px 8px #494949;
+  border: none;
+  margin-top: 120px;
 }
