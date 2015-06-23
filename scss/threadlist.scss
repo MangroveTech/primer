@@ -32,6 +32,10 @@ $mc-icon-pin-color: #4A90E2;
     border-bottom: 1px solid #f6f6f6;
     width:100%;
   }
+
+  .mc-section-last{
+    border:none;
+  }
 }
 
 .mc-threadlist-item{
@@ -234,6 +238,5 @@ $mc-icon-pin-color: #4A90E2;
   padding: 40px 0 80px 0;
   float: left;
   width: 100%;
-
 }
 

@@ -74,7 +74,7 @@ Sheng fixing dsty-1282 Liu fixing dsty-479 Adam fixing dsty-1281</span>
         <div class='mc-threadlist-date'>11:51 PM</div>
       </a>
     </div>
-    <div class='mc-section'>
+    <div class='mc-section mc-section-last'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
