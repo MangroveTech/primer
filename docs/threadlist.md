@@ -8,7 +8,7 @@ title: Threadlist
 
 {% example html %}
 
-<div style='height:400px;width:100%;background-color:#ececec'>
+<div style='height:600px;width:100%;background-color:#ececec'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Today</span>
@@ -94,6 +94,7 @@ Sheng fixing dsty-1282 Liu fixing dsty-479 Adam fixing dsty-1281</span>
       </a>
     </div>
   </div>
+  <div class='mc-threadlist-loadmore'>Loading more...</div>
 </div>
 
 <script type="text/javascript">
