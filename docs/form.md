@@ -80,14 +80,14 @@ title: Form
         <div class="form-group">
           <label for="inputLabelColor" class="col-sm-3 control-label">Filter</label>
           <div class="col-sm-8">
-            <button id="inputLabelColor" class='mc-button-primary mc-button-small'>Add Filter</button>
+            <button id="inputLabelColor" class='mc-button mc-button-small'>Add Filter</button>
             <span id="helpBlock" class="help-block">Label incoming messages automatically.  <a href='#'> Learn more</a></span>
           </div>
         </div>
         <div class="form-group">
           <label for="inputLabelColor" class="col-sm-3 control-label">Action</label>
           <div class="col-sm-8">
-            <button id="inputLabelColor" class='mc-button-primary mc-button-small'>Add Action</button>
+            <button id="inputLabelColor" class='mc-button mc-button-small'>Add Action</button>
             <span id="helpBlock" class="help-block">Manage action of messages been labeled.  <a href='#'> Learn more</a></span>
           </div>
         </div>
@@ -95,7 +95,8 @@ title: Form
     </div>
     <div class='mc-modal-footer'>
       <div class='mc-modal-footer-right'>
-        <button class='mc-button-primary'>Create</button>
+        <div class='mc-form-spinner'></div>
+        <button class='mc-button-primary' disabled="disabled">Create</button>
         <button class='mc-button-link'>Cancel</button>
       </div>
     </div>

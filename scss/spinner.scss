@@ -1,3 +1,24 @@
+.mc-form-spinner{
+  -webkit-animation: rotate-infinite .7s linear infinite;
+  border: 3px solid #a1a1a1;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+@-webkit-keyframes rotate-infinite {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100%  {
+    -webkit-transform: rotate(360deg); 
+  }
+}
+
 .mc-spinner{
   position: absolute;
   top: 50%;
