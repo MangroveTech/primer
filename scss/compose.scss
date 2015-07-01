@@ -41,7 +41,7 @@
 
 .mc-compose-body{
   @extend .mc-modal-body;
-  min-height: 300px;
+  /*min-height: 300px;*/
   padding: 0;
 
   .mc-compose-body-label {
@@ -68,8 +68,9 @@
   }
 
   .mc-compose-body-content{
-    height:300px;
-    overflow-y:scroll;
+    /*height:300px;*/
+    /*height:100%;*/
+    /*overflow-y:scroll;*/
 
     .mc-attachment-box{
       float:left;
@@ -83,8 +84,8 @@
     }
 
     padding: 10px 12px;
-    min-height: 200px;
-    overflow-y: scroll;
+    /*min-height: 200px;*/
+    /*overflow-y: scroll;*/
   }
 
 
@@ -140,7 +141,7 @@
 }
 
 .mc-select {
-  width: 370px;
+  width: 480px;
   height: 42px;
   padding:0;
   border:0;

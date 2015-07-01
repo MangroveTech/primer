@@ -5,7 +5,7 @@
   "author": "GitHub, Inc.",
   "scss": "./scss/primer.scss",
   "scripts": {
-    "start": "supervisor -e css,html,js,json,scss,md -i node_modules,bower_component,_site -x jekyll server"  
+    "start": "supervisor -e css,html,js,json,scss,md -i node_modules,bower_component,_site -x jekyll server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
     "grunt-jekyll": "~0.4.2",
     "grunt-parker": "~0.1.0",
     "grunt-sass": "~0.18.0",
-    "grunt-contrib-watch": "~0.6.1"
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-copy": "^0.8.0"
   }
 }

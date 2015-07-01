@@ -5,3 +5,4 @@ vendor/
 vendor/
 .ruby-version
 _site/
+node_modules
