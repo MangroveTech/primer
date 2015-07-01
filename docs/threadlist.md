@@ -74,7 +74,7 @@ Sheng fixing dsty-1282 Liu fixing dsty-479 Adam fixing dsty-1281</span>
         <div class='mc-threadlist-date'>11:51 PM</div>
       </a>
     </div>
-    <div class='mc-section mc-section-last'>
+    <div class='mc-section mc-section-selected mc-section-last'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
@@ -115,7 +115,7 @@ $(".mc-button-nobg").click(function() {
 ##Follow up Page
 
 {% example html %}
-<div style='height:300px;width:100%;background-color:#f1f1f1'>
+<div style='height:350px;width:100%;background-color:#f1f1f1'>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Follow up</span>
@@ -141,13 +141,33 @@ $(".mc-button-nobg").click(function() {
         <div class='mc-threadlist-date'>11:51 PM</div>
       </a>
     </div>
+    <div class='mc-section mc-section-marked mc-section-selected'>
+      <a class='mc-threadlist-item'>
+        <div class='mc-threadlist-item-left'>
+          <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>
+        </div>
+        <div class='mc-threadlist-item-content'>
+          <div class='mc-threadlist-headline'>Jacky Li, Gate Johnason, me (5)</div>
+          <div class='mc-threadlist-subject'>
+            A World Of Indexes In Your Inbox - <span class="mc-threadlist-summary">Dubsmash saw a 2nd wind in terms of downloads, and TurboTax remained a top contender in revenue</span>
+          </div>
+        </div>
+        <div class='mc-threadlist-mark'><span class="mc-icon-pin mc-color-icon-midblue"></span></div>
+        <div class='mc-threadlist-item-right'>
+          <div><button class='mc-button-nobg' onclick="closeanimation()"><span class="mc-icon-done"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-pin mc-color-icon-midblue"></span></button></div>
+          <div><button class='mc-button-nobg'><span class="mc-icon-label"></span></button></div>
+        </div>
+        <div class='mc-threadlist-date'>11:51 PM</div>
+      </a>
+    </div>
   </div>
   <div class='mc-threadlist-section'>
     <div class='mc-section-header'>
       <span class='mc-text-content'>Done</span>
       <button class='mc-button-nobg'><span class='mc-icon-alldone'></span></button>
     </div>
-    <div class='mc-section mc-section-marked'>
+    <div class='mc-section mc-section-marked mc-section-selected'>
       <a class='mc-threadlist-item'>
         <div class='mc-threadlist-item-left'>
           <img class="mc-avatar-mid" src="../img/Mailcup-avatar-default.png"/>

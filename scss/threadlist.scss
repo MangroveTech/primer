@@ -126,6 +126,37 @@ $mc-icon-pin-color: #4A90E2;
 
   .mc-threadlist-item-right{
     display: none;
+    float: left;
+    width: 180px;
+    height: 70px;
+
+    text-decoration: none;
+    div {
+      display: inline-block;
+      width: 30%;
+      line-height: 70px;
+      button {
+        color: #B6B6B6;
+        display: inline-block;
+        margin-top: -1px;
+        font-size: 18px;
+        &:hover{
+          color: #6D6D6D;
+          background-color:#EEEEEE;
+        }
+      }
+      .mc-labels-group{
+        line-height:30px;
+        li{
+          padding: 0px 0 0 10px;
+        }
+        label{
+          line-height: 17px;  
+        }
+
+      }
+
+    }
   }
 
   .divider{
@@ -135,52 +166,27 @@ $mc-icon-pin-color: #4A90E2;
     float: left;
     width: 100%;
   }
+}
 
-  &:hover{
-    background-color:$mc-color-lightblue;
-    
-
-    .mc-avatar-mid{
-      transform:rotate(-6deg);
-      transition: 0.2s;
-    }
-
+.mc-section-selected {
+  .mc-threadlist-item {
     .mc-threadlist-item-content {
       width: calc(100% - 340px);
     }
-    .mc-threadlist-item-right{
+
+    .mc-threadlist-item-right {
       display: block;
-      float: left;
-      width: 180px;
-      height: 70px;
+    }
 
-      text-decoration: none;
-      div {
-        display: inline-block;
-        width: 30%;
-        line-height: 70px;
-        button {
-          color: #B6B6B6;
-          display: inline-block;
-          margin-top: -1px;
-          font-size: 18px;
-          &:hover{
-            color: #6D6D6D;
-            background-color:#EEEEEE;
-          }
-        }
-        .mc-labels-group{
-          line-height:30px;
-          li{
-            padding: 0px 0 0 10px;
-          }
-          label{
-            line-height: 17px;  
-          }
+    .mc-threadlist-mark {
+      display: none;
+    }
 
-        }
-
-      }
+    background-color:$mc-color-lightblue;
+    
+    .mc-avatar-mid{
+      transform:rotate(-6deg);
+      transition: 0.2s;
     }
   }
 }
@@ -222,12 +228,6 @@ $mc-icon-pin-color: #4A90E2;
     width: 40px;
     float: left;
     padding: 24px 0 0 0;
-  }
-
-  &:hover{
-    .mc-threadlist-mark{
-      display:none;
-    }
   }
 }
 
