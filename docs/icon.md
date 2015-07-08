@@ -22,53 +22,71 @@ Icon 提供了 Mailcup 所用到的图标字体方案
 
 {% example html %}
 <div class="row" style="margin:15px 0px 15px 0px">
-<div class="col-md-3"><span class="mc-icon-template btn-lg"> template</span></div>
-<div class="col-md-3"><span class="mc-icon-clip btn-lg"> clip</span></div>
-<div class="col-md-3"><span class="mc-icon-back btn-lg"> back</span></div>
-<div class="col-md-3"><span class="mc-icon-close btn-lg"> close</span></div>
+  <div class="col-md-3"><span class="mc-icon-clip btn-lg"> clip</span></div>
+  <div class="col-md-3"><span class="mc-icon-template btn-lg"> template</span></div>
+  <div class="col-md-3"><span class="mc-icon-back btn-lg"> back</span></div>
+  <div class="col-md-3"><span class="mc-icon-close btn-lg"> close</span></div>
 </div>
+
 <div class="row" style="margin:15px 0px 15px 0px">
 <div class="col-md-3"><span class="mc-icon-done-all btn-lg"> done-all</span></div>
 <div class="col-md-3"><span class="mc-icon-done btn-lg"> done</span></div>
+<div class="col-md-3"><span class="mc-icon-caret-right btn-lg"> caret-right</span></div>
+<div class="col-md-3"><span class="mc-icon-caret-left btn-lg"> caret-left</span></div>
+</div>
+
+<div class="row" style="margin:15px 0px 15px 0px">
+<div class="col-md-3"><span class="mc-icon-caret-up btn-lg"> caret-up</span></div>
 <div class="col-md-3"><span class="mc-icon-caret-down btn-lg"> caret-down</span></div>
-<div class="col-md-3"><span class="mc-icon-arrow-down btn-lg"> arrow-down</span></div>
+<div class="col-md-3"><span class="mc-icon-arrow-left btn-lg"> arrow-left</span></div>
+<div class="col-md-3"><span class="mc-icon-arrow-right btn-lg"> arrow-right</span></div>
 </div>
+
 <div class="row" style="margin:15px 0px 15px 0px">
-<div class="col-md-3"><span class="mc-icon-focus btn-lg"> focus</span></div>
-<div class="col-md-3"><span class="mc-icon-pin btn-lg"> pin</span></div>
+  <div class="col-md-3"><span class="mc-icon-arrow-up btn-lg"> arrow-up</span></div>
+  <div class="col-md-3"><span class="mc-icon-arrow-down btn-lg"> arrow-down</span></div>
+  <div class="col-md-3"><span class="mc-icon-focus btn-lg"> focus</span></div>
+  <div class="col-md-3"><span class="mc-icon-pin btn-lg"> pin</span></div>
+</div>
+
+<div class="row" style="margin:15px 0px 15px 0px">
 <div class="col-md-3"><span class="mc-icon-font-color btn-lg"> font-color</span></div>
-<div class="col-md-3"><span class="mc-icon-forward btn-lg"> forward</span></div>
+  <div class="col-md-3"><span class="mc-icon-forward-up btn-lg"> forward-up</span></div>
+  <div class="col-md-3"><span class="mc-icon-forward-down btn-lg"> forward-down</span></div>
+  <div class="col-md-3"><span class="mc-icon-forward btn-lg"> forward</span></div>
 </div>
-<div class="row" style="margin:15px 0px 15px 0px">
-<div class="col-md-3"><span class="mc-icon-inbox btn-lg"> inbox</span></div>
-<div class="col-md-3"><span class="mc-icon-label btn-lg"> label</span></div>
-<div class="col-md-3"><span class="mc-icon-more btn-lg"> more</span></div>
-<div class="col-md-3"><span class="mc-icon-clock btn-lg"> clock</span></div>
-</div>
-<div class="row" style="margin:15px 0px 15px 0px">
-<div class="col-md-3"><span class="mc-icon-plus btn-lg"> plus</span></div>
-<div class="col-md-3"><span class="mc-icon-reply btn-lg"> reply</span></div>
-<div class="col-md-3"><span class="mc-icon-reply-all btn-lg"> reply-all</span></div>
-<div class="col-md-3"><span class="mc-icon-search btn-lg"> search</span></div>
-</div>
-<div class="row" style="margin:15px 0px 15px 0px">
-<div class="col-md-3"><span class="mc-icon-setting btn-lg"> setting</span></div>
-<div class="col-md-3"><span class="mc-icon-list-text btn-lg"> list-text</span></div>
-<div class="col-md-3"><span class="mc-icon-list-num btn-lg"> list-num</span></div>
-<div class="col-md-3"><span class="mc-icon-text btn-lg"> text</span></div>
-</div>
-<div class="row" style="margin:15px 0px 15px 0px">
-<div class="col-md-3"><span class="mc-icon-text-bold btn-lg"> text-bold</span></div>
-<div class="col-md-3"><span class="mc-icon-text-italic btn-lg"> text-italic</span></div>
-<div class="col-md-3"><span class="mc-icon-text-size btn-lg"> text-size</span></div>
-<div class="col-md-3"><span class="mc-icon-underline btn-lg"> underline</span></div>
 
+<div class="row" style="margin:15px 0px 15px 0px">
+  <div class="col-md-3"><span class="mc-icon-inbox btn-lg"> inbox</span></div>
+  <div class="col-md-3"><span class="mc-icon-label btn-lg"> label</span></div>
+  <div class="col-md-3"><span class="mc-icon-more btn-lg"> more</span></div>
+  <div class="col-md-3"><span class="mc-icon-clock btn-lg"> clock</span></div>
+</div>
+
+<div class="row" style="margin:15px 0px 15px 0px">
+  <div class="col-md-3"><span class="mc-icon-plus btn-lg"> plus</span></div>
+  <div class="col-md-3"><span class="mc-icon-spam btn-lg"> spam</span></div>
+  <div class="col-md-3"><span class="mc-icon-trash btn-lg"> trash</span></div>
+  <div class="col-md-3"><span class="mc-icon-reply btn-lg"> reply</span></div>
+</div>
+
+<div class="row" style="margin:15px 0px 15px 0px">
+  <div class="col-md-3"><span class="mc-icon-reply-all btn-lg"> reply-all</span></div>
+  <div class="col-md-3"><span class="mc-icon-search btn-lg"> search</span></div>
+  <div class="col-md-3"><span class="mc-icon-setting btn-lg"> setting</span></div>
+  <div class="col-md-3"><span class="mc-icon-list-text btn-lg"> list-text</span></div>
+</div>
+
+<div class="row" style="margin:15px 0px 15px 0px">
+  <div class="col-md-3"><span class="mc-icon-list-num btn-lg"> list-num</span></div>
+  <div class="col-md-3"><span class="mc-icon-text btn-lg"> text</span></div>
+  <div class="col-md-3"><span class="mc-icon-text-bold btn-lg"> text-bold</span></div>
+  <div class="col-md-3"><span class="mc-icon-text-italic btn-lg"> text-italic</span></div>
 </div>
 <div class="row" style="margin:15px 0px 15px 0px">
-<div class="col-md-3"><span class="mc-icon-unfocus btn-lg"> unfocus</span></div>
-<div class="col-md-3"><span class="mc-icon-spam btn-lg"> spam</span></div>
-<div class="col-md-3"><span class="mc-icon-trash btn-lg"> trash</span></div>
-
+  <div class="col-md-3"><span class="mc-icon-text-size btn-lg"> text-size</span></div>
+  <div class="col-md-3"><span class="mc-icon-underline btn-lg"> underline</span></div>
+  <div class="col-md-3"><span class="mc-icon-unfocus btn-lg"> unfocus</span></div>
 </div>
 {% endexample %}
 
