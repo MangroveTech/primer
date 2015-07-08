@@ -39,7 +39,7 @@ title: Replybox
 
 {% example html %}
 
-<div style='height:400px;width:100%;background-color:#f1f1f1'>
+<div style='height:550px;width:100%;background-color:#f1f1f1'>
   <div class='mc-replybox'>
     <div class='mc-replysection'>
       <div class='mc-replybox-header'>
