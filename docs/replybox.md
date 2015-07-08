@@ -39,7 +39,7 @@ title: Replybox
 
 {% example html %}
 
-<div style='height:400px;width:100%;background-color:#f1f1f1'>
+<div style='height:550px;width:100%;background-color:#f1f1f1'>
   <div class='mc-replybox'>
     <div class='mc-replysection'>
       <div class='mc-replybox-header'>
@@ -63,6 +63,32 @@ title: Replybox
       </div>
       <div class='mc-replbox-body'>
         <div class='mc-replybox-editor' contenteditable="true">
+          <br>
+          <br>
+          <br>
+          <div class="gmail_quote">Wed Jul 08 2015 11:19:36 GMT+0800 (CST) ck<span dir="ltr">&lt;<a href="mailto:ck@just.test.mailcup.com" target="_blank">ck@just.test.mailcup.com</a>&gt;</span>:
+            <br>
+            <blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+                <div dir="ltr">hehe
+                    <br>
+                    <br>
+                    <div>--</div>
+                    <div>程科</div>from mailcup
+                    <br>
+                    <br>
+                    <blockquote id="quoteDetail" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex" ng-show="show">
+                        <div>ck
+                            \<ck@just.test.mailcup.com\>于Mon Jul 06 2015 18:41:07 GMT+0800 (CST)写到:
+                              <div>
+                                  <br>hehe
+                                  <br>
+                                  <br>
+                              </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </blockquote>
+          </div>
           <br><br>--<br>Send from Mailcup
         </div>
       </div>
