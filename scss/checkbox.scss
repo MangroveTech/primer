@@ -1,6 +1,9 @@
-$green: #7ED321;
-$blue: #18D7AC;
-$orange: #F5A623;
+$grey: #777;
+$blue: #337ab7;
+$red: #d9534f;
+$cyan: #5bc0de;
+$yellow: #f0ad4e;
+$green: #5cb85c;
 
 @font-face {
   font-family: 'mailcup';
@@ -45,14 +48,28 @@ input[type="checkbox"] + label {
   border-radius: 2px;
 }
 
-[id^="mc-checkbox-green"] + label, [id^="mc-checkbox-green"]:checked + label {
-  background-color: $green;
+[id^="mc-checkbox-grey"] + label, [id^="mc-checkbox-grey"]:checked + label {
+  background-color: $grey;
 }
+
 [id^="mc-checkbox-blue"] + label, [id^="mc-checkbox-blue"]:checked + label {
   background-color: $blue;
 }
-[id^="mc-checkbox-orange"] + label, [id^="mc-checkbox-orange"]:checked + label {
-  background-color: $orange;
+
+[id^="mc-checkbox-red"] + label, [id^="mc-checkbox-red"]:checked + label {
+  background-color: $red;
+}
+
+[id^="mc-checkbox-cyan"] + label, [id^="mc-checkbox-cyan"]:checked + label {
+  background-color: $cyan;
+}
+
+[id^="mc-checkbox-yellow"] + label, [id^="mc-checkbox-yellow"]:checked + label {
+  background-color: $yellow;
+}
+
+[id^="mc-checkbox-green"] + label, [id^="mc-checkbox-green"]:checked + label {
+  background-color: $green;
 }
 
 [id^="mc-checkbox-"]:checked + label:after {
